@@ -1,0 +1,35 @@
+# create-connection.md
+CREATE SECRET kafka_ssl_cert
+CREATE CONNECTION
+
+# frontegg-mock/tests/local.rs
+"publicCertificate": "-----BEGIN CERTIFICATE-----
+MIIC..."
+
+# Public Keys
+-----BEGIN PUBLIC KEY-----
+-----END PUBLIC KEY-----
+
+# Private Keys
+-----BEGIN PRIVATE KEY-----
+-----END PRIVATE KEY-----
+
+# RSA Private Key
+-----BEGIN RSA PRIVATE KEY-----
+-----END RSA PRIVATE KEY-----
+
+# GPG Public Key
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+-----END PGP PUBLIC KEY BLOCK-----
+
+# GPG Signature
+-----BEGIN PGP SIGNATURE-----
+-----END PGP SIGNATURE-----
+
+# Certificates
+-----BEGIN CERTIFICATE-----
+-----END CERTIFICATE-----
+
+# nofmt blocks
+```nofmt
+```
