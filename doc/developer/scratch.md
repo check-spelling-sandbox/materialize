@@ -18,7 +18,7 @@ be useful to you, ask in #eng-infra on Slack.
 
 To access scratch resources from the AWS console, use [our SSO app](https://materialize.awsapps.com/start/).
 
-To access scratch resources from the command line, follow the instructions [here](https://github.com/MaterializeInc/i2/blob/main/doc/aws-access.md#cli-and-api-access).
+To access scratch resources from the command line, follow the [instructions](https://github.com/MaterializeInc/i2/blob/main/doc/aws-access.md#cli-and-api-access).
 
 ## Management with the `bin/scratch` script
 
