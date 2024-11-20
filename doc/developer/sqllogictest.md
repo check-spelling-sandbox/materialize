@@ -75,9 +75,8 @@ CREATE TABLE bar (
 
 ### Useful tips
 
-* If you use Visual Studio Code, @benesch has made a syntax highlighter for
-  sqllogictest, which you can find
-  [here](https://marketplace.visualstudio.com/items?itemName=benesch.sqllogictest).
+* If you use Visual Studio Code, @benesch has made a [syntax highlighter for
+  sqllogictest](https://marketplace.visualstudio.com/items?itemName=benesch.sqllogictest).
 * If you run
   ```bash
   bin/sqllogictest -- --rewrite-results <path_to_test_file>
