@@ -662,7 +662,7 @@ and find common sub-expressions within it, to identify intermediate results wort
 // Similar to the Description section. List of alternative approaches considered, pros/cons or why they were not chosen
 -->
 
-* QGM with interior mutability, shared pointers and so on as implemented [here](https://github.com/asenac/rust-sql).
+* QGM with interior mutability, shared pointers and so on as implemented by [asenac/rust-sql](https://github.com/asenac/rust-sql).
     * Making all boxes to be directly owned by the model makes recursion easier to support.
 * Relational algebra representation
 * Convert `MirRelationExpr` into a normalization-friendly representation with explicit `outer join` operator
