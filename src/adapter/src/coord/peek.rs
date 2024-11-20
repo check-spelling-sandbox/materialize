@@ -765,7 +765,7 @@ impl crate::coord::Coordinator {
         pending_peek
     }
 
-    /// Constructs an [`ExecuteResponse`] that that will send some rows to the
+    /// Constructs an [`ExecuteResponse`] that will send some rows to the
     /// client immediately, as opposed to asking the dataflow layer to send along
     /// the rows after some computation.
     pub(crate) fn send_immediate_rows<I>(rows: I) -> ExecuteResponse
