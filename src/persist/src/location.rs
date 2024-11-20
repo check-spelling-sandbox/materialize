@@ -831,7 +831,7 @@ pub mod tests {
         let keys: Vec<_> = consensus.list_keys().try_collect().await?;
         assert_eq!(keys, vec![key.to_owned()]);
 
-        // We can observe the a recent value on successful update.
+        // We can observe the recent value on successful update.
         assert_eq!(consensus.head(&key).await, Ok(Some(state.clone())));
 
         // Can scan a key that has data with a lower bound sequence number < head.
@@ -915,7 +915,7 @@ pub mod tests {
             Ok(CaSResult::Committed),
         );
 
-        // We can observe the a recent value on successful update.
+        // We can observe the recent value on successful update.
         assert_eq!(consensus.head(&key).await, Ok(Some(new_state.clone())));
 
         // We can observe both states in the correct order with scan if pass

@@ -43,7 +43,7 @@ where
         }
     }
 
-    /// Converts the the iterator into an `ExactSizeIterator` reporting the given size.
+    /// Converts the iterator into an `ExactSizeIterator` reporting the given size.
     ///
     /// The caller is responsible for providing the correct size of the iterator! Providing an
     /// incorrect size value will lead to panics and/or incorrect responses to size queries.

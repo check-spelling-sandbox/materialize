@@ -147,7 +147,7 @@ pub struct PutValue<V> {
 pub struct MergeValue<V> {
     /// The value of the merge operand to write to the backend.
     pub value: V,
-    /// The 'diff' of this merge operand value, used to estimate the the overall size diff
+    /// The 'diff' of this merge operand value, used to estimate the overall size diff
     /// of the working set after this merge operand is merged by the backend.
     pub diff: i64,
 }

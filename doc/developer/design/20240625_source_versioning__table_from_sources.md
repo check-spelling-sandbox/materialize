@@ -652,7 +652,7 @@ There are multiple ways to migrate a customer to the new syntax model:
         `DROP SOURCE <source> CASCADE`.
 
     Note that there is an important caveat: Kafka and single-output load generator sources
-    will continue to export data to the the primary source collection until
+    will continue to export data to the primary source collection until
     `force_source_table_syntax` is activated, in addition to any exports to tables.
     The additional export can have adverse performance implications when using the `upsert`
     envelope, such as requiring more disk when there are two upsert exports instead of one.
