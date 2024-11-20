@@ -103,7 +103,7 @@ world. Materialize uses the [PostgreSQL wire protocol](https://datastation.multi
 which allows it to integrate out-of-the-box with many SQL clients and other
 tools in the data ecosystem that support PostgreSQL — like [dbt](/integrations/dbt/).
 
-Don't see the a tool that you’d like to use with Materialize listed under
+Don't see a tool that you’d like to use with Materialize listed under
 [Tools and integrations](/integrations/)? Let us know by submitting a
 [feature request](https://github.com/MaterializeInc/materialize/discussions/new?category=feature-requests&labels=A-integration)!
 

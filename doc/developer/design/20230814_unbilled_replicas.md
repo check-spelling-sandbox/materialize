@@ -160,7 +160,7 @@ DROP REPLICA SET cl.default CASCADE;
 We can mix managed and unmanaged replica sets:
 
 ```sql
--- Create the a cluster with an implicit managed replica set, which include replicas `cl.r1`, `cl.r2`:
+-- Create a cluster with an implicit managed replica set, which include replicas `cl.r1`, `cl.r2`:
 CREATE CLUSTER cl SIZE '3xsmall', REPLICATION FACTOR 2;
 -- Create the `p1` replica set, which includes replica `cl.p1_r1`:
 CREATE REPLICA SET cl.p1 REPLICAS (p1_r1 SIZE 'large');

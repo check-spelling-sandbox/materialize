@@ -7,7 +7,7 @@
 // the Business Source License, use of this software will be governed
 // by the Apache License, Version 2.0.
 
-//! A source that reads from an a persist shard.
+//! A source that reads from a persist shard.
 
 use differential_dataflow::consolidation::ConsolidatingContainerBuilder;
 use mz_dyncfg::ConfigSet;

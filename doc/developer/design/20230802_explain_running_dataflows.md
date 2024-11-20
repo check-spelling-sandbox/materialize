@@ -20,7 +20,7 @@ EXPLAIN OPTIMIZED PLAN FOR MATERIALIZED VIEW $name
 
 to get this information for materialized views, and we still don't support the counterpart syntax for index items.
 
-However, even for the `MATERIALIZED VIEW` syntax, the information can be misleading because the `EXPLAIN` output is based on an a new optimization run that is executed while handling the `EXPLAIN` statement.
+However, even for the `MATERIALIZED VIEW` syntax, the information can be misleading because the `EXPLAIN` output is based on a new optimization run that is executed while handling the `EXPLAIN` statement.
 Even though our optimizer is deterministic, this will only provide results consistent with the dataflow that is actually running while the environment context that guides the optimizer remains unchanged.
 For example, if the user does:
 
