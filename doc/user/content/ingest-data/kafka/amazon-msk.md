@@ -179,7 +179,7 @@ The process to connect Materialize to Amazon MSK consists of the following steps
       --server-properties fileb://<config-file-path>/msk-config.txt
     ```
 
-    You can find more information about making your cluster public [here](https://docs.aws.amazon.com/msk/latest/developerguide/public-access.html).
+    You can find more information about [making your cluster public](https://docs.aws.amazon.com/msk/latest/developerguide/public-access.html).
 
 3. #### Create a client machine
     If you already have a client machine set up that can interact with your cluster, then you can skip this step.
