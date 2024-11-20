@@ -194,8 +194,7 @@ On other Linux variants, you'll need to make your own way through [Confluent's
 installation instructions][confluent-install]. Note that, at the time of
 writing, only Java 8 and 11 are supported.
 
-Alternatively, it is possible to get an all-in-one tarball from
-[here](https://packages.confluent.io/archive/). Then untar this to a
+Alternatively, it is possible to get an [all-in-one tarball](https://packages.confluent.io/archive/). Then untar this to a
 location, set `$CONFLUENT_HOME` to this location and add `$CONFLUENT_HOME/bin`
 to your $PATH. I found this to be the most convenient way to get confluent
 and it also works in a distro neutral way (if you are using, Arch Linux for example).
