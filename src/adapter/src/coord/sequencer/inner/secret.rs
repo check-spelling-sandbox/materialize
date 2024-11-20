@@ -155,7 +155,7 @@ impl Coordinator {
         let evaled = secret_as.eval(&[], &temp_storage)?;
 
         if evaled == Datum::Null {
-            coord_bail!("secret value can not be null");
+            coord_bail!("secret value cannot be null");
         }
 
         let payload = evaled.unwrap_bytes();
@@ -165,7 +165,7 @@ impl Coordinator {
         // We are enforcing this limit across all types of Secrets Controllers
         // Most secrets are expected to be roughly 75B
         if payload.len() > 1024 * 512 {
-            coord_bail!("secrets can not be bigger than 512KiB")
+            coord_bail!("secrets cannot be bigger than 512KiB")
         }
 
         // Enforce that all secrets are valid UTF-8 for now. We expect to lift

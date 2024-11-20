@@ -19,7 +19,7 @@ pub async fn run_connect(
 ) -> Result<ControlFlow, anyhow::Error> {
     let name = cmd.args.string("name")?;
     if name.starts_with("postgres://") {
-        bail!("connection name can not be url");
+        bail!("connection name cannot be url");
     }
 
     let url = cmd.args.string("url")?;

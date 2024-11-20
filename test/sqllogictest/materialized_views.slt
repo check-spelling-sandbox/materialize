@@ -86,7 +86,7 @@ statement ok
 DROP MATERIALIZED VIEW other_mv
 
 
-# Test: Materialized view can not be created in a non-existing cluster.
+# Test: Materialized view cannot be created in a non-existing cluster.
 
 statement error unknown cluster 'doesnotexist'
 CREATE MATERIALIZED VIEW error IN CLUSTER doesnotexist AS SELECT 1
@@ -203,7 +203,7 @@ statement ok
 DROP MATERIALIZED VIEW mv
 
 
-# Test: Materialized views can not be dropped if they have dependants.
+# Test: Materialized views cannot be dropped if they have dependants.
 
 statement ok
 CREATE MATERIALIZED VIEW mv AS SELECT 1

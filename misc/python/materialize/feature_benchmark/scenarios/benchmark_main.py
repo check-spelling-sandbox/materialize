@@ -119,7 +119,7 @@ true
         ]
 
     # Since an individual query of this particular type being benchmarked takes 1ms to execute, the results are susceptible
-    # to a lot of random noise. As we can not make the query any slower by using e.g. a large dataset,
+    # to a lot of random noise. As we cannot make the query any slower by using e.g. a large dataset,
     # we run the query 100 times in a row and measure the total execution time.
 
     def benchmark(self) -> MeasurementSource:
@@ -1865,7 +1865,7 @@ class StartupLoaded(Scenario):
 
     SCALE = 1.2  # 25 objects of each kind
     FIXED_SCALE = (
-        True  # Can not scale to 100s of objects, so --size=+N will have no effect
+        True  # Cannot scale to 100s of objects, so --size=+N will have no effect
     )
 
     def shared(self) -> Action:

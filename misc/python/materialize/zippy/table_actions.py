@@ -66,7 +66,7 @@ class CreateTable(Action):
     def __init__(self, table: TableExists, capabilities: Capabilities) -> None:
         assert (
             table is not None
-        ), "CreateTable Action can not be referenced directly, it is produced by CreateTableParameterized factory"
+        ), "CreateTable Action cannot be referenced directly, it is produced by CreateTableParameterized factory"
         self.table = table
         super().__init__(capabilities)
 

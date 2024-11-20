@@ -7,7 +7,7 @@
 # the Business Source License, use of this software will be governed
 # by the Apache License, Version 2.0.
 
-# This file is needed as otherwise pytest --doctest-module can not
+# This file is needed as otherwise pytest --doctest-module cannot
 # disambiguate between the two instances of `scalability` in misc/python/materialize
 
 # The pass is needed to keep pydoc happy, as it errors out on empty files

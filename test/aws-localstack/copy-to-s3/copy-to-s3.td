@@ -57,7 +57,7 @@ contains:only 's3://...' urls are supported as COPY TO target
     AWS CONNECTION = aws_conn,
     FORMAT = 'csv'
   );
-contains:COPY TO target value can not be null
+contains:COPY TO target value cannot be null
 
 ! COPY t TO 1234
   WITH (

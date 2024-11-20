@@ -264,7 +264,7 @@ class Test:
             )
 
             for subclass in subclasses:
-                # Do not pick an Action whose requirements can not be satisfied
+                # Do not pick an Action whose requirements cannot be satisfied
                 if self._can_run(subclass):
                     alternatives.append(subclass)
 

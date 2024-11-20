@@ -180,7 +180,7 @@ change in future versions of Materialize.
 
 For unmanaged clusters, `CREATE CLUSTER`'s behavior remains unchanged.
 
-**Note:** Managed clusters can not be used to host sources and sinks, or can be
+**Note:** Managed clusters cannot be used to host sources and sinks, or can be
 used as linked clusters.
 
 ### `ALTER CLUSTER`

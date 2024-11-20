@@ -87,7 +87,7 @@ class Materialized(Service):
         environment = [
             "MZ_NO_TELEMETRY=1",
             f"MZ_SOFT_ASSERTIONS={int(soft_assertions)}",
-            # The following settings can not be baked in the default image, as they
+            # The following settings cannot be baked in the default image, as they
             # are enabled for testing purposes only
             "MZ_ORCHESTRATOR_PROCESS_TCP_PROXY_LISTEN_ADDR=0.0.0.0",
             "MZ_ORCHESTRATOR_PROCESS_PROMETHEUS_SERVICE_DISCOVERY_DIRECTORY=/mzdata/prometheus",

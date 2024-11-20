@@ -31,7 +31,7 @@ class ReplicaExists(Capability):
 
 def source_capable_clusters(capabilities: Capabilities) -> list[str]:
     if len(capabilities.get(ReplicaExists)) > 0:
-        # Default cluster may have multiple replicas, can not be used for sources
+        # Default cluster may have multiple replicas, cannot be used for sources
         return ["storage"]
     else:
         return ["storage", "quickstart"]

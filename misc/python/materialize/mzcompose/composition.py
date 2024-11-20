@@ -1184,7 +1184,7 @@ class Composition:
             container_id = self.container_id(service)
 
             if container_id is None:
-                # Container has already exited, can not `docker wait` on it
+                # Container has already exited, cannot `docker wait` on it
                 continue
 
             try:

@@ -76,7 +76,7 @@ class CreateSink(Action):
     ) -> None:
         assert (
             sink is not None
-        ), "CreateSink Action can not be referenced directly, it is produced by CreateSinkParameterized factory"
+        ), "CreateSink Action cannot be referenced directly, it is produced by CreateSinkParameterized factory"
         self.sink = sink
         super().__init__(capabilities)
 

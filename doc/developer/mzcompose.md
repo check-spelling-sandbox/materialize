@@ -78,7 +78,7 @@ Additional examples can be found here:
 
 # Dealing with services
 
-Given the declarative nature of `docker-compose`, participating services need to be declared at the top of the `mzcompose.py` file, outside of a particular workflow. A service definition can not be created inside a workflow, but a declared service can be started, stopped and otherwise manipulated within a workflow.
+Given the declarative nature of `docker-compose`, participating services need to be declared at the top of the `mzcompose.py` file, outside of a particular workflow. A service definition cannot be created inside a workflow, but a declared service can be started, stopped and otherwise manipulated within a workflow.
 
 The `mzcompose` library contains definitions for the most common services used when composing workflows. The definitive list is available [from the class documentation of `mzcompose`](https://dev.materialize.com/api/python/materialize/mzcompose/index.html#materialize.mzcompose.Service).
 

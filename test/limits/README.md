@@ -6,7 +6,7 @@ number of tables in a join).
 Some of the limits are product-wide, most pertain to the various aspects of individual queries that
 pertain to the optimizer, e.g. "number of conditions over the same column in a WHERE clause".
 
-While the framework does not explicitly test for performance and can not intelligently flag regressions,
+While the framework does not explicitly test for performance and cannot intelligently flag regressions,
 in practice it is hoped that regressions will be caught by one of the following mechanisms:
 - a fixpoint panic if the optimizer is unable to transform a complex query to a stable tree
 - a stack overflow if a recursive algorithm is used anywhere during query processing

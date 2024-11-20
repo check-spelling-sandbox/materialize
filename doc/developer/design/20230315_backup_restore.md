@@ -69,7 +69,7 @@ While this imposes some additional cost, it’s modest both in absolute terms an
 
 ### Correctness
 
-Unlike for a single shard, the state of an entire environment can not be represented with a single number. (Including the `mztimestamp` — the timestamp of a shard can lag arbitrarily behind, if eg. the cluster that populates that shard is crashing.) Conceptually, an environment backup is a mapping between shard id and the seqno of the per-shard backup. (Along with any additional environment-level state, like the stash.)
+Unlike for a single shard, the state of an entire environment cannot be represented with a single number. (Including the `mztimestamp` — the timestamp of a shard can lag arbitrarily behind, if eg. the cluster that populates that shard is crashing.) Conceptually, an environment backup is a mapping between shard id and the seqno of the per-shard backup. (Along with any additional environment-level state, like the stash.)
 
 Correctness criteria are also a bit more subtle, and involve reasoning about the dependencies between collections. We’re aware of two important correctness properties:
 

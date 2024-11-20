@@ -173,7 +173,7 @@ impl Coordinator {
             let temp_storage = RowArena::new();
             let evaled = to.eval(&[], &temp_storage)?;
             if evaled == Datum::Null {
-                coord_bail!("COPY TO target value can not be null");
+                coord_bail!("COPY TO target value cannot be null");
             }
             let to_url = match Uri::from_str(evaled.unwrap_str()) {
                 Ok(url) => {

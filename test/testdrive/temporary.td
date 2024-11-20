@@ -166,7 +166,7 @@ contains:unknown catalog item 't1'
 
 > DROP TABLE t2;
 
-# A non-temporary view can not depend on a temporary table
+# A non-temporary view cannot depend on a temporary table
 
 > CREATE TEMPORARY TABLE t1 (f1 INTEGER);
 

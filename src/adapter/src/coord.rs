@@ -3200,7 +3200,7 @@ impl Coordinator {
                             let prev = self.pending_linearize_read_txns.insert(conn_id, pending_read_txn);
                             soft_assert_or_log!(
                                 prev.is_none(),
-                                "connections can not have multiple concurrent reads, prev: {prev:?}"
+                                "connections cannot have multiple concurrent reads, prev: {prev:?}"
                             )
                         }
                         messages.push(Message::LinearizeReads);

@@ -44,7 +44,7 @@ An ActionFactory is a way to pass parameters to Actions, so that e.g. a differen
 
 ## Capabilities
 
-The framework keeps track of what capabilities the environment currently has, which influences what actions the framework can pick to be run. For example, one can not run a `CreateSource` action before a `CreateTopic` action has been executed that will cause the environment to have a `TopicExists` capability.
+The framework keeps track of what capabilities the environment currently has, which influences what actions the framework can pick to be run. For example, one cannot run a `CreateSource` action before a `CreateTopic` action has been executed that will cause the environment to have a `TopicExists` capability.
 
 # Data Validation
 

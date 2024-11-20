@@ -29,7 +29,7 @@ USE test;
 EXEC sys.sp_cdc_enable_db;
 
 # I could not get the Debezium signal mechanism to work -- Debezium throws a NullPointerException
-# Therefore, we are forced to populate all tables first as we can not add new tables to the replication stream post-factum
+# Therefore, we are forced to populate all tables first as we cannot add new tables to the replication stream post-factum
 
 # CREATE TABLE debezium_signal (id VARCHAR(42) PRIMARY KEY, type VARCHAR(32) NOT NULL, data VARCHAR(2048) NULL);
 # EXEC sys.sp_cdc_enable_table @source_schema = 'dbo', @source_name = 'debezium_signal', @role_name = 'SA', @supports_net_changes = 0

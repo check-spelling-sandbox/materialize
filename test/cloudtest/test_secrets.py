@@ -25,7 +25,7 @@ def test_secrets(mz: MaterializeApplication) -> None:
             > CREATE SECRET username AS '123';
             > CREATE SECRET password AS '234';
 
-            # Our Redpanda instance is not configured for SASL, so we can not
+            # Our Redpanda instance is not configured for SASL, so we cannot
             # really establish a successful connection.
             ! CREATE CONNECTION secrets_conn TO KAFKA (
                 BROKER '${testdrive.kafka-addr}',

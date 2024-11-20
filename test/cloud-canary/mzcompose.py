@@ -206,7 +206,7 @@ SERVICES = [
             "--orchestrator-process-secrets-directory=/mzdata/secrets",
             "--orchestrator-process-scratch-directory=/scratch",
         ],
-        # We can not restart this container at will, as it does not have clusterd
+        # We cannot restart this container at will, as it does not have clusterd
         sanity_restart=False,
     ),
     Testdrive(),  # Overriden below

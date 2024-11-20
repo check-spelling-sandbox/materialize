@@ -39,7 +39,7 @@ A second kind of **read-only** transaction can contain an initial [`SUBSCRIBE`](
 ### Write-only transactions
 
 A **write-only** transaction starts with an [`INSERT`](/sql/insert) and allows only `INSERT` statements.
-Different statements can not reference different tables.
+Different statements cannot reference different tables.
 On `COMMIT`, all statements from the transaction are committed at the same timestamp.
 
 ### Same timedomain error

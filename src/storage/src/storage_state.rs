@@ -838,7 +838,7 @@ impl<'w, A: Allocate> Worker<'w, A> {
     }
 
     /// Extract commands until `InitializationComplete`, and make the worker
-    /// reflect those commands. If the worker can not be made to reflect the
+    /// reflect those commands. If the worker cannot be made to reflect the
     /// commands, return an error.
     fn reconcile(&mut self, command_rx: &CommandReceiver) -> Result<(), RecvError> {
         let worker_id = self.timely_worker.index();

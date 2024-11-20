@@ -461,7 +461,7 @@ event loop. Individual benefits of this are:
 - Isolated Writes: What we have above for Peeks, but for Writes!
 
 At the end of this milestone, we will have an isolated and vertically scalable
-query/control layer. The current implementation can not scale up by adding more
+query/control layer. The current implementation cannot scale up by adding more
 resources to the single process/machine because the single event loop is a
 bottleneck. Once responsibilities are decouple we _can_ scale up vertically.
 

@@ -421,7 +421,7 @@ SELECT (col_not_null -> 'x')::int IS NULL, (col_not_null -> 'y')::text IS NULL, 
 true  true  true  true  true  true  true  true  true
 
 #
-# REGEXP returns NULL on no match, so can not be NOT NULL
+# REGEXP returns NULL on no match, so cannot be NOT NULL
 #
 
 query T multiline
