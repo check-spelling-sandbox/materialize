@@ -127,7 +127,7 @@ The process to connect Materialize to Amazon MSK consists of the following steps
 
     h. Review the details and click **Finish**
 
-    You can find more details about creating a symmetric key [here](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-symmetric-cmk).
+    You can find more details about [creating a symmetric key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-symmetric-cmk).
 
     ##### Store a new Secret
     a. Go to the [AWS Secrets Manager console](https://console.aws.amazon.com/secretsmanager/)
