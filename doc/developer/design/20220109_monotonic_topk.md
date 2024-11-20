@@ -36,7 +36,7 @@ The bottom arrangement in the reduction stack is “fat”: it has many keys for
 
 **Overview of evaluation strategy:** The strategy is similar to the construction for the `BasicTopKPlan`; however, the monotonic strategy makes changes that affect how much state from the input collection ends up being retained. Essentially, it is observed that the input can be “thinned” once the top-k rows are determined, since all “loser” rows outside of the top-k can never again make it to the top-k set. The latter is because the input is monotonic, so there are no input retractions. The rendering thus removes all non-top-k rows from the input after the top-k set is found. This rendering strategy is not applied when an offset is given.
 
-The behavior above is concretely implemented by a feedback operator, triggered by the usage of delay and a variable [here](https://github.com/MaterializeInc/materialize/blob/7dbd4f0aa8a454911bf92a8cebd7b1fc08491b41/src/compute/src/render/top_k.rs#L68-L75). This strategy results in an even more complex rendering than for `BasicTopKPlan`.
+The behavior above is concretely implemented by a feedback operator, triggered by the usage of [delay and a variable](https://github.com/MaterializeInc/materialize/blob/7dbd4f0aa8a454911bf92a8cebd7b1fc08491b41/src/compute/src/render/top_k.rs#L68-L75). This strategy results in an even more complex rendering than for `BasicTopKPlan`.
 
 **Summarized Analysis:**
 
