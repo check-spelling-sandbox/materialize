@@ -896,7 +896,7 @@ where
             indexmap::IndexMap::new();
         let mut multi_get_scratch = Vec::new();
 
-        // Now can can resume consuming the collection
+        // Now can resume consuming the collection
         let mut output_updates = vec![];
         let mut input_upper = Antichain::from_elem(Timestamp::minimum());
 

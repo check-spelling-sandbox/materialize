@@ -26,7 +26,7 @@ produces:
 ```
 (See [this page for how the colors will look])
 
-You also also add semi-structured data to the event, for example:
+You can also add semi-structured data to the event, for example:
 ```
 tracing::debug!("processed {} items", items.len(), ?enum_value")
 ```

@@ -1109,7 +1109,7 @@ where
         // Record pending introspection updates.
         //
         // It's beneficial to do this as the last maintenance step because previous steps can cause
-        // dropping of state, which can can cause introspection retractions, which lower the volume
+        // dropping of state, which can cause introspection retractions, which lower the volume
         // of data we have to record.
         self.record_introspection_updates(storage);
     }

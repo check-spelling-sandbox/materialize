@@ -153,7 +153,7 @@ In this example, let's say your `dev_role` needs the following permissions:
     ```
 
     {{< note >}}
-  All of the grant resources are a 1:1 between a specific role, object and privilege. So adding three privileges to the `dev_role` will require three Terraform resources which can can be accomplished with the `for_each` meta-argument.
+  All of the grant resources are a 1:1 between a specific role, object and privilege. So adding three privileges to the `dev_role` will require three Terraform resources which can be accomplished with the `for_each` meta-argument.
     {{</ note >}}
 
 2. We will run Terraform to grant these privileges on the `dev_table` table.
