@@ -199,7 +199,7 @@ seqno=v10 batches=b0,b1,b2 rollups=v5,v8
 seqno=v11 batches=b0,b1,b2 rollups=v5,v8,v9
 seqno=v12 batches=b0,b1,b2 rollups=v8,v9
 
-# even though the row v8 doesn't exist any more, GC
+# even though the row v8 doesn't exist anymore, GC
 # should still know to remove it from state. it should
 # additionally perform no actual truncate calls because
 # it started at a state greater than to_seqno

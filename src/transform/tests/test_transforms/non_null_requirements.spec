@@ -124,7 +124,7 @@ Filter (#0 = #3)
 # requirements derived through Let bindings.
 #
 # Note: if we implement fixpoint-based handling of LetRec bindings, the
-# `Filter #2 > 0` under `l1` will not be needed any more.
+# `Filter #2 > 0` under `l1` will not be needed anymore.
 apply pipeline=non_null_requirements
 Return
   Filter #0 < 7 AND #2 > 0
