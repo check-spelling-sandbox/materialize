@@ -313,7 +313,7 @@ ensure each update-set pTVC maintains the correctness invariant: `read(ptvc, t)
 = read(tvc, t)` so long as `t` is at least `since` and not later than `upper`.
 
 First, consider the empty pTVC `ptvc0 = [timeline, {}, {t0}, {t0}]`. `ptvc0` is
-trivially correct since there are no times not later than than the upper
+trivially correct since there are no times not later than the upper
 frontier `{t0}`.
 
 Next we consider two ways a pTVC could evolve, and wave our hands frantically
