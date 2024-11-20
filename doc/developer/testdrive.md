@@ -349,7 +349,7 @@ There are four types of error expectations:
   * `timeout` expects the query to time out.
 
 
-You can include include variables in `contains`, `exact`, and `regex`
+You can include variables in `contains`, `exact`, and `regex`
 expectations:
 
 ```

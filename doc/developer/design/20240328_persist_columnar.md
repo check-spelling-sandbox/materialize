@@ -728,7 +728,7 @@ two goals:
 Like Extension Types, schemas can also be tagged with metadata. We already
 write some [limited metadata](https://github.com/MaterializeInc/materialize/blob/7135e53182c77e2c2fe31fe2aa700adc37ac134d/src/persist/src/indexed/columnar/parquet.rs#L54-L59)
 to our Parquet files in the form of a [protobuf message](https://github.com/MaterializeInc/materialize/blob/7135e53182c77e2c2fe31fe2aa700adc37ac134d/src/persist/src/persist.proto#L26-L35)
-I propose we extend this message to include include a "version" which initially
+I propose we extend this message to include a "version" which initially
 will just be `1` and can be incremented at its own pace. The goal of this
 "batch version" is it gives us a way to entirely ignore the new columnar data
 if necessary. For example, say we incorrectly encode the new structured format
