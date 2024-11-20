@@ -152,7 +152,7 @@ The process to connect Materialize to Amazon MSK consists of the following steps
 
     h. Go forward to the next steps and finish creating the secret. Once created, record the ARN (Amazon Resource Name) value for your secret
 
-    You can find more details about creating a secret using AWS Secrets Manager [here](https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html).
+    You can find more details about [creating a secret using AWS Secrets Manager](https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html).
 
     ##### Associate secret with MSK cluster
     a. Navigate back to the [Amazon MSK console](https://console.aws.amazon.com/msk/) and click on the cluster you created in Step 1
