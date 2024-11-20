@@ -340,7 +340,7 @@ pub struct ExplainConfig {
 }
 ```
 
-Note that we need need to be careful with the `filter_pushdown` handling. There are some options:
+Note that we need to be careful with the `filter_pushdown` handling. There are some options:
 
 1. Don't respect the `filter_pushdown` value. Treat it as `true` for catalog items that were created with MFP pushdown enabled, and as `false` otherwise.
 2. Don't respect the `filter_pushdown` value. Treat it as `false` for all catalog items.
