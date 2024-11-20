@@ -17,7 +17,7 @@ In the context of this framework:
 bin/mzcompose --find platform-checks run default --scenario=SCENARIO [--check=CHECK] [--execution-mode= [--execution-mode={alltogether,oneatatime}]
 ```
 
-The list of Checks available can be found [here](https://dev.materialize.com/api/python/materialize/checks/checks.html#materialize.checks.checks.Check)
+The list of [Checks](https://dev.materialize.com/api/python/materialize/checks/checks.html#materialize.checks.checks.Check)
 
 The list of Scenarios is [here](https://dev.materialize.com/api/python/materialize/checks/scenarios.html#materialize.checks.scenarios.Scenario)
 
