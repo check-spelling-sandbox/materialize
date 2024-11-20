@@ -327,7 +327,7 @@ where
         // heartbeat task. Run reader creation in a task to attempt to defend against this.
         //
         // TODO: Really we likely need to swap the inners of all persist operators to be
-        // communicating with a tokio task over a channel, but that's much much harder, so for now
+        // communicating with a tokio task over a channel, but that's much, much, harder, so for now
         // we whack the moles as we see them.
         let mut read = mz_ore::task::spawn(|| format!("shard_source_reader({})", name_owned), {
             let diagnostics = Diagnostics {
