@@ -1150,7 +1150,7 @@ impl CsrConnection {
                     // and not the hostname This works fine in practice, because
                     // only the SSH tunnel port will change if the tunnel fails
                     // and has to be restarted (the hostname is always
-                    // 127.0.0.1)--but this is an an implementation detail of
+                    // 127.0.0.1)--but this is an implementation detail of
                     // the SSH tunnel code that we're relying on.
                     .dynamic_url({
                         let remote_url = self.url.clone();

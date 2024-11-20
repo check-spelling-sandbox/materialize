@@ -66,7 +66,7 @@ In the future, it is possible to add per-service filtering, if deemed useful.
 **Please see [the tracing docs](https://docs.rs/tracing/latest/tracing/index.html#spans) for more information about spans**
 
 [`Span`]s are what makes `tracing` a "tracing" crate, and not just a logging crate. Spans are like events,
-but they have a start and and end, and are organized into a tree of parents and children. There are
+but they have a start and an end, and are organized into a tree of parents and children. There are
 many tools that can analyze and visualize spans to help you determine where Materialize is spending
 its time.
 

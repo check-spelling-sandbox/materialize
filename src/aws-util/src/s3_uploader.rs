@@ -152,7 +152,7 @@ impl Default for S3MultiPartUploaderConfig {
 }
 
 impl S3MultiPartUploader {
-    /// Creates a an instance of `S3MultiPartUploader` for the given `bucket` and `path`.
+    /// Creates an instance of `S3MultiPartUploader` for the given `bucket` and `path`.
     /// This starts the multi part upload by making a `create_multipart_upload` call, and
     /// initializes all the internal state required to track the ongoing upload.
     pub async fn try_new(

@@ -175,7 +175,7 @@ communicate that fact to the coordinator by causing the
 ### Subscriptions
 
 The coordinator responds to a bare `SUBSCRIBE` statement (that is, one
-that is not part of a `COPY ... TO STDOUT` statement) with the an instance of
+that is not part of a `COPY ... TO STDOUT` statement) with an instance of
 [`ExecuteResponse::Subscribing`][subscribing]. This response contains
 a channel on which batches of rows are received. The client may
 continue drawing from this channel until either it closes gracefully

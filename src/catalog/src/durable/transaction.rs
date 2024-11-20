@@ -2536,7 +2536,7 @@ struct TransactionUpdate<V> {
 /// - transactional reads and writes (including read-your-writes before commit)
 ///
 /// `K` is the primary key type. Multiple entries with the same key are disallowed.
-/// `V` is the an arbitrary value type.
+/// `V` is an arbitrary value type.
 #[derive(Debug, PartialEq, Eq)]
 struct TableTransaction<K, V> {
     initial: BTreeMap<K, V>,

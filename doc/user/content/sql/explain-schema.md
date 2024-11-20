@@ -31,7 +31,7 @@ Output type | Description
 **JSON** | Format the explanation output as a JSON object.
 
 ## Details
-When creating a an Avro-formatted Kafka sink, Materialize automatically generates Avro schemas for the message key and value and publishes them to a schema registry.
+When creating an Avro-formatted Kafka sink, Materialize automatically generates Avro schemas for the message key and value and publishes them to a schema registry.
 This command shows what the generated schemas would look like, without creating the sink.
 
 ## Examples

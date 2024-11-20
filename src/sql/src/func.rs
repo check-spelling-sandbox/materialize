@@ -4041,7 +4041,7 @@ pub static MZ_INTERNAL_BUILTINS: LazyLock<BTreeMap<&'static str, Func>> = LazyLo
                 WHERE r.id = o.id AND r.best_ranked;
             ") => ReturnType::set_of(RecordAny), oid::FUNC_MZ_RESOLVE_OBJECT_NAME;
         },
-        // Returns the an array representing the minimal namespace a user must
+        // Returns an array representing the minimal namespace a user must
         // provide to refer to an item whose name is the first argument.
         //
         // The first argument must be a fully qualified name (i.e. contain
