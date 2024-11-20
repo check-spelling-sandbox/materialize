@@ -735,7 +735,7 @@ where
         // is almost certainly better, but the ideal is probably somewhere in
         // between the two.
         //
-        // For now, invent some some extra budget out of thin air for prefetch.
+        // For now, invent some extra budget out of thin air for prefetch.
         let prefetch_budget_bytes = 2 * cfg.batch.blob_target_size;
 
         let mut timings = Timings::default();
