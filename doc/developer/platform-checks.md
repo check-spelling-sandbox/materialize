@@ -174,7 +174,7 @@ manipulation (twice) and validation of all participating Checks. Any Actions tha
 are then interspersed between those steps. Two `Manipulate` sections are run so that more complex, drawn-out
 upgrade scenarios can be tested while ensuring that database activity happens during every stage of the upgrade.
 
-The list of available Actions is [here](https://dev.materialize.com/api/python/materialize/checks/actions.html#materialize.checks.actions.Action).
+The list of [available Actions](https://dev.materialize.com/api/python/materialize/checks/actions.html#materialize.checks.actions.Action).
 
 # Writing an Action
 
