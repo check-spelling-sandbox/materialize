@@ -42,7 +42,7 @@ fn main() -> Result<()> {
     }
 
     // Convert the default PostgreSQL timezone abbreviation file into a Rust
-    // constants, one for each abbrevation in the file, and the SQL definition
+    // constants, one for each abbreviation in the file, and the SQL definition
     // of the `pg_timezone_abbrevs` view.
     //
     // See: https://www.postgresql.org/docs/16/datetime-config-files.html
