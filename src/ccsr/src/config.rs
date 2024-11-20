@@ -92,7 +92,7 @@ impl ClientConfig {
 
     /// Sets a callback that will be used to dynamically override the url
     /// the client uses.
-    // Note this this doesn't use native `reqwest` `Proxy`s because not all schema
+    // Note this doesn't use native `reqwest` `Proxy`s because not all schema
     // registry implementations support them.
     pub fn dynamic_url<F: Fn() -> Url + Send + Sync + 'static>(
         mut self,
