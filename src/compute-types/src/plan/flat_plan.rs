@@ -290,7 +290,7 @@ impl<T> From<Plan<T>> for FlatPlan<T> {
     fn from(plan: Plan<T>) -> Self {
         use FlatPlanNode::*;
 
-        // The strategy is to walk walk through the `Plan` in right-to-left pre-order and for each
+        // The strategy is to walk through the `Plan` in right-to-left pre-order and for each
         // node (a) produce a corresponding `FlatPlanNode` and (b) push the contained subplans onto
         // the work stack. We do this until no further subplans remain.
 
