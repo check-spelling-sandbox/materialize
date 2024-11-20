@@ -200,7 +200,7 @@ See [#23179](https://github.com/MaterializeInc/database-issues/issues/6981).
 
 ## Minimal Viable Prototype
 
-A prototype is available [here](https://github.com/ggevay/materialize/commit/f1f279cad786f4b3cb96ac4e376fa1bd90e160ea) (written together with Jan). It simply inserts an operator in front of the Persist sink, which rounds up the timestamps as proposed above. The prototype does it for all MVs (with a fix interval), so there is no SQL syntax in the prototype. Automated replica management is not implemented yet, but one can manually drop and create replicas.
+A prototype is [available](https://github.com/ggevay/materialize/commit/f1f279cad786f4b3cb96ac4e376fa1bd90e160ea) (written together with Jan). It simply inserts an operator in front of the Persist sink, which rounds up the timestamps as proposed above. The prototype does it for all MVs (with a fix interval), so there is no SQL syntax in the prototype. Automated replica management is not implemented yet, but one can manually drop and create replicas.
 
 ## Console
 
