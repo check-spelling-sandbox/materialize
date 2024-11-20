@@ -184,7 +184,7 @@ The process to connect Materialize to Amazon MSK consists of the following steps
 3. #### Create a client machine
     If you already have a client machine set up that can interact with your cluster, then you can skip this step.
 
-    If not, you can create an EC2 client machine and then add the security group of the client to the inbound rules of the cluster's security group from the VPC console. You can find more details about how to do that [here](https://docs.aws.amazon.com/msk/latest/developerguide/create-client-machine.html).
+    If not, you can [create an EC2 client machine](https://docs.aws.amazon.com/msk/latest/developerguide/create-client-machine.html) and then add the security group of the client to the inbound rules of the cluster's security group from the VPC console.
 
 4. #### Install Apache Kafka and create a topic
     To start using Materialize with Apache Kafka, you need to create a Materialize source over an Apache Kafka topic. If you already have Apache Kafka installed and a topic created, you can skip this step.
