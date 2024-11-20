@@ -111,7 +111,7 @@ Thus, an alternative design could be to let the coordinator install the introspe
 This alternative has the desirable properties that introspection subscribes could be defined in SQL, rather than LIR, and that they could read from arbitrary builtin relations, not just introspection indexes.
 
 The main drawback of this alternative appears to be complexity.
-During an (unfinished) attempt to develop a prototype of this approach, the amount of changes and new edge cases required in the coordinator code was significantly higher than with the design proposed above.
+During an (unfinished) attempt to develop a prototype of this approach, the amount of changes and new edge cases required in the coordinator code was significantly greater than with the design proposed above.
 The coordinator makes a number of assumptions about subscribe handling (e.g., every active subscribe is associated with a client connection) that don't hold for introspection subscribes and would need to be adjusted.
 
 In the interest of moving fast we opt to not follow this approach for the MVP implementation.

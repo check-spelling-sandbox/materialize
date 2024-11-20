@@ -93,7 +93,7 @@ The logic for determining what timestamp to return must satisfy:
       strictly larger than the previous timestamp.
 
 We can accomplish this by using a single global timestamp per timeline. The timestamp will be initialized to some valid
-initial value and be advanced periodically to some valid value that is higher than the previous value. The periodic
+initial value and be advanced periodically to some valid value that is greater than the previous value. The periodic
 advancements should maintain the property that the global timestamp is within some error bound of all the timestamps
 being assigned to data from upstream sources. All reads are given a timestamp equal to the global timestamp, which is
 greater than or equal to the `since` of all involved objects as described
@@ -156,7 +156,7 @@ and committed immediately. Otherwise the queue must wait until the current time 
 timestamp, before executing and committing the writes in the queue. All writes in a queue are executed and committed
 together in a batch and assigned the same timestamp. The commits are all assigned the current global write timestamp.
 
-NOTE: The `TimestampOracle` provides us the property that the global write timestamp will be higher than all previous
+NOTE: The `TimestampOracle` provides us the property that the global write timestamp will be greater than all previous
 reads.
 
 This approach limits the per session write throughput to 1 write transaction per 1 time unit for user tables.

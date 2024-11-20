@@ -1234,7 +1234,7 @@ fn test_storage_usage_collection_interval() {
         if after_insert_storage_usage > post_create_storage_usage {
             Ok(())
         } else {
-            Err(format!("expected insert storage usage, {after_insert_storage_usage}, to be higher than pre insert storage usage of {post_create_storage_usage}"))
+            Err(format!("expected insert storage usage, {after_insert_storage_usage}, to be greater than pre insert storage usage of {post_create_storage_usage}"))
         }
     }).unwrap();
 

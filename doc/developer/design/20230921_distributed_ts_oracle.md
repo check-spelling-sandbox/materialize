@@ -123,7 +123,7 @@ Those last two points are subtle, but what could happen if we did not do that is
 1. old leader reserves timestamps up until t1
 2. a new leader (new `environmentd` process) starts up
 3. it reserves a new range of timestamps up until t2
-4. a write happens at a timestamp higher than t1
+4. a write happens at a timestamp greater than t1
 5. the old leader could accidentally serve a read at a timestamp lower than t1
    -> a linearization anomaly
 

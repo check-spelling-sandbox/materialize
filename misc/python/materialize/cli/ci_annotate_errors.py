@@ -949,7 +949,7 @@ def _get_failures_on_main_from_buildkite(
     ]
 
     if len(last_build_step_outcomes) > 8:
-        # the number of build steps might be higher than the number of requested builds due to retries
+        # the number of build steps might be greater than the number of requested builds due to retries
         last_build_step_outcomes = last_build_step_outcomes[:8]
 
     if not last_build_step_outcomes:

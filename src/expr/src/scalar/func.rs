@@ -76,7 +76,7 @@ pub use impls::*;
 use mz_repr::adt::system::Oid;
 
 /// The maximum size of a newly allocated string. Chosen to be the smallest number to keep our tests
-/// passing without changing. 100MiB is probably higher than what we want, but it's better than no
+/// passing without changing. 100MiB is probably greater than what we want, but it's better than no
 /// limit.
 const MAX_STRING_BYTES: usize = 1024 * 1024 * 100;
 

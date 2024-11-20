@@ -1791,7 +1791,7 @@ async fn test_session_linearizability(isolation_level: &str) {
     test_util::wait_for_pg_table_population(&mz_client, pg_table_name, 1).await;
 
     // The user table's write frontier will be close to zero because we use a
-    // deterministic now function in this test. It may be slightly higher than
+    // deterministic now function in this test. It may be slightly greater than
     // zero because bootstrapping and background tasks push the global timestamp
     // forward.
     //
