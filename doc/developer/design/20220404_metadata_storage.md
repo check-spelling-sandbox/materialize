@@ -200,7 +200,7 @@ on other environments. We'll have to keep an eye on this.
 If we discover scalability problems with Aurora PostgreSQL, we have two easy
 fixes. We can run multiple Aurora PostgreSQL RDS instances in each environment,
 and randomly assign customer environments to one of the instances. Or we can
-migrate to CockroachDB, which is largely PostgreSQL compatible, anad has
+migrate to CockroachDB, which is largely PostgreSQL compatible, and has
 effectively no limits on horizontal scalability.
 
 We also have one hard fix, which is to migrate to FoundationDB. The `Stash`

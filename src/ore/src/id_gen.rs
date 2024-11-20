@@ -449,7 +449,7 @@ mod tests {
         assert_eq!(id.unhandled(), (0xfff << 20) | 1);
     }
 
-    // Test that the random conn id and and uuid each with all bits set don't intersect.
+    // Test that the random conn id and uuid each with all bits set don't intersect.
     fn test_mask_envd<A: IdAllocatorInner>() {
         let env_lower = org_id_conn_bits(&uuid::Uuid::from_u128(u128::MAX));
         let ida = IdAllocator::<A>::new(MAX_ORG_ID, MAX_ORG_ID, env_lower);

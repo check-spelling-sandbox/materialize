@@ -328,7 +328,7 @@ pub(super) struct PurifiedSourceExports {
 }
 
 // Purify the requested external references, returning a set of purified
-// source exports corresponding to external tables, and and additional
+// source exports corresponding to external tables, and additional
 // fields necessary to generate relevant statements and update statement options
 pub(super) async fn purify_source_exports(
     conn: &mut mz_mysql_util::MySqlConn,
