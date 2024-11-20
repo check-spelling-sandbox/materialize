@@ -19,7 +19,7 @@ bin/mzcompose --find platform-checks run default --scenario=SCENARIO [--check=CH
 
 The list of [Checks](https://dev.materialize.com/api/python/materialize/checks/checks.html#materialize.checks.checks.Check)
 
-The list of Scenarios is [here](https://dev.materialize.com/api/python/materialize/checks/scenarios.html#materialize.checks.scenarios.Scenario)
+The list of [Scenarios](https://dev.materialize.com/api/python/materialize/checks/scenarios.html#materialize.checks.scenarios.Scenario)
 
 The list of available [Actions for use in Scenarios](https://dev.materialize.com/api/python/materialize/checks/actions.html#materialize.checks.actions.Action)
 
