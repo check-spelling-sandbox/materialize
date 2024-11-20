@@ -21,7 +21,7 @@ helm-docs
 
 This command updates the `README.md` file based on the chart's `values.yaml` file and the `README.md.gotmpl` template.
 
-Make sure you have `helm-docs` installed. You can install it by following the instructions [here](https://github.com/norwoodj/helm-docs).
+Make sure you have `helm-docs` installed. You can install it by [following the instructions](https://github.com/norwoodj/helm-docs).
 
 ## Linting
 
