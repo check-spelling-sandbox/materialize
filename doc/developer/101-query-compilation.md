@@ -69,7 +69,7 @@ Transformations in the compile-time lifecycle of a dataflow.
     * `EXPLAIN OPTIMIZED PLAN` returns the result of transformations up to this point.
 * [`MIR ⇒ LIR`](https://github.com/MaterializeInc/materialize/blob/main/src/compute-client/src/plan/mod.rs#L882-L897).
     * Decisions are made regarding rendering.
-        * All aggregations are created equal in MIR, but from the rendering perspective, [aggregations are evaluated differently according to what data needs to be kept to recalculate the aggregation after receiving a diff](https://github.com/MaterializeInc/materialize/blob/main/src/compute-client/src/plan/reduce.rs). A pictorial version can be found [here](https://github.com/MaterializeInc/materialize/blob/main/doc/developer/arrangements.md).
+        * All aggregations are created equal in MIR, but from the rendering perspective, [aggregations are evaluated differently according to what data needs to be kept to recalculate the aggregation after receiving a diff](https://github.com/MaterializeInc/materialize/blob/main/src/compute-client/src/plan/reduce.rs). A pictorial version can be found in [developer arrangements](https://github.com/MaterializeInc/materialize/blob/main/doc/developer/arrangements.md).
         * [Joins are broken down into multiple stages](https://github.com/MaterializeInc/materialize/blob/main/src/compute-client/src/plan/join/linear_join.rs), and filters + projects run between each stage to shrink the intermediate result.
     * RelationTypes (column types + unique keys) are discarded since we do no key or type of validation at render time.
     * `EXPLAIN PHYSICAL PLAN` returns the result of transformations up to this point.
