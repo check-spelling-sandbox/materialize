@@ -47,7 +47,7 @@ use crate::plan::PlanError;
 
 /// A fully-qualified human readable name of an item in the catalog.
 ///
-/// Catalog names compare case sensitively. Use
+/// Catalog names compare case-sensitively. Use
 /// [`normalize::unresolved_item_name`] to
 /// perform proper case folding if converting an [`UnresolvedItemName`] to a
 /// `FullItemName`.

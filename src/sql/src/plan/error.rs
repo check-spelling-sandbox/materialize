@@ -433,7 +433,7 @@ impl PlanError {
             Self::CsrPurification(e) => e.hint(),
             Self::KafkaSinkPurification(e) => e.hint(),
             Self::UnknownColumn { table, similar, .. } => {
-                let suffix = "Make sure to surround case sensitive names in double quotes.";
+                let suffix = "Make sure to surround case-sensitive names in double quotes.";
                 match &similar[..] {
                     [] => None,
                     [column] => Some(format!("The similarly named column {} does exist. {suffix}", ColumnDisplay { table, column })),
