@@ -2,8 +2,7 @@
 
 ## Summary
 
-We have identified several issues with the sources documented
-[here](https://materialize.com/docs/sql/system-catalog/mz_internal/). In
+We have [identified several issues with the sources](https://materialize.com/docs/sql/system-catalog/mz_internal/). In
 particular, some key views are missing (e.g., a way to connect channel
 IDs to the operators they connect), and there are various existing ones that
 have inconsistently named fields or inconsistent
