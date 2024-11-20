@@ -108,7 +108,7 @@ The process to connect Materialize to Amazon MSK consists of the following steps
 
     f. Click **Save changes**
 
-    You can find more details about updating a cluster's security configurations [here](https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-security.html).
+    You can find more details about [updating a cluster's security configurations](https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-security.html).
 
     ##### Create a symmetric key
     a. Now go to the [AWS Key Management Service (AWS KMS) console](https://console.aws.amazon.com/kms)
