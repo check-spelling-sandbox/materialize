@@ -19,7 +19,7 @@ In this guide, we’ll cover how to connect and configure a [Cube Cloud](https:/
 1. #### Set up the Cube project
     You will have the following options to build the project:<br/>
         • CLI<br/>
-        • Github repository<br/>
+        • GitHub repository<br/>
         • Create from scratch <br/>
 
     Click on the **create** from scratch option to be align with this guide.

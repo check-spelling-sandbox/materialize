@@ -8,7 +8,7 @@ Thus to prevent regressions and new bugs we instead want to ensure that new and 
 
 ## Triggering Coverage for your PR
 
-As an example let's take the *[adapter: Update privileges when an owner is updated](https://github.com/MaterializeInc/materialize/pull/18777)* pull request. To run PR code coverage against it, go to the [Coverage Buildkite pipeline](https://buildkite.com/materialize/coverage), click on "New Build" and enter the full commit hash and branch with your Github username:
+As an example let's take the *[adapter: Update privileges when an owner is updated](https://github.com/MaterializeInc/materialize/pull/18777)* pull request. To run PR code coverage against it, go to the [Coverage Buildkite pipeline](https://buildkite.com/materialize/coverage), click on "New Build" and enter the full commit hash and branch with your GitHub username:
 
 ![Commit: 69de84971e8c16ab459c88be73870bb676dbc478, Branch: jkosh44:update-privilege-owners](assets/coverage-new-build.png)
 

@@ -2,7 +2,7 @@
 
 Thank you for your interest in Materialize! Contributions of many kinds are encouraged and most welcome.
 
-If you have questions, please [create a Github discussion](https://github.com/MaterializeInc/materialize/discussions/new/choose).
+If you have questions, please [create a GitHub discussion](https://github.com/MaterializeInc/materialize/discussions/new/choose).
 
 ## Getting started
 
@@ -16,7 +16,7 @@ our development process is available in the [doc/developer](doc/developer) folde
 Materialize is written entirely in Rust. Rust API documentation is hosted at
 <https://dev.materialize.com/api/rust/>.
 
-If you're interested in contributing to Materialize, please [create a Github
+If you're interested in contributing to Materialize, please [create a GitHub
 discussion](https://github.com/MaterializeInc/materialize/discussions/new?category=contribute-to-materialize)
 describing the work you're planning to pick up. Prospective code contributors might
 find the [`D-good for external contributors` tag](https://github.com/MaterializeInc/materialize/discussions/categories/contribute-to-materialize?discussions_q=is%3Aopen+category%3A%22Contribute+to+Materialize%22+label%3A%22D-good+for+external+contributors%22) useful.

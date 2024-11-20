@@ -9,7 +9,7 @@
 
 # These are only errors which have no associated issues since they are not
 # considered product bugs, but SQLsmith generating bad queries. Use ci-regexp
-# in Github issues for actual product bugs.
+# in GitHub issues for actual product bugs.
 known_errors = [
     "no connection to the server",  # Expected AFTER a crash, the query before this is interesting, not the ones after
     "failed: Connection refused",  # Expected AFTER a crash, the query before this is interesting, not the ones after

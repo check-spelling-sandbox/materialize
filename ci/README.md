@@ -172,7 +172,7 @@ To configure a GitHub Actions agent:
 ## Agent security
 
 Unlike builds on a CI platform where hardware is provided, like Travis CI or
-Github Actions, our build runners are not hardened against malicious code. This
+GitHub Actions, our build runners are not hardened against malicious code. This
 is problematic for accepting third-party pull requests, which could modify the
 build scripts to do all manner of devious things to our infrastructure.
 

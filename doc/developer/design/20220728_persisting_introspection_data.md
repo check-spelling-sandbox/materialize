@@ -57,7 +57,7 @@ replica_id     worker    slept_for    requested    count
 ...
 ```
 
-However, if done naively the way queries work in materialize requires a fixed timestamp at which time the results of the queries are reported. But if one replica is lagging or otherwise unable to provide logging data, the query would either report out of date data (when settling for the least timestamp where all replicas have provided data) or block for a long time (when choosing a timestamp closer to the actual time). See the design question “Expose an aggregate sources or source per replica” as well as the [discussion in the Github](https://github.com/MaterializeInc/materialize/pull/13340#issuecomment-1180628374) PR for more technical details.
+However, if done naively the way queries work in materialize requires a fixed timestamp at which time the results of the queries are reported. But if one replica is lagging or otherwise unable to provide logging data, the query would either report out of date data (when settling for the least timestamp where all replicas have provided data) or block for a long time (when choosing a timestamp closer to the actual time). See the design question “Expose an aggregate sources or source per replica” as well as the [discussion in the GitHub](https://github.com/MaterializeInc/materialize/pull/13340#issuecomment-1180628374) PR for more technical details.
 
 ### UX gap with per replica sources
 
