@@ -192,7 +192,7 @@ class DropCreateDefaultReplica(Action):
 ```
 
 The Action's `execute()` method gets passed a `Composition` object, so that the Action can perform any operation
-against the mzcompose composition. The methods of the `Composition` class are listed [here](https://dev.materialize.com/api/python/materialize/mzcompose/index.html#materialize.mzcompose.Composition).
+against the mzcompose composition. The methods of the [`Composition` class](https://dev.materialize.com/api/python/materialize/mzcompose/index.html#materialize.mzcompose.Composition).
 
 # Tips for creating a comprehensive `Check`
 
