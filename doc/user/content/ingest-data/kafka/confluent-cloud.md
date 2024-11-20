@@ -74,7 +74,7 @@ of the following steps:
 
     If you already have a topic created, you can skip this step.
 
-    Otherwise, you can find more information about how to do that [here](https://docs.confluent.io/cloud/current/get-started/index.html#step-2-create-a-ak-topic).
+    Otherwise, you can find more information about how to [create a topic](https://docs.confluent.io/cloud/current/get-started/index.html#step-2-create-a-ak-topic).
 
 4. #### Create a source in Materialize
 
