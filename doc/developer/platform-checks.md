@@ -21,7 +21,7 @@ The list of Checks available can be found [here](https://dev.materialize.com/api
 
 The list of Scenarios is [here](https://dev.materialize.com/api/python/materialize/checks/scenarios.html#materialize.checks.scenarios.Scenario)
 
-The list of available Actions for use in Scenarios is [here](https://dev.materialize.com/api/python/materialize/checks/actions.html#materialize.checks.actions.Action)
+The list of available [Actions for use in Scenarios](https://dev.materialize.com/api/python/materialize/checks/actions.html#materialize.checks.actions.Action)
 
 In execution mode `altogether` (the default), all Checks are run against a single Mz instance. This means more "stuff" happens
 against that single instance, which has the potential for exposing various bugs that do not happen in isolation. At the same time,
