@@ -36,7 +36,7 @@ are specific to the source type, and some sources may ignore any such frontier.
   - Regularly commit advancing _offset resumption frontiers_ for all sources
 - Additional Goals:
   - Restart sources with up-to-date _resumption frontiers_.
-    - Note that this is _required_, as the upstream sources could could compact data that is not beyond the _offset resumption frontier_.
+    - Note that this is _required_, as the upstream sources could compact data that is not beyond the _offset resumption frontier_.
   - Compact the _remap collection_
   - Localize _timestamp resumption frontier_ and _offset resumption frontier_ management inside `storaged` instances
   (i.e. not in the storage controller).
