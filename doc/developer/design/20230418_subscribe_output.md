@@ -210,7 +210,7 @@ so we can operate on one batch at a time.
 
 `WITHIN TIMESTAMP ORDER BY`: in `process_response`, for each timestamp
 we'll sort the rows by the given `ORDER BY`. This `ORDER BY` can be as
-complicated as any `SELECT`. This adds adds some logic to compiling a
+complicated as any `SELECT`. This adds some logic to compiling a
 `SUBSCRIBE` plan but we can reuse most of the existing planning
 machinery.
 
