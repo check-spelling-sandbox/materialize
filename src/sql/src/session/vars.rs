@@ -493,7 +493,7 @@ impl SessionVars {
     /// Returns a [`Var`] representing the configuration parameter with the
     /// specified name.
     ///
-    /// Configuration parameters are matched case insensitively. If no such
+    /// Configuration parameters are matched case-insensitively. If no such
     /// configuration parameter exists, `get` returns an error.
     ///
     /// Note that if `name` is known at compile time, you should instead use the
@@ -590,7 +590,7 @@ impl SessionVars {
     /// even if the transaction is marked to commit.
     ///
     /// Like with [`SessionVars::get`], configuration parameters are matched
-    /// case insensitively. If the named configuration parameter does not exist,
+    /// case-insensitively. If the named configuration parameter does not exist,
     /// an error is returned.
     ///
     /// If the variable does not exist or the user does not have the visibility
@@ -1458,7 +1458,7 @@ impl SystemVars {
     /// Returns a [`Var`] representing the configuration parameter with the
     /// specified name.
     ///
-    /// Configuration parameters are matched case insensitively. If no such
+    /// Configuration parameters are matched case-insensitively. If no such
     /// configuration parameter exists, `get` returns an error.
     ///
     /// Note that:

@@ -66,7 +66,7 @@ SELECT 'NaN'::real AS nan
  NaN
 ```
 
-The strings are recognized case insensitively.
+The strings are recognized case-insensitively.
 
 ### Valid casts
 

@@ -77,7 +77,7 @@ STRING_OPERATION_TYPES.append(
         "$ ~* $",
         [StringOperationParam(), REGEX_PARAM],
         BooleanReturnTypeSpec(),
-        comment="matches regular expression, case insensitive",
+        comment="matches regular expression, case-insensitive",
         tags={TAG_REGEX},
     )
 )
@@ -97,7 +97,7 @@ STRING_OPERATION_TYPES.append(
         "$ !~* $",
         [StringOperationParam(), REGEX_PARAM],
         BooleanReturnTypeSpec(),
-        comment="does not match regular expression, case insensitive",
+        comment="does not match regular expression, case-insensitive",
         tags={TAG_REGEX},
     )
 )

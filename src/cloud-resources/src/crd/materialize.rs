@@ -307,7 +307,7 @@ pub mod v1alpha1 {
         pub fn status(&self) -> MaterializeStatus {
             self.status.clone().unwrap_or_else(|| {
                 let mut status = MaterializeStatus::default();
-                // DNS-1035 names are supposed to be case insensitive,
+                // DNS-1035 names are supposed to be case-insensitive,
                 // so we define our own character set, rather than use the
                 // built-in Alphanumeric distribution from rand, which
                 // includes both upper and lowercase letters.

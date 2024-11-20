@@ -857,7 +857,7 @@ async fn test_auth_base_require_tls_frontegg() {
                 configure: Box::new(|b| Ok(b.set_verify(SslVerifyMode::NONE))),
                 assert: Assert::Success,
             },
-            // Email comparisons should be case insensitive.
+            // Email comparisons should be case-insensitive.
             TestCase::Pgwire {
                 user_to_auth_as: &frontegg_user_lowercase,
                 user_reported_by_system: frontegg_user,

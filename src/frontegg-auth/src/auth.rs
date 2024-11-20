@@ -789,7 +789,7 @@ fn validate_user(user: &str, expected_user: &str) -> Result<(), Error> {
 
     let valid = match is_email(expected_user) {
         false => user == expected_user,
-        // To match Frontegg, email addresses are compared case insensitively.
+        // To match Frontegg, email addresses are compared case-insensitively.
         //
         // NOTE(benesch): we could save some allocations by using `unicase::eq`
         // here, but the `unicase` crate has had some critical correctness bugs that
