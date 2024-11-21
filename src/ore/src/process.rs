@@ -65,7 +65,7 @@ macro_rules! exit {
 /// This function exists to avoid that all callers of `halt!` have to explicitly depend on `libc`.
 pub fn exit_thread_safe(error_code: i32) -> ! {
     // Using `std::process::exit` here would be unsound as that function invokes libc's `exit`
-    // function, which is not thread-safe [1]. There are two viable work arounds for this:
+    // function, which is not thread-safe [1]. There are two viable workarounds for this:
     //
     //  * Calling libc's `_exit` function instead, which is thread-safe by virtue of not performing
     //    any cleanup work.
