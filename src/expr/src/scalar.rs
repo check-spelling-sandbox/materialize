@@ -1653,7 +1653,7 @@ impl MirScalarExpr {
     /// ```text
     /// (a && b) || (a && c) || (d && c)
     /// ```
-    /// Here we can factor out `a` from from the 1. and 2. terms, or we can
+    /// Here we can factor out `a` from the 1. and 2. terms, or we can
     /// factor out `c` from the 2. and 3. terms. One of these might lead to
     /// more/better undistribution opportunities later, but we just pick one
     /// locally, because recursively trying out all of them would lead to
