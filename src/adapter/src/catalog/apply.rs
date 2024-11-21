@@ -1089,7 +1089,7 @@ impl CatalogState {
                 let prev = self.source_references.remove(&source_references.source_id);
                 assert!(
                     prev.is_some(),
-                    "retraction for a non-existent existing value: {source_references:?}"
+                    "retraction for a nonexistent existing value: {source_references:?}"
                 );
             }
         }

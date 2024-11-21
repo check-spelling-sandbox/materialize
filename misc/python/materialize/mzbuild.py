@@ -1201,7 +1201,7 @@ class Repository:
             for d in image.depends_on:
                 if d not in self.images:
                     raise ValueError(
-                        f"image {image.name} depends on non-existent image {d}"
+                        f"image {image.name} depends on nonexistent image {d}"
                     )
 
     @staticmethod

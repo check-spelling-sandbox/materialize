@@ -106,7 +106,7 @@ pub async fn drop_replication_slots(
             0 => {
                 // DROP_REPLICATION_SLOT will error if the slot does not exist
                 tracing::info!(
-                    "drop_replication_slots called on non-existent slot {}",
+                    "drop_replication_slots called on nonexistent slot {}",
                     slot
                 );
                 continue;

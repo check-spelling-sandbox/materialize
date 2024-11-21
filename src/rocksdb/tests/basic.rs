@@ -78,7 +78,7 @@ async fn basic() -> Result<(), anyhow::Error> {
     instance
         .multi_update(vec![
             ("one".to_string(), KeyUpdate::Put("onev".to_string()), None),
-            // Deleting a non-existent key shouldn't do anything
+            // Deleting a nonexistent key shouldn't do anything
             ("two".to_string(), KeyUpdate::Delete, None),
         ])
         .await?;

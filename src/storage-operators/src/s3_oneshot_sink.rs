@@ -234,7 +234,7 @@ where
                 };
 
                 // Confirm we have DeleteObject permissions before proceeding by trying to
-                // delete a known non-existent file.
+                // delete a known nonexistent file.
                 // S3 will return an AccessDenied error whether or not the object exists,
                 // and no error if we have permissions and it doesn't.
                 // Other S3-compatible APIs (e.g. GCS) return a 404 error if the object

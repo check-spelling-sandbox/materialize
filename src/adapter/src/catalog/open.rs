@@ -1323,7 +1323,7 @@ fn add_new_builtin_cluster_replicas_migration(
     for builtin_replica in BUILTIN_CLUSTER_REPLICAS {
         let cluster = cluster_lookup
             .get(builtin_replica.cluster_name)
-            .expect("builtin cluster replica references non-existent cluster");
+            .expect("builtin cluster replica references nonexistent cluster");
         let replica_names = replicas.get(&cluster.id);
         if matches!(replica_names, None)
             || matches!(replica_names, Some(names) if !names.contains(builtin_replica.name))

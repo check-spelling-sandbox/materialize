@@ -803,7 +803,7 @@ impl CatalogState {
             }
         }
 
-        // Use initial lcw so that we can tell apart default from non-existent windows.
+        // Use initial lcw so that we can tell apart default from nonexistent windows.
         if let Some(cw) = entry.item().initial_logical_compaction_window() {
             updates.push(self.pack_history_retention_strategy_update(id, cw, diff));
             // Propagate source export changes.

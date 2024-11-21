@@ -341,7 +341,7 @@ WHERE (a,b,c) IN ((1,2,3), (1,4,5), (1,4,7))
 1  4  7
 
 # On the fast path, the IN list is looking for a record that is not present in the table, but there is a larger record.
-# This exercises the situation when `cursor.seek_key` in `compute_state.rs` tries to seek to a non-existent key, and it
+# This exercises the situation when `cursor.seek_key` in `compute_state.rs` tries to seek to a nonexistent key, and it
 # lands on a different key.
 
 query III rowsort

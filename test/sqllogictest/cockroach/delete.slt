@@ -81,7 +81,7 @@ SELECT * FROM kv
 1 2
 7 8
 
-# delete a non-existent value.
+# delete a nonexistent value.
 statement count 0
 DELETE FROM kv WHERE k=5
 

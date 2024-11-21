@@ -1032,7 +1032,7 @@ impl<'w, A: Allocate> Worker<'w, A> {
         // would do.
         soft_assert_or_log!(
             drop_commands.is_empty(),
-            "AllowCompaction commands for non-existent IDs {:?}",
+            "AllowCompaction commands for nonexistent IDs {:?}",
             drop_commands
         );
 
@@ -1195,7 +1195,7 @@ impl StorageState {
                         // exports
                         None if self.reported_frontiers.contains_key(&id) => (),
                         None => {
-                            soft_panic_or_log!("AllowCompaction command for non-existent {id}");
+                            soft_panic_or_log!("AllowCompaction command for nonexistent {id}");
                             continue;
                         }
                     }

@@ -594,7 +594,7 @@ pub fn plan_explain_schema(
     } = explain_schema;
 
     // Force the sink's name to one that's guaranteed not to exist, by virtue of
-    // being a non-existent item in a schema under the system's control, so that
+    // being a nonexistent item in a schema under the system's control, so that
     // `plan_create_sink` doesn't complain about the name already existing.
     statement.name = Some(UnresolvedItemName::qualified(&[
         ident!("mz_catalog"),

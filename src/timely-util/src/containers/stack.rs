@@ -344,7 +344,7 @@ impl<T: Columnation> ChunkedStack<T> {
         self.inner.heap_size(callback);
     }
 
-    /// Iterate over a range of elements. Panics if the range mentions non-existent elements,
+    /// Iterate over a range of elements. Panics if the range mentions nonexistent elements,
     /// i.e., its end is past the last element of this container.
     #[inline(always)]
     pub fn range(&self, r: impl RangeBounds<usize> + std::fmt::Debug) -> Iter<'_, T> {

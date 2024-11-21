@@ -724,7 +724,7 @@ pub enum ParamType {
     /// "Compatibility"-type parameters to find the best common type.
     ///
     /// Prefer using [`ParamType::RangeAny`] over this type; it is easy to fool
-    /// this type into generating non-existent range types (e.g. ranges of
+    /// this type into generating nonexistent range types (e.g. ranges of
     /// floats) that will panic.
     RangeAnyCompatible,
     /// A psuedotype indicating that the function is only meant to be called

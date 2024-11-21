@@ -1363,7 +1363,7 @@ async fn test_auth_base_require_tls() {
         "TlsMode::Require",
         &server,
         &[
-            // Non-existent role will be created.
+            // Nonexistent role will be created.
             TestCase::Pgwire {
                 user_to_auth_as: frontegg_user,
                 user_reported_by_system: frontegg_user,

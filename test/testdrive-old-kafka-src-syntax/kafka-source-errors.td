@@ -24,7 +24,7 @@ contains:Meta data fetch error: BrokerTransportFailure (Local: Broker transport 
 # Verify that incorrect/unreachable brokers throw up an error on source creation.
 
 ! CREATE CONNECTION fawlty_kafka_conn
-  TO KAFKA (BROKER 'non-existent-broker:9092');
+  TO KAFKA (BROKER 'nonexistent-broker:9092');
 regex:Failed to resolve hostname|Broker transport failure
 
 > CREATE CONNECTION IF NOT EXISTS csr_conn TO CONFLUENT SCHEMA REGISTRY (
@@ -32,7 +32,7 @@ regex:Failed to resolve hostname|Broker transport failure
   );
 
 ! CREATE CONNECTION IF NOT EXISTS fawlty_csr_conn TO CONFLUENT SCHEMA REGISTRY (
-    URL 'http://non-existent-csr:8081'
+    URL 'http://nonexistent-csr:8081'
   );
 contains:failed to lookup address information
 

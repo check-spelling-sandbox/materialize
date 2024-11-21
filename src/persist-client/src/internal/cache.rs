@@ -474,7 +474,7 @@ mod tests {
         assert_eq!(cache.entry_weight(), 3);
         assert_eq!(cache.keys(), &["e", "c", "d"]);
 
-        // Get a non-existent element.
+        // Get a nonexistent element.
         cache.get("f");
         assert_eq!(cache.entry_count(), 3);
         assert_eq!(cache.entry_weight(), 3);
@@ -486,7 +486,7 @@ mod tests {
         assert_eq!(cache.entry_weight(), 2);
         assert_eq!(cache.keys(), &["e", "d"]);
 
-        // Remove a non-existent element.
+        // Remove a nonexistent element.
         assert_none!(cache.remove("f"));
         assert_eq!(cache.entry_count(), 2);
         assert_eq!(cache.entry_weight(), 2);

@@ -299,7 +299,7 @@ impl MetricsVecs {
             )),
             external_blob_delete_noop_count: registry.register(metric!(
                 name: "mz_persist_external_blob_delete_noop_count",
-                help: "count of blob delete calls that deleted a non-existent key",
+                help: "count of blob delete calls that deleted a nonexistent key",
             )),
             external_blob_sizes: registry.register(metric!(
                 name: "mz_persist_external_blob_sizes",

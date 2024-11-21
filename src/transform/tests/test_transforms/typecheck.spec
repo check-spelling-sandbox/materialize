@@ -12,7 +12,7 @@
 # missing relation type errors:
 #  unbouned variables (parser panics)
 #  bad type annotation on Get (parser panics)
-#  project of non-existent column (parser panics)
+#  project of nonexistent column (parser panics)
 #  union of incompatible types (parser panics)
 #  strict join equivalence checking (typechecker is imprecise, we only log debug messages)
 #
@@ -592,6 +592,6 @@ ArrangeBy keys=[[#2]]
     - (3, 4)
 
 
-#2 references non-existent column 2
+#2 references nonexistent column 2
 ----
 ----

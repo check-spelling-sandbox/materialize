@@ -49,7 +49,7 @@ pub enum TypeError<'a> {
         /// The type `id` was expected to have
         typ: RelationType,
     },
-    /// Dereference of a non-existent column
+    /// Dereference of a nonexistent column
     NoSuchColumn {
         /// Expression with the bug
         source: &'a MirRelationExpr,
@@ -94,7 +94,7 @@ pub enum TypeError<'a> {
         expected: Vec<ColumnType>,
         // TODO(mgree) with a good way to get the type of a Datum, we could give a diff here
     },
-    /// Projection of a non-existent column
+    /// Projection of a nonexistent column
     BadProject {
         /// Expression with the bug
         source: &'a MirRelationExpr,
@@ -112,7 +112,7 @@ pub enum TypeError<'a> {
         /// The problem with the join equivalences
         message: String,
     },
-    /// TopK grouping by non-existent column
+    /// TopK grouping by nonexistent column
     BadTopKGroupKey {
         /// Expression with the bug
         source: &'a MirRelationExpr,
@@ -121,7 +121,7 @@ pub enum TypeError<'a> {
         /// The input columns (which don't have that column)
         input_type: Vec<ColumnType>,
     },
-    /// TopK ordering by non-existent column
+    /// TopK ordering by nonexistent column
     BadTopKOrdering {
         /// Expression with the bug
         source: &'a MirRelationExpr,
@@ -1418,7 +1418,7 @@ impl<'a> TypeError<'a> {
                 source: _,
                 expr,
                 col,
-            } => writeln!(f, "{expr} references non-existent column {col}")?,
+            } => writeln!(f, "{expr} references nonexistent column {col}")?,
             MismatchColumn {
                 source: _,
                 got,

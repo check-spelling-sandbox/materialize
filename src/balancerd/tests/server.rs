@@ -149,8 +149,8 @@ async fn test_balancer() {
         format!(
             "{}\n{}",
             envd_server.inner.sql_local_addr(),
-            // Ensure that multiline files and non-existent addresses both work.
-            "non-existent-addr:1234",
+            // Ensure that multiline files and nonexistent addresses both work.
+            "nonexistent-addr:1234",
         ),
     )
     .unwrap();

@@ -456,7 +456,7 @@ contains:unacceptable schema name 'pg_bar'
 > SET SCHEMA foo
 > SET search_path to public
 
-# Creating views in non-existent databases should fail.
+# Creating views in nonexistent databases should fail.
 ! CREATE VIEW noexist.ignored AS SELECT 1
 contains:unknown schema 'noexist'
 ! CREATE VIEW materialize.noexist.ignored AS SELECT 1
