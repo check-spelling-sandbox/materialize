@@ -254,7 +254,7 @@ pub fn describe(
 /// Produces a [`Plan`] from the purified statement `stmt`.
 ///
 /// Planning is a pure, synchronous function and so requires that the provided
-/// `stmt` does does not depend on any external state. Statements that rely on
+/// `stmt` does not depend on any external state. Statements that rely on
 /// external state must remove that state prior to calling this function via
 /// [`crate::pure::purify_statement`] or
 /// [`crate::pure::purify_create_materialized_view_options`].
