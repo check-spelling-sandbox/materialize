@@ -169,10 +169,10 @@ pub trait Codec64: Sized + Clone + 'static {
 /// processes. This location can contain any number of persist shards.
 #[derive(Arbitrary, Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash, Deserialize, Serialize)]
 pub struct PersistLocation {
-    /// Uri string that identifies the blob store.
+    /// URI string that identifies the blob store.
     pub blob_uri: SensitiveUrl,
 
-    /// Uri string that identifies the consensus system.
+    /// URI string that identifies the consensus system.
     pub consensus_uri: SensitiveUrl,
 }
 
