@@ -71,7 +71,7 @@ The `mz_default_privileges` table will store default privileges and have the fol
 If both `schema_id` and `database_id` are NULL, then the default privilege applies to all objects of
 a certain type in all databases and schemas.
 
-`mz_default_privileges` will be pre-populated with certain system default privileges. Currently, the
+`mz_default_privileges` will be prepopulated with certain system default privileges. Currently, the
 only one is:
 
 - `(<public-role-id>, NULL, NULL, 'TYPE', <public-role-id>, 'U')`.
@@ -119,7 +119,7 @@ This section will highlight the differences between PostgreSQL default privilege
 default privileges for Materialize.
 
 - This proposal has no special system privileges that are hard-coded into the system. Instead, we
-  pre-populate the user default privileges table with some initial default privileges.
+  prepopulate the user default privileges table with some initial default privileges.
 - This proposal allows defining default privileges for all current and future roles.
 - This proposal allows defining default privileges for multiple databases at once.
 - This proposal does not differentiate between global and non-global default privilege revokes.

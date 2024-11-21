@@ -22,7 +22,7 @@ ALTER SYSTEM SET enable_connection_validation_syntax TO true;
 ----
 COMPLETE 0
 
-# Test pre-populated default privileges
+# Test prepopulated default privileges
 
 query TTTTTT
 SELECT * FROM mz_default_privileges
@@ -4964,7 +4964,7 @@ PUBLIC  NULL  NULL  type   PUBLIC  U
 statement ok
 DROP ROLE r1
 
-## Test that we can remove pre-populated global default privileges.
+## Test that we can remove prepopulated global default privileges.
 
 simple conn=mz_system,user=mz_system
 ALTER DEFAULT PRIVILEGES FOR ALL ROLES REVOKE USAGE ON TYPES FROM PUBLIC;

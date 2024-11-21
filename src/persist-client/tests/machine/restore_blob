@@ -14,7 +14,7 @@ persist_inline_writes_total_max_bytes 0
 ----
 ok
 
-# Pre-populate some non-trivial state in our shard.
+# Prepopulate some non-trivial state in our shard.
 
 write-batch output=b0 lower=0 upper=1
 k1 0 1
