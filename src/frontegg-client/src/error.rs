@@ -72,7 +72,7 @@ pub enum Error {
     /// An error thrown after trying to build a [jsonwebtoken::DecodingKey] using JWKS
     #[error("Converting JWK into decoding key.")]
     ConvertingJwks,
-    /// An error indicating that the claims are invalid, acoording to the structure
+    /// An error indicating that the claims are invalid, according to the structure
     /// or keys provided. If the error persists,
     /// check if the token claims matches the struct.
     #[error("Error decoding JWT claims: {0}")]
