@@ -65,7 +65,7 @@ code path. Obviously, this can cause a lot of frustration for users that rely on
 `EXPLAIN` output in order to tune their queries.
 
 This design doc aims to provide a mechanism that mitigates that risk. In
-addiion, we want to address the following shortcomings of the current state:
+addition, we want to address the following shortcomings of the current state:
 
 1. The optimizer boundary is a natural boundary between the COMPUTE and ADAPTER
    teams. However, because this boundary is fuzzy, it's often not clear which
