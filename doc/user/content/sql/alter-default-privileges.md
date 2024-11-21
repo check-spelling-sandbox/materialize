@@ -32,7 +32,7 @@ to the `PUBLIC` role. This can be revoked like any other default privilege.
 
 {{< diagram "alter-default-privileges.svg" >}}
 
-### `abreviated_grant`
+### `abbreviated_grant`
 
 {{< diagram "abbreviated-grant.svg" >}}
 
