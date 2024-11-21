@@ -14,7 +14,7 @@
 $ set-sql-timeout duration=180s
 
 # With clusterd down, the upper of remote1 and remote2 will not advance. However, the global timestamp will advance.
-# In strict serializable mode we may select a timestamp that is ahead of on of the sources uppers and hang forever.
+# In strict serializable mode we may select a timestamp that is ahead of one of the sources uppers and hang forever.
 > SET transaction_isolation = serializable
 
 > SELECT * from remote1

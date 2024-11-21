@@ -8,7 +8,7 @@
 # by the Apache License, Version 2.0.
 
 # With clusterd down, the upper of t1 will not advance. However, the global timestamp will advance.
-# In strict serializable mode we may select a timestamp that is ahead of on of the table's upper and hang forever.
+# In strict serializable mode we may select a timestamp that is ahead of one of the table's upper and hang forever.
 > SET transaction_isolation = serializable
 
 # Increased from the default because of CI flakiness.
