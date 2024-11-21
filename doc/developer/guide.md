@@ -621,7 +621,7 @@ ln -s ../../misc/githooks/pre-push .git/hooks/pre-push
 ### Shell completion
 
 Some Materialize scripts have shell completion, and the latest versions of the completions files
-are checked in to `misc/completions`. The contents of this directory can be sourced into your shell,
+are checked into `misc/completions`. The contents of this directory can be sourced into your shell,
 and will stay updated as any changes are made.
 
 To add the completions to bash, add the following to your `~/.bashrc`:

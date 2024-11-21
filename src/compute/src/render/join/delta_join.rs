@@ -50,7 +50,7 @@ where
     /// Renders `MirRelationExpr:Join` using dogs^3 delta query dataflows.
     ///
     /// The join is followed by the application of `map_filter_project`, whose
-    /// implementation will be pushed in to the join pipeline if at all possible.
+    /// implementation will be pushed into the join pipeline if at all possible.
     pub fn render_delta_join(
         &self,
         inputs: Vec<CollectionBundle<G>>,
@@ -138,7 +138,7 @@ where
                     //
                     // Just before we apply the `lookup` function to perform a join, we will first use our
                     // available information to determine the filtering and logic that we can apply, and
-                    // introduce that in to the `lookup` logic to cause it to happen in that operator.
+                    // introduce that into the `lookup` logic to cause it to happen in that operator.
 
                     // Collects error streams for the region scope. Concats before leaving.
                     let mut region_errs = Vec::with_capacity(inputs.len());

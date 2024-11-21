@@ -198,7 +198,7 @@ There are pros and cons to this approach.
    can therefore experiment a little more freely with how we render
    different MIR operators.
 
- - Doesn't hook in to existing `EXPLAIN` infrastructure.
+ - Doesn't hook into existing `EXPLAIN` infrastructure.
 
 If we find we miss features from the `EXPLAIN` infrastructure, we can
 enrich what we put in the `MirId` operator mapping.

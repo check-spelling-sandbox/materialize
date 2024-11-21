@@ -735,7 +735,7 @@ where
     ///
     /// This method recursively descends `LetRec` nodes, establishing nested scopes for each
     /// and establishing the appropriate recursive dependencies among the bound variables.
-    /// Once non-`LetRec` nodes are reached it calls in to `render_plan` which will error if
+    /// Once non-`LetRec` nodes are reached it calls into `render_plan` which will error if
     /// further `LetRec` variants are found.
     ///
     /// The method requires that all variables conclude with a physical representation that

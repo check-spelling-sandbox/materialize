@@ -112,7 +112,7 @@ This pipeline does not need to be a dataflow, but as we will see it is helpful t
 
 The goal of the source ingestion pipeline is to produce data that can be appended to the `persist` shards of a durable storage collection.
 The result of this collection is the primary user-facing output of the source ingestion pipeline.
-There may be other auxiliary information, like the reclocking collection, that feeds in to health checks and user-facing diagnostics.
+There may be other auxiliary information, like the reclocking collection, that feeds into health checks and user-facing diagnostics.
 
 We want source ingestion to satisfy at least these three properties:
 

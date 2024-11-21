@@ -13,7 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//! Reusable arguments that can be mixed in to commands.
+//! Reusable arguments that can be mixed into commands.
 
 use url::Url;
 

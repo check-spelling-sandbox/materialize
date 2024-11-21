@@ -1503,7 +1503,7 @@ where
 
         // Some of the aggregations may have the `distinct` bit set, which means that they'll
         // need to be extracted from `collection` and be subjected to `distinct` with `key`.
-        // Other aggregations can be directly moved in to the `diff` field.
+        // Other aggregations can be directly moved into the `diff` field.
         //
         // In each case, the resulting collection should have `data` shaped as `(key, ())`
         // and a `diff` that is a vector with length `3 * aggrs.len()`. The three values are
@@ -2303,7 +2303,7 @@ impl Columnation for Accum {
 mod monoids {
 
     // We can improve the performance of some aggregations through the use of algebra.
-    // In particular, we can move some of the aggregations in to the `diff` field of
+    // In particular, we can move some of the aggregations into the `diff` field of
     // updates, by changing `diff` from integers to a different algebraic structure.
     //
     // The one we use is called a "semigroup", and it means that the structure has a

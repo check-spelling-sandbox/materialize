@@ -277,7 +277,7 @@ to hydrate before you can validate that it produces the expected results.
 
 Once your dbt project is ready to move out of development, or as soon as you
 start managing multiple users and deployment environments, we recommend
-checking the code in to **version control** and setting up an **automated
+checking the code into **version control** and setting up an **automated
 workflow** to control the deployment of changes.
 
 Depending on the environment context and your deployment requirements, there are

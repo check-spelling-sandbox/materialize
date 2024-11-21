@@ -31,7 +31,7 @@ We intend to frame an interface with sources that allow them to communicate back
 We do not intend to determine the policy for which operators should be communicated to sources and which should be held back.
 We expect a substantial amount of follow-up work on source implementations where we determine how best to apply these operators.
 We do not intend to communicate expressions over things other than `[Datum]` input (e.g. we are not directly expression JSON or Avro navigation).
-We could go further with the set of operations that we push in to sources, including e.g. `FlatMap`, `Negate`, or `Union` operators.
+We could go further with the set of operations that we push into sources, including e.g. `FlatMap`, `Negate`, or `Union` operators.
 
 ## Description
 

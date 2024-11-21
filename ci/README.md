@@ -261,7 +261,7 @@ Launched instances:
 the `AWSRegion2AMI` heading. Use the AMI for `us-east-1` and `linuxamd64`.</small>
 
 This will create an EC2 instance that looks like a CI agent and push your local
-copy of the repository to it. You can SSH in to the agent using the instance ID
+copy of the repository to it. You can SSH into the agent using the instance ID
 printed by the previous command and run the CI job that is failing.
 
 Every CI job is a combination of an mzcompose "composition" and a "workflow". A

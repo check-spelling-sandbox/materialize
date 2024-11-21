@@ -310,7 +310,7 @@ communication in a way that does not exist today, and the scaling limitations im
 ### `clusterd`-hosted RPC services
 
 The proposed topology has `environmentd` host a singular RPC service that each `clusterd` dials in to. An alternative
-would be to reverse the direction, and have `environmentd` dial in to each `clusterd`, similar to how the Controller gRPC
+would be to reverse the direction, and have `environmentd` dial into each `clusterd`, similar to how the Controller gRPC
 connections are set up. This may be easier to roll out as the design is a known quantity, and `environmentd` can use its
 knowledge of which `clusterd` are created and dropped to set up the appropriate connections.
 
@@ -318,7 +318,7 @@ We are partial to the proposed design however, as it more closely models accessi
 are given an address to connect to, and begin publishing and subscribing to messages with no further information needed.
 And if individual clients fail to connect, or choose not to (e.g. via feature flag), no harm done, everything continues
 to work via fallbacks. Consolidating the discovery and connection establishment into `environmentd` breaks this abstraction
-in a way that would make swapping implementations more challenging (e.g. Kafka wouldn't be dialing in to `clusterd`!),
+in a way that would make swapping implementations more challenging (e.g. Kafka wouldn't be dialing into `clusterd`!),
 making it harder for Persist to treat its PubSub implementation as an internal detail.
 
 ### External PubSub/Message Bus

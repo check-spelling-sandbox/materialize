@@ -163,7 +163,7 @@ The sequence of goals have their own design considerations
 
 8.  LIR generalization
 
-    LIR may want to *remove* `Let` and move all bindings in to the sequence of dataflow objects to construct.
+    LIR may want to *remove* `Let` and move all bindings into the sequence of dataflow objects to construct.
     This is already roughly the same as having a multiple binding `Let` block around the whole statement.
 
 9.  Rendering

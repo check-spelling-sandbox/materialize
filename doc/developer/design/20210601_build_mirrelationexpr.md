@@ -124,7 +124,7 @@ documented in the comments of [#5684].
 Let's call this approach "Minimal boilerplate".
 
 I propose to retain Justin's syntax and invest in a mechanism that can
-automatically convert it in to a JSON formatted string that can be correctly
+automatically convert it into a JSON formatted string that can be correctly
 deserialized by [serde_json].
 
 The mechanism has 3 components:

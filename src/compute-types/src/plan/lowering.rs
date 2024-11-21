@@ -167,7 +167,7 @@ impl Context {
         T: Timestamp,
     {
         // Extract a maximally large MapFilterProject from `expr`.
-        // We will then try and push this in to the resulting expression.
+        // We will then try and push this into the resulting expression.
         //
         // Importantly, `mfp` may contain temporal operators and not be a "safe" MFP.
         // While we would eventually like all plan stages to be able to absorb such

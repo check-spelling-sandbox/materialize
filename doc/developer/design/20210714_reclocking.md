@@ -14,7 +14,7 @@ For example,
     Materialize CDC sources have explicit timestamps.
 
 The source-specific "gauges" of forward progress are useful, but they are not directly comparable.
-This document describes one framework for converting between gauges including in to and potentially out of Materialize's system timeline.
+This document describes one framework for converting between gauges including into and potentially out of Materialize's system timeline.
 
 ## Goals
 
@@ -132,7 +132,7 @@ The above approach actually fails to provide certain appealing end-to-end consis
 Above, a transaction is available at the first `IntoTime` for which it and its constituent data are available through `remap`'s `FromTime`.
 However, the transaction may occur strictly after another transaction that is not yet complete.
 We may want to change the definition of the two output collections, to respect the transaction order, to be:
-    * A TEMP collection containing at each `IntoTime` the data and transaction records up through `remap`'s `FromTime` for this `IntoTime`, excluding records accepted in to the output.
+    * A TEMP collection containing at each `IntoTime` the data and transaction records up through `remap`'s `FromTime` for this `IntoTime`, excluding records accepted into the output.
     * An output collection, containing at each `IntoTime` the data from transactions for which all less-or-equal transactions are complete on records up through `remap`'s `FromTime` for this `IntoTime`.
 Notice how we restricted the emission of transactions to await all prior transactions completing.
 This will result in a larger TEMP collection, but an association of timestamps to transactions that respects the input order.

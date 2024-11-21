@@ -301,7 +301,7 @@ impl Coordinator {
     /// Tries to commit all pending writes transactions at the same timestamp.
     ///
     /// If the caller of this function has the `write_lock` acquired, then they can optionally pass
-    /// it in to this method. If the caller does not have the `write_lock` acquired and the
+    /// it into this method. If the caller does not have the `write_lock` acquired and the
     /// `write_lock` is currently locked by another operation, then only writes to system tables
     /// and table advancements will be applied. If the caller does not have the `write_lock`
     /// acquired and the `write_lock` is not currently locked by another operation, then group
