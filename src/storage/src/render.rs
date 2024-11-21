@@ -33,7 +33,7 @@
 //! defined by the [`timely::progress::timestamp::Refines`] trait in timely. `FromTime` however
 //! does not refine `IntoTime` nor does `IntoTime` refine `FromTime`.
 //!
-//! In order to acomplish this we split ingestion dataflows in two scopes, both of which are
+//! In order to accomplish this we split ingestion dataflows in two scopes, both of which are
 //! children of the root timely scope. The first scope is timestamped with `FromTime` and the
 //! second one with `IntoTime`. To move timely streams from the one scope to the other we must do
 //! so manually. Each stream that needs to be transferred between scopes is first captured using
