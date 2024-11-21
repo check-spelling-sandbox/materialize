@@ -36,7 +36,7 @@ granular permissions within the database must be handled separately using
       inviting new users, editing account and security information, or managing
       billing. Admins have _superuser_ privileges in the database.
 
-    - `Organization Member`: can login to the console and has restricted access
+    - `Organization Member`: can log into the console and has restricted access
       to the database, depending  on the privileges defined via
       [role-based access control (RBAC)](/manage/access-control/#role-based-access-control-rbac).
 
