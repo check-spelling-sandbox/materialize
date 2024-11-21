@@ -3,7 +3,7 @@ This doc walks you through the process of contributing to Materialize's referenc
 # Stylistic conventions
 
 1.  Strive for minimal, to the point documentation.
-    Use the design documentation process to discuss the broader perspective, background, rationale, and alternatives aboud decisions that evolve the codebase.
+    Use the design documentation process to discuss the broader perspective, background, rationale, and alternatives about decisions that evolve the codebase.
 1.  Don't duplicate information.
     For example, if you are writing reference documentation of some protocol or library in the crate, put a link to the publicly hosted API docs.
 1.  When referencing code, prefer relative links.
