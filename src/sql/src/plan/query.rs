@@ -599,7 +599,7 @@ pub fn plan_copy_from_rows(
     // Exit early with just the raw constant if we know that all columns are present
     // and in the correct order. This lets us bypass expensive downstream optimizations
     // more easily, as at every stage we know this expression is nothing more than
-    // a constant (as opposed to e.g. a constant with with an identity map and identity
+    // a constant (as opposed to e.g. a constant with an identity map and identity
     // projection).
     let default: Vec<_> = (0..desc.arity()).collect();
     if columns == default {
