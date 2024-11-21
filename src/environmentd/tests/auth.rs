@@ -2628,7 +2628,7 @@ async fn test_refresh_dropped_session() {
     );
 
     // We should not have issued another auth request, because we should have attached to the
-    // pre-emptively refreshed session.
+    // preemptively refreshed session.
     assert_eq!(*frontegg_server.auth_requests.lock().unwrap(), 2);
 }
 

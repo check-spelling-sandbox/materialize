@@ -394,7 +394,7 @@ struct AuthenticatorInner {
     ///
     /// We track when a session was dropped to handle the case of many one-shot queries being
     /// issued in rapid succession. If it comes time to refresh an auth token, and there are no
-    /// currently alive sessions, but one was recently dropped, we'll pre-emptively refresh to get
+    /// currently alive sessions, but one was recently dropped, we'll preemptively refresh to get
     /// ahead of another session being created with the same [`AppPassword`].
     dropped_sessions: Mutex<LruCache<AppPassword, Instant>>,
     /// How large of a window we'll use for determining if a session was dropped "recently", and if
