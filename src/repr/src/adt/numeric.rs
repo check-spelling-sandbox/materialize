@@ -608,7 +608,7 @@ fn test_twos_complement_to_numeric_fail() {
     e[0] -= 0x80;
     inner(&mut e);
 
-    // 1 << 17 * 8 exceeds exceeds 39 digits of precision
+    // 1 << 17 * 8 exceeds 39 digits of precision
     let mut e = [0; Numeric::TWOS_COMPLEMENT_BYTE_WIDTH + 1];
     e[0] = 1;
     inner(&mut e);
