@@ -515,7 +515,7 @@ where
     /// structurally compared to other `DataflowDescription`s.
     ///
     /// For now this method performs a single normalization only: It replaces transient `GlobalId`s
-    /// that are only used internally (i.e. not imported nor exported) with consecutive IDs
+    /// that are only used internally (i.e. neither imported nor exported) with consecutive IDs
     /// starting from `t1`.
     fn as_comparable(&self) -> Self {
         let external_ids: BTreeSet<_> = self.import_ids().chain(self.export_ids()).collect();

@@ -594,7 +594,7 @@ impl PubSubSender for MetricsSameProcessPubSubSender {
             let delegate = Arc::clone(&self.delegate);
             delegate.subscribe(shard_id)
         } else {
-            // Create a no-op token that does not subscribe nor unsubscribe.
+            // Create a no-op token that neither subscribes nor unsubscribes.
             // This is ideal for single-process persist setups, since the sender and
             // receiver should already share a state cache... but if the diffs are
             // generated remotely but applied on the server, this may cause us to fall
