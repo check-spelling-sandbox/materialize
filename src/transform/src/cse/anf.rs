@@ -234,7 +234,7 @@ impl Bindings {
                         .into_iter()
                         .map(|(id_int, value)| (LocalId::new(id_int), value))
                         .unzip();
-                    // New limits will all be `None`, except for any pre-existing limits.
+                    // New limits will all be `None`, except for any preexisting limits.
                     let mut new_limits: BTreeMap<LocalId, _> = BTreeMap::default();
                     for (id, limit) in ids.iter().zip_eq(limits.iter()) {
                         new_limits.insert(scoped_anf.rebindings[id], limit.clone());

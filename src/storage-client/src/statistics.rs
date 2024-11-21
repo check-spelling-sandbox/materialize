@@ -249,7 +249,7 @@ impl StorageMetric for ResettingTotal {
     }
 
     fn incorporate(&mut self, other: Self, _field_name: &'static str) {
-        // Reset the pre-existing value.
+        // Reset the preexisting value.
         self.0 = other.0;
     }
 }

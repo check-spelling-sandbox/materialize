@@ -177,7 +177,7 @@ you **must** override the default value of `After-state only` to `false`.
     The first time it connects to a MySQL server, Debezium takes a
     [consistent snapshot](https://debezium.io/documentation/reference/connectors/mysql.html#mysql-snapshots)
     of the tables selected for replication, so you should see that the
-    pre-existing records in the replicated table are initially pushed into your
+    preexisting records in the replicated table are initially pushed into your
     Kafka topic:
 
     ```bash

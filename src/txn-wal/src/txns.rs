@@ -721,7 +721,7 @@ where
             // - For new shards we will always have at least one schema
             //   registered by the time we reach this point, because that
             //   happens at txn-registration time.
-            // - For pre-existing shards, every txns shard will have had
+            // - For preexisting shards, every txns shard will have had
             //   open_writer called on it at least once in the previous release,
             //   so the schema should exist.
             None => unreachable!("data shard {} should have a schema", data_id),

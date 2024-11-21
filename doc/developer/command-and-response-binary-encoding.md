@@ -245,7 +245,7 @@ impl RustType<ProtoMyEnum> for MyEnum {
 
 Note that the trait needs to be implemented for all nested types as well, and [the `ProtoMapEntry` trait](https://dev.materialize.com/api/rust/mz_repr/proto/trait.ProtoMapEntry.html) needs to be implemented for types that represent encoded `~Map` entries (such as `proto_my_struct::ProtoField7Entry`).
 
-Note the pre-existing implementations for [`RustType`](https://dev.materialize.com/api/rust/mz_repr/proto/trait.RustType.html).
+Note the preexisting implementations for [`RustType`](https://dev.materialize.com/api/rust/mz_repr/proto/trait.RustType.html).
 The blanket implementations allow seamless use of `into_proto()` and `into_rust()?` syntax for (possibly nested) container types as long as the element type implements `RustType`.
 
 ## Adding unit tests for `$T`

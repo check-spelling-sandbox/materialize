@@ -235,7 +235,7 @@ GRANT USAGE ON SCHEMA d1.s1 TO data_analyst;
 GRANT USAGE ON CLUSTER c1 to data_analyst;
 
 -- Step 3: grant select to all objects in the d1.s1 schema to the data_analyst role.
--- For pre-existing objects in the schema (skip if there are none!)
+-- For preexisting objects in the schema (skip if there are none!)
 GRANT SELECT ON ALL TABLES IN SCHEMA d1.s1 TO data_analyst;
 -- For future objects created in the schema
 ALTER DEFAULT PRIVILEGES FOR ALL ROLES IN SCHEMA d1.s1 GRANT SELECT ON TABLES TO data_analyst;
@@ -249,7 +249,7 @@ GRANT USAGE, CREATE ON SCHEMA d1.s1 TO data_engineer;
 GRANT USAGE, CREATE ON CLUSTER c1 to data_engineer;
 
 -- Step 6: grant all privileges to all objects in the d1.s1 schema to the data_engineer role
--- For pre-existing objects in the schema (skip if there are none!)
+-- For preexisting objects in the schema (skip if there are none!)
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA d1.s1 TO data_engineer;
 -- For future objects created in the schema
 ALTER DEFAULT PRIVILEGES FOR ALL ROLES IN SCHEMA d1.s1 GRANT ALL PRIVILEGES ON TABLES TO data_engineer;

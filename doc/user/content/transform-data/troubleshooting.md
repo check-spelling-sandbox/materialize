@@ -222,7 +222,7 @@ guide.
 ### Hydrating upstream objects
 
 When a source, materialized view, or index is created or updated, it must first
-be backfilled with any pre-existing data — a process known as _hydration_.
+be backfilled with any preexisting data — a process known as _hydration_.
 
 Queries that depend objects that are still hydrating will **block until
 hydration is complete**. To see whether an object is still hydrating, navigate

@@ -109,7 +109,7 @@ Project (#5, #1, #0, #0, #3, #4)
         ArrangeBy keys=[[#0]]
           Get x
 
-## MFPs don't get lifted if join is not using a pre-existing arrangement on that input.
+## MFPs don't get lifted if join is not using a preexisting arrangement on that input.
 
 opt
 (join

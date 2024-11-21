@@ -530,6 +530,6 @@ index, you have to drop and recreate all downstream dependencies.
 {{< warning >}}
 Forcing a re-plan using the approach above **will trigger hydration**,
 which incurs downtime while the objects are recreated and backfilled with
-pre-existing data. We recommend doing a [blue/green deployment](/manage/dbt/development-workflows/#bluegreen-deployments)
+preexisting data. We recommend doing a [blue/green deployment](/manage/dbt/development-workflows/#bluegreen-deployments)
 to handle these changes in production environments.
 {{< /warning >}}

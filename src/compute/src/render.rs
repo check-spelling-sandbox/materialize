@@ -731,7 +731,7 @@ where
     /// Renders a plan to a differential dataflow, producing the collection of results.
     ///
     /// This method allows for `plan` to contain a `LetRec` variant at its root, and is planned
-    /// in the context of `level` pre-existing iteration coordinates.
+    /// in the context of `level` preexisting iteration coordinates.
     ///
     /// This method recursively descends `LetRec` nodes, establishing nested scopes for each
     /// and establishing the appropriate recursive dependencies among the bound variables.
