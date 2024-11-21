@@ -142,8 +142,8 @@ impl JoinImplementation {
             //  - Delta, then we are good already.
             //  - IndexedFilter, then we just leave that alone, because those are out of scope
             //    for JoinImplementation (they are created by `LiteralConstraints`).
-            // We don't want to change from a Differential plan to an other Differential plan, or
-            // from a Delta plan to an other Delta plan, because the second run cannot distinguish
+            // We don't want to change from a Differential plan to another Differential plan, or
+            // from a Delta plan to another Delta plan, because the second run cannot distinguish
             // between an ArrangeBy that marks an already existing arrangement and an ArrangeBy
             // that was inserted by a previous run of JoinImplementation. (We should eventually
             // refactor this to make ArrangeBy unambiguous somehow. Maybe move JoinImplementation
