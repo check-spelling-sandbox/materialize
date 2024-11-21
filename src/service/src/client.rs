@@ -9,7 +9,7 @@
 
 //! Traits for client–server communication independent of transport layer.
 //!
-//! These traits are designed for servers where where commands must be sharded
+//! These traits are designed for servers where commands must be sharded
 //! among several worker threads or processes.
 
 use std::fmt;
