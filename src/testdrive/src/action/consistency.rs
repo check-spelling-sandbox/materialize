@@ -103,7 +103,7 @@ pub async fn run_check_shard_tombstoned(
     Ok(ControlFlow::Continue)
 }
 
-/// Asks the Coordinator to run it's own internal consistency checks.
+/// Asks the Coordinator to run its own internal consistency checks.
 async fn check_coordinator(state: &State) -> Result<(), anyhow::Error> {
     // Make sure we can dump the Coordinator state.
     let response = reqwest::get(&format!(

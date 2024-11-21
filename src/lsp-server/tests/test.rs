@@ -58,7 +58,7 @@ mod tests {
 
     /// Tests the different capabilities of [Backend](mz_lsp::backend::Backend)
     ///
-    /// Each capability tested is inside it's own function. To test a capability
+    /// Each capability tested is inside its own function. To test a capability
     /// a request and the expected response must be written and the function must
     /// assert that both are ok.
     ///

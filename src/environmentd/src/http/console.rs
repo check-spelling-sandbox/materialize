@@ -73,7 +73,7 @@ pub(crate) async fn handle_internal_console(
     // Preserve the request, but update the URI to point upstream.
     *req.uri_mut() = uri;
 
-    // If vercel sees the request being served from a different host it tries to redirect to it's own.
+    // If vercel sees the request being served from a different host it tries to redirect to its own.
     req.headers_mut()
         .insert(HOST, HeaderValue::from_str(&host).unwrap());
 

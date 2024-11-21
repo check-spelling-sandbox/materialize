@@ -2350,7 +2350,7 @@ async fn test_concurrent_id_reuse() {
 
     // The goal here is to start some connection `B`, after another connection `A` has
     // terminated, but while connection `A` still has some asynchronous work in flight. Then
-    // connection `A` will terminate it's session after connection `B` has started it's own
+    // connection `A` will terminate it's session after connection `B` has started its own
     // session. If they use the same connection ID, then `A` will accidentally tear down `B`'s
     // state and `B` will panic at any point it tries to access it's state. If they don't use
     // the same connection ID, then everything will be fine.

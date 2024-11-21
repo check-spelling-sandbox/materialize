@@ -330,7 +330,7 @@ production. See Rollout below.
 10. Remove now-unused in-memory TimestampOracle.
 11. Various further refactorings that we can do now that _all_ oracle
     implementations are (easily) shareable: We will put the oracle behind an
-    `Arc<dyn TimestampOracle>`. We will move the oracle code out into it's own
+    `Arc<dyn TimestampOracle>`. We will move the oracle code out into its own
     crate, if we didn't manage to do that before because of dependency
     shenanigans.
 
@@ -384,7 +384,7 @@ the Coordinator.
 ### Add a separate (highly available) TimestampOracle service
 
 We would essentially pull the current in-memory/backed-by-stash implementation
-out into it's own service that clients talk to via (g)RPC. However, we can
+out into its own service that clients talk to via (g)RPC. However, we can
 either accept that it is not highly available or we would have to do work that
 is similar to the current `confirm_leadership()` checks to ensure that operations
 return a linearizable timestamp. Operating a distributed, highly available
