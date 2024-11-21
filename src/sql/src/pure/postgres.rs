@@ -419,7 +419,7 @@ pub(super) async fn purify_source_exports(
         .collect();
 
     if !text_column_map.is_empty() {
-        // If any any item was not removed from the text_column_map, it wasn't being
+        // If any item was not removed from the text_column_map, it wasn't being
         // added.
         let mut dangling_text_column_refs = vec![];
         let all_references = retrieved_references.all_references();
