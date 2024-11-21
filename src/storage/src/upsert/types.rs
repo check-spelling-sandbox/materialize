@@ -306,7 +306,7 @@ impl<O: Default> StateValue<O> {
     ///
     /// ## Robustness
     ///
-    /// In the absense of bugs, accumulating the diff and checksum is not required since we know
+    /// In the absence of bugs, accumulating the diff and checksum is not required since we know
     /// that a well formed snapshot always satisfies XOR(bincode(values)) == bincode(cur_value).
     /// However bugs may happen and so storing 16 more bytes per key to have a very high
     /// guarantee that we're not decoding garbage is more than worth it.
