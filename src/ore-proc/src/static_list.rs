@@ -222,7 +222,7 @@ impl Parse for StaticListArgs {
 }
 
 fn type_matches(static_ty: &Type, expected_ty: &LitStr) -> bool {
-    // Note: This probably isn't super accurrate, but it's easy.
+    // Note: This probably isn't super accurate, but it's easy.
     static_ty
         .into_token_stream()
         .to_string()
