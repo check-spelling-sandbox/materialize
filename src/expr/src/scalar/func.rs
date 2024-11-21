@@ -7124,7 +7124,7 @@ fn array_position<'a>(datums: &[Datum<'a>]) -> Result<Datum<'a>, EvalError> {
     let r = array.elements().iter().skip(skip).position(|d| d == search);
 
     Ok(Datum::from(r.map(|p| {
-        // Adjust count for the amount we skipped, plus 1 for adjustng to PG indexing scheme.
+        // Adjust count for the amount we skipped, plus 1 for adjusting to PG indexing scheme.
         i32::try_from(p + skip + 1).expect("fewer than i32::MAX elements in array")
     })))
 }
