@@ -1687,7 +1687,7 @@ pub mod plan {
 
             let mut temporal = Vec::new();
 
-            // Optimize, to ensure that temporal predicates are move into `mfp.predicates`.
+            // Optimize, to ensure that temporal predicates are moved into `mfp.predicates`.
             mfp.optimize();
 
             mfp.predicates.retain(|(_position, predicate)| {
