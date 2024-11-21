@@ -349,7 +349,7 @@ mod internal {
 
     impl<const N: usize> SegmentedReader<N> {
         pub fn new(mut bytes: SegmentedBytes<N>) -> Self {
-            // Re-adjust our accumlated lengths.
+            // Re-adjust our accumulated lengths.
             //
             // Note: `SegmentedBytes` could track the accumulated lengths, but
             // it's complicated by the impl of `Buf::advance`.
