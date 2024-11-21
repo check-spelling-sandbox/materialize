@@ -176,7 +176,7 @@ impl TrimStats for ProtoJsonStats {
     }
 }
 
-/// Returns a [`Strategy`] for generating abritrary [`JsonStats`].
+/// Returns a [`Strategy`] for generating arbitrary [`JsonStats`].
 pub(crate) fn any_json_stats() -> impl Strategy<Value = JsonStats> {
     let leaf = Union::new(vec![
         any::<()>().prop_map(|_| JsonStats::None).boxed(),
