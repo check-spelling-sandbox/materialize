@@ -1491,7 +1491,7 @@ where
         // we must have called this function with something to reduce
         if full_aggrs.len() == 0 || simple_aggrs.len() + distinct_aggrs.len() != full_aggrs.len() {
             self.error_logger().soft_panic_or_log(
-                "Incorrect numbers of aggregates in accummulable reduction rendering",
+                "Incorrect numbers of aggregates in accumulable reduction rendering",
                 &format!(
                     "full_aggrs={}, simple_aggrs={}, distinct_aggrs={}",
                     full_aggrs.len(),
