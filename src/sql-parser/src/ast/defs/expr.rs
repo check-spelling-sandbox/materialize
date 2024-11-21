@@ -144,7 +144,7 @@ pub enum Expr<T: AstInfo> {
     /// `CASE [<operand>] WHEN <condition> THEN <result> ... [ELSE <result>] END`
     ///
     /// Note we only recognize a complete single expression as `<condition>`,
-    /// not `< 0` nor `1, 2, 3` as allowed in a `<simple when clause>` per
+    /// neither `< 0` nor `1, 2, 3` is allowed in a `<simple when clause>` per
     /// <https://jakewheat.github.io/sql-overview/sql-2011-foundation-grammar.html#simple-when-clause>
     Case {
         operand: Option<Box<Expr<T>>>,
