@@ -27,7 +27,7 @@ so the exact shape of what we would give to users requires more design work.
 
 ## Description
 
-We will extend the existing `INCLUDE` syntax to take additionaloptional metadata
+We will extend the existing `INCLUDE` syntax to take additional optional metadata
 field specifiers: `timestamp`, `offset`, `partition`, and `topic` clause. These
 are all the remaining fields in a Kafka message that are not `headers`. Each
 field inside the field list can take an optional `AS <name>` clause, in case of
