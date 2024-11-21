@@ -128,7 +128,7 @@ impl Subtime {
 /// flow control upper by an amount that is related to the size of batches.
 ///
 /// If no flow control is desired an empty stream whose frontier immediately advances
-/// to the empty antichain can be used. An easy easy of creating such stream is by
+/// to the empty antichain can be used. An easy way of creating such stream is by
 /// using [`timely::dataflow::operators::generic::operator::empty`].
 ///
 /// [advanced by]: differential_dataflow::lattice::Lattice::advance_by
