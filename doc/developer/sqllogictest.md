@@ -98,7 +98,7 @@ CREATE TABLE bar (
   See [GDB to LLDB command map](https://lldb.llvm.org/use/map.html) for more
   details. *Note*:
 
-  Do not use `rust-gdb` to debug sqllogictest on MacOS because `gdb` will print
+  Do not use `rust-gdb` to debug sqllogictest on macOS because `gdb` will print
   a bunch of error messages and then freeze.
 
 ## Materialize-specific behavior in sqllogictest

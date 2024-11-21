@@ -519,7 +519,7 @@ pub struct TomlProfile {
     pub app_password: Option<String>,
     /// The profile's region to use by default.
     pub region: Option<String>,
-    /// The vault value to use in MacOS.
+    /// The vault value to use in macOS.
     pub vault: Option<Vault>,
     /// A custom admin endpoint used for development.
     pub admin_endpoint: Option<String>,
