@@ -417,7 +417,7 @@ impl TransactionalProducer {
     /// Synchronously puts the provided message to librdkafka's send queue. This method only
     /// returns an error if the queue is full. Handling this error by buffering the message and
     /// retrying is equivalent to adjusting the maximum number of queued items in rdkafka so it is
-    /// adviced that callers only handle this error in order to apply backpressure to the rest of
+    /// advised that callers only handle this error in order to apply backpressure to the rest of
     /// the system.
     fn send(
         &mut self,
