@@ -190,7 +190,7 @@ impl<D> Range<D> {
     ///
     /// Note that when constructing `Range<Datum<'a>>`, the range must still be
     /// canonicalized. If this becomes a common operation, we should consider
-    /// addinga `new_canonical` function that performs both steps.
+    /// adding a `new_canonical` function that performs both steps.
     pub fn new(inner: Option<(RangeLowerBound<D>, RangeUpperBound<D>)>) -> Range<D> {
         Range {
             inner: inner.map(|(lower, upper)| RangeInner { lower, upper }),
