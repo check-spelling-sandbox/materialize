@@ -120,7 +120,7 @@ As a _superuser_:
 
 {{< tab "Azure DB">}}
 
-We recommend following the [Azure DB for PostgreSQL](https://docs.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-logical#pre-requisites-for-logical-replication-and-logical-decoding)
+We recommend following the [Azure DB for PostgreSQL](https://docs.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-logical#prerequisites-for-logical-replication-and-logical-decoding)
 documentation for detailed information on logical replication configuration and
 best practices.
 

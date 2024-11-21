@@ -1889,7 +1889,7 @@ mod tests {
             .expect_open::<(), (), u64, i64>(shard_id)
             .await;
 
-        // Advance since and upper to empty, which is a pre-requisite for
+        // Advance since and upper to empty, which is a prerequisite for
         // finalization/tombstoning.
         let () = read.downgrade_since(&Antichain::new()).await;
         let () = write
@@ -1952,7 +1952,7 @@ mod tests {
             .expect("usage should be valid")
             .expect("upper should match");
 
-        // Advance since and upper to empty, which is a pre-requisite for
+        // Advance since and upper to empty, which is a prerequisite for
         // finalization/tombstoning.
         let () = read.downgrade_since(&Antichain::new()).await;
         let () = write
