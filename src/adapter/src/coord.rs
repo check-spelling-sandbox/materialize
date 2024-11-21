@@ -10,10 +10,10 @@
 //! Translation of SQL commands into timestamped `Controller` commands.
 //!
 //! The various SQL commands instruct the system to take actions that are not
-//! yet explicitly timestamped. On the other hand, the underlying data continually
-//! change as time moves forward. On the third hand, we greatly benefit from the
-//! information that some times are no longer of interest, so that we may
-//! compact the representation of the continually changing collections.
+//! yet explicitly timestamped. The underlying data continually changes as time
+//! moves forward. We greatly benefit from the information that some times are
+//! no longer of interest, so that we may compact the representation of the
+//! continually changing collections.
 //!
 //! The [`Coordinator`] curates these interactions by observing the progress
 //! collections make through time, choosing timestamps for its own commands,
