@@ -8,7 +8,7 @@
 // by the Apache License, Version 2.0.
 
 //! [`FlatPlan`], a flat representation of LIR plans used in the compute protocol and rendering,
-//! and support for for flatting [`Plan`]s into this representation.
+//! and support for flatting [`Plan`]s into this representation.
 
 use std::collections::{BTreeMap, BTreeSet};
 

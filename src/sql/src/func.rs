@@ -618,7 +618,7 @@ impl ParamList {
         types.iter().enumerate().all(|(i, t)| self[i] == **t)
     }
 
-    /// Generates values underlying data for for `mz_catalog.mz_functions.arg_ids`.
+    /// Generates values underlying data for `mz_catalog.mz_functions.arg_ids`.
     fn arg_names(&self) -> Vec<&'static str> {
         match self {
             ParamList::Exact(p) => p.iter().map(|p| p.name()).collect::<Vec<_>>(),
