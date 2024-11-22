@@ -84,7 +84,7 @@ This is also a very large change with lots of user-facing impact.
 A third implementation is to teach either the dataflow builder or dataflow shipper to be able to error.
 In the implementation above, we hand picked VIEW and SELECT to check that their dataflows are ok.
 If we change something in the future and provide another way to create a potentially multi-timeline index, we might forget to check.
-The above API is easily misusable, whereas teaching the dataflow bulider/shipper would be a global API that can't be misused.
+The above API is easily misusable, whereas teaching the dataflow builder/shipper would be a global API that can't be misused.
 Attempts were made to do this, but dataflow building and shipping interacts closely with the catalog, which doesn't support interactive (to the Coordinator, not the user) transactions.
 Thus we didn't have a correct way to produce an error and rollback catalog changes.
 We would like interactive catalog transactions in the future, so this may get done.
