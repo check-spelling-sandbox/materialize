@@ -644,7 +644,7 @@ mod tests {
 
         // Seek back to the middle.
         reader.seek(SeekFrom::Start(6)).unwrap();
-        // Read the entire bufffer.
+        // Read the entire buffer.
         let mut buf = Vec::new();
         let bytes_read = reader.read_to_end(&mut buf).unwrap();
         assert_eq!(bytes_read, 6);
