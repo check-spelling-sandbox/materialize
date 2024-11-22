@@ -57,7 +57,7 @@ For each, we describe the associated action applied by CR.
 * `AllowCompaction`: Stop tracking an upper frontier if the controller permits compaction to the empty frontier.
   Forward command as-is.
 * `Peek`: Remember active peek, forward command.
-* `CancelPeeks`: Remove cancled peeks from active peeks, forward command.
+* `CancelPeeks`: Remove canceled peeks from active peeks, forward command.
 
 CR handles responses similarly:
 * `FrontierUppers`: Update the maintained frontier from the provided change batch and return the effective changes.
