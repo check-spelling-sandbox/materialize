@@ -68,7 +68,7 @@ pub struct TraceEntry<T> {
 /// 1.  The plan type should be listed in the layers created in the
 ///     `OptimizerTrace` constructor.
 /// 2.  Each `trace_plan` should be unique within it's enclosing span and should
-///     represent the result of the stage idenified by that span. In particular,
+///     represent the result of the stage identified by that span. In particular,
 ///     this means that functions that call `trace_plan` more than once need to
 ///     construct ad-hoc spans (see the iteration spans in the `Fixpoint`
 ///     transform for example).
