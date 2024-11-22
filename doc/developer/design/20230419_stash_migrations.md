@@ -45,7 +45,7 @@ There have been several issues caused by Stash migrations:
 ### What is the "Stash"?
 
 The [Stash](https://github.com/MaterializeInc/materialize/blob/23d7cad1211b4d1d1de3a26652937f9f2c4df61c/src/stash/src/lib.rs#L107-L124)
-is a time-varying key-value store, i.e. it stores colletions of `(key, value, timestamp, diff)`,
+is a time-varying key-value store, i.e. it stores collections of `(key, value, timestamp, diff)`,
 which we use to persist metadata for a Materialize deployment. For example, we use the Stash to
 persist metadata for all `MATERIALIZED VIEWS` that a user has created. This way when restarting an
 environment, we know what Materialized Views to recreate on Compute. Concretely we use CockroachDB
