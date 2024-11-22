@@ -106,7 +106,7 @@ class SubscribeParallelTableWithIndex(SubscribeParallel):
 class SubscribeParallelKafka(SubscribeParallel):
     def create_subscribe_source(self) -> str:
         # As we are doing `kafka-ingest` in the middle of the benchmark() method
-        # we must always use a unique topic to ensure isolation between the individal
+        # we must always use a unique topic to ensure isolation between the individual
         # measurements
         self._unique_topic_id = getrandbits(64)
         return dedent(

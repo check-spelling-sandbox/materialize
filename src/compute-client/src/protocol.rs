@@ -7,7 +7,7 @@
 // the Business Source License, use of this software will be governed
 // by the Apache License, Version 2.0.
 
-//! The compute protocol defines the communication between the compute controller and indiviual
+//! The compute protocol defines the communication between the compute controller and individual
 //! compute replicas.
 //!
 //! # Overview
