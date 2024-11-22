@@ -274,7 +274,7 @@ bool Transactions::executeNewOrder(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
     SQL_TIMESTAMP_STRUCT oEntryD;
     DataSource::getCurrentTimestamp(oEntryD, cfg.order_entry_date_offset_millis(chRandom::rng));
 
-    SQLLEN nIdicator = 0;
+    SQLLEN nIndicator = 0;
     SQLCHAR buf[1024] = {0};
 
     // BEGIN TRANSACTION
@@ -293,7 +293,7 @@ bool Transactions::executeNewOrder(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
         return false;
     }
     int dNextOId = 0;
-    if (!DbcTools::fetch(noDistrictSelect, buf, &nIdicator, 2, dNextOId)) {
+    if (!DbcTools::fetch(noDistrictSelect, buf, &nIndicator, 2, dNextOId)) {
         DbcTools::rollback(hDBC);
         return false;
     }
@@ -352,7 +352,7 @@ bool Transactions::executeNewOrder(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
         iPrice = 0;
         if (SQL_SUCCESS == SQLFetch(noItemSelect)) {
             if (SQL_SUCCESS ==
-                SQLGetData(noItemSelect, 1, SQL_C_CHAR, buf, 1024, &nIdicator))
+                SQLGetData(noItemSelect, 1, SQL_C_CHAR, buf, 1024, &nIndicator))
                 iPrice = atof((char*) buf);
             else {
                 DbcTools::rollback(hDBC);
@@ -375,7 +375,7 @@ bool Transactions::executeNewOrder(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
         sDist = "";
         if (SQL_SUCCESS == SQLFetch(noStockSelects[dId - 1])) {
             if (SQL_SUCCESS == SQLGetData(noStockSelects[dId - 1], 1,
-                                          SQL_C_CHAR, buf, 1024, &nIdicator)) {
+                                          SQL_C_CHAR, buf, 1024, &nIndicator)) {
                 sQuantity = strtol((char*) buf, nullptr, 0);
             } else {
                 DbcTools::rollback(hDBC);
@@ -383,7 +383,7 @@ bool Transactions::executeNewOrder(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
             }
 
             if (SQL_SUCCESS == SQLGetData(noStockSelects[dId - 1], 2,
-                                          SQL_C_CHAR, buf, 1024, &nIdicator)) {
+                                          SQL_C_CHAR, buf, 1024, &nIndicator)) {
                 sDist = std::string((char*) buf);
             } else {
                 DbcTools::rollback(hDBC);
@@ -476,7 +476,7 @@ bool Transactions::executePayment(Dialect* dialect, SQLHDBC& hDBC, mz::Config& c
     SQL_TIMESTAMP_STRUCT hDate;
     DataSource::getCurrentTimestamp(hDate,cfg.orderline_delivery_date_offset_millis(chRandom::rng));
 
-    SQLLEN nIdicator = 0;
+    SQLLEN nIndicator = 0;
     SQLCHAR buf[1024] = {0};
 
     // BEGIN TRANSACTION
@@ -487,7 +487,7 @@ bool Transactions::executePayment(Dialect* dialect, SQLHDBC& hDBC, mz::Config& c
         return false;
     }
     std::string wName;
-    if (!DbcTools::fetch(pmWarehouseSelect, buf, &nIdicator, 1, wName)) {
+    if (!DbcTools::fetch(pmWarehouseSelect, buf, &nIndicator, 1, wName)) {
         DbcTools::rollback(hDBC);
         return false;
     }
@@ -508,7 +508,7 @@ bool Transactions::executePayment(Dialect* dialect, SQLHDBC& hDBC, mz::Config& c
         return false;
     }
     std::string dName;
-    if (!DbcTools::fetch(pmDistrictSelect, buf, &nIdicator, 1, dName)) {
+    if (!DbcTools::fetch(pmDistrictSelect, buf, &nIndicator, 1, dName)) {
         DbcTools::rollback(hDBC);
         return false;
     }
@@ -534,7 +534,7 @@ bool Transactions::executePayment(Dialect* dialect, SQLHDBC& hDBC, mz::Config& c
             return false;
         }
         int count = 0;
-        if (!DbcTools::fetch(pmCustomerSelect1, buf, &nIdicator, 1, count)) {
+        if (!DbcTools::fetch(pmCustomerSelect1, buf, &nIndicator, 1, count)) {
             DbcTools::rollback(hDBC);
             return false;
         }
@@ -556,14 +556,14 @@ bool Transactions::executePayment(Dialect* dialect, SQLHDBC& hDBC, mz::Config& c
         }
         if (SQL_SUCCESS == SQLFetch(pmCustomerSelect2)) {
             if (SQL_SUCCESS == SQLGetData(pmCustomerSelect2, 1, SQL_C_CHAR, buf,
-                                          1024, &nIdicator))
+                                          1024, &nIndicator))
                 cId = strtol((char*) buf, nullptr, 0);
             else {
                 DbcTools::rollback(hDBC);
                 return false;
             }
             if (SQL_SUCCESS == SQLGetData(pmCustomerSelect2, 11, SQL_C_CHAR,
-                                          buf, 1024, &nIdicator))
+                                          buf, 1024, &nIndicator))
                 cCredit = std::string((char*) buf);
             else {
                 DbcTools::rollback(hDBC);
@@ -583,7 +583,7 @@ bool Transactions::executePayment(Dialect* dialect, SQLHDBC& hDBC, mz::Config& c
             return false;
         }
         cCredit = "";
-        if (!DbcTools::fetch(pmCustomerSelect3, buf, &nIdicator, 11, cCredit)) {
+        if (!DbcTools::fetch(pmCustomerSelect3, buf, &nIndicator, 11, cCredit)) {
             DbcTools::rollback(hDBC);
             return false;
         }
@@ -610,7 +610,7 @@ bool Transactions::executePayment(Dialect* dialect, SQLHDBC& hDBC, mz::Config& c
             return false;
         }
         std::string cData;
-        if (!DbcTools::fetch(pmCustomerSelect4, buf, &nIdicator, 1, cData)) {
+        if (!DbcTools::fetch(pmCustomerSelect4, buf, &nIndicator, 1, cData)) {
             DbcTools::rollback(hDBC);
             return false;
         }
@@ -675,7 +675,7 @@ bool Transactions::executeOrderStatus(Dialect* dialect, SQLHDBC& hDBC) {
         cId = chRandom::nonUniformInt(1023, 1, 3000, 867);
     }
 
-    SQLLEN nIdicator = 0;
+    SQLLEN nIndicator = 0;
     SQLCHAR buf[1024] = {0};
 
     // BEGIN TRANSACTION
@@ -691,7 +691,7 @@ bool Transactions::executeOrderStatus(Dialect* dialect, SQLHDBC& hDBC) {
             return false;
         }
         int count = 0;
-        if (!DbcTools::fetch(osCustomerSelect1, buf, &nIdicator, 1, count)) {
+        if (!DbcTools::fetch(osCustomerSelect1, buf, &nIndicator, 1, count)) {
             DbcTools::rollback(hDBC);
             return false;
         }
@@ -710,7 +710,7 @@ bool Transactions::executeOrderStatus(Dialect* dialect, SQLHDBC& hDBC) {
         for (int i = 0; i < ((count + 1) / 2) - 1; i++) { // move cursor
             SQLFetch(osCustomerSelect2);
         }
-        if (!DbcTools::fetch(osCustomerSelect2, buf, &nIdicator, 1, cId)) {
+        if (!DbcTools::fetch(osCustomerSelect2, buf, &nIndicator, 1, cId)) {
             DbcTools::rollback(hDBC);
             return false;
         }
@@ -737,7 +737,7 @@ bool Transactions::executeOrderStatus(Dialect* dialect, SQLHDBC& hDBC) {
         return false;
     }
     int oId = 0;
-    if (!DbcTools::fetch(osOrderSelect, buf, &nIdicator, 1, oId)) {
+    if (!DbcTools::fetch(osOrderSelect, buf, &nIndicator, 1, oId)) {
         DbcTools::rollback(hDBC);
         return false;
     }
@@ -769,7 +769,7 @@ bool Transactions::executeDelivery(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
     SQL_TIMESTAMP_STRUCT olDeliveryD;
     DataSource::getCurrentTimestamp(olDeliveryD, cfg.orderline_delivery_date_offset_millis(chRandom::rng));
 
-    SQLLEN nIdicator = 0;
+    SQLLEN nIndicator = 0;
     SQLCHAR buf[1024] = {0};
 
     // BEGIN TRANSACTION
@@ -790,7 +790,7 @@ bool Transactions::executeDelivery(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
         noOId = 0;
         if (SQL_SUCCESS == SQLFetch(dlNewOrderSelect)) {
             if (SQL_SUCCESS == SQLGetData(dlNewOrderSelect, 1, SQL_C_CHAR, buf,
-                                          1024, &nIdicator))
+                                          1024, &nIndicator))
                 noOId = strtol((char*) buf, nullptr, 0);
             else {
                 DbcTools::rollback(hDBC);
@@ -818,7 +818,7 @@ bool Transactions::executeDelivery(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
             return false;
         }
         oCId = 0;
-        if (!DbcTools::fetch(dlOrderSelect, buf, &nIdicator, 1, oCId)) {
+        if (!DbcTools::fetch(dlOrderSelect, buf, &nIndicator, 1, oCId)) {
             DbcTools::rollback(hDBC);
             return false;
         }
@@ -852,7 +852,7 @@ bool Transactions::executeDelivery(Dialect* dialect, SQLHDBC& hDBC, mz::Config& 
             return false;
         }
         olAmount = 0;
-        if (!DbcTools::fetch(dlOrderlineSelect, buf, &nIdicator, 1, olAmount)) {
+        if (!DbcTools::fetch(dlOrderlineSelect, buf, &nIndicator, 1, olAmount)) {
             DbcTools::rollback(hDBC);
             return false;
         }
@@ -884,7 +884,7 @@ bool Transactions::executeStockLevel(Dialect* dialect, SQLHDBC& hDBC) {
     // 2.8.1.2
     int threshold = chRandom::uniformInt(10, 20);
 
-    SQLLEN nIdicator = 0;
+    SQLLEN nIndicator = 0;
     SQLCHAR buf[1024] = {0};
 
     // BEGIN TRANSACTION
@@ -896,7 +896,7 @@ bool Transactions::executeStockLevel(Dialect* dialect, SQLHDBC& hDBC) {
         return false;
     }
     int dNextOId = 0;
-    if (!DbcTools::fetch(slDistrictSelect, buf, &nIdicator, 1, dNextOId)) {
+    if (!DbcTools::fetch(slDistrictSelect, buf, &nIndicator, 1, dNextOId)) {
         DbcTools::rollback(hDBC);
         return false;
     }

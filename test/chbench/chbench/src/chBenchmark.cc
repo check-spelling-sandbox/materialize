@@ -329,9 +329,9 @@ static int detectWarehouses(Dialect* dialect, SQLHSTMT& hStmt, int* countOut) {
         hStmt, dialect->getSelectCountWarehouse());
 
     int temp = 0;
-    SQLLEN nIdicator = 0;
+    SQLLEN nIndicator = 0;
     SQLCHAR buf[1024] = {0};
-    DbcTools::fetch(hStmt, buf, &nIdicator, 1, temp);
+    DbcTools::fetch(hStmt, buf, &nIndicator, 1, temp);
     *countOut = temp;
     if (*countOut == 0) {
         Log::l2() << Log::tm() << "-detecting warehouses failed\n";

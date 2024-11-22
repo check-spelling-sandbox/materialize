@@ -26,7 +26,7 @@ limitations under the License.
 class DbcTools {
 
   private:
-    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator,
+    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator,
                       int pos);
     static bool reviewReturn(SQLHANDLE& handle, SQLSMALLINT handleType,
                              SQLRETURN& ret, bool showError = 0);
@@ -46,11 +46,11 @@ class DbcTools {
     static bool executePreparedStatement(SQLHSTMT& hStmt);
     static bool executeServiceStatement(SQLHSTMT& hStmt, const char* stmt,
                                         bool showError = 1);
-    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator, int pos,
+    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator, int pos,
                       std::string& value);
-    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator, int pos,
+    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator, int pos,
                       int& value);
-    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator, int pos,
+    static bool fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator, int pos,
                       double& value);
     static bool commit(SQLHDBC& hDBC);
     static bool rollback(SQLHDBC& hDBC);

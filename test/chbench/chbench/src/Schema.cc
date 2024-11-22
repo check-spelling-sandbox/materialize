@@ -24,14 +24,14 @@ limitations under the License.
 
 bool Schema::check(SQLHSTMT& hStmt, const char* query, int& cnt) {
 
-    SQLLEN nIdicator = 0;
+    SQLLEN nIndicator = 0;
     SQLCHAR buf[128] = {0};
 
     if (!DbcTools::executeServiceStatement(hStmt, query)) {
         Log::l2() << Log::tm() << "-determine count failed\n";
         return false;
     }
-    if (!DbcTools::fetch(hStmt, buf, &nIdicator, 1, cnt)) {
+    if (!DbcTools::fetch(hStmt, buf, &nIndicator, 1, cnt)) {
         Log::l2() << Log::tm() << "-determine count failed\n";
         return false;
     }

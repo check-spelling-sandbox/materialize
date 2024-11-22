@@ -19,11 +19,11 @@ limitations under the License.
 
 #include "Log.h"
 
-bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator,
+bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator,
                      int pos) {
     SQLRETURN ret = SQLFetch(hStmt);
     if (reviewReturn(hStmt, SQL_HANDLE_STMT, ret)) {
-        ret = SQLGetData(hStmt, pos, SQL_C_CHAR, buf, 1024, nIdicator);
+        ret = SQLGetData(hStmt, pos, SQL_C_CHAR, buf, 1024, nIndicator);
         if (reviewReturn(hStmt, SQL_HANDLE_STMT, ret)) {
             return true;
         }
@@ -219,27 +219,27 @@ bool DbcTools::reviewReturn(SQLHANDLE& handle, SQLSMALLINT handleType,
     return false;
 }
 
-bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator, int pos,
+bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator, int pos,
                      std::string& value) {
-    if (fetch(hStmt, buf, nIdicator, pos)) {
+    if (fetch(hStmt, buf, nIndicator, pos)) {
         value = std::string((char*) buf);
         return true;
     }
     return false;
 }
 
-bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator, int pos,
+bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator, int pos,
                      int& value) {
-    if (fetch(hStmt, buf, nIdicator, pos)) {
+    if (fetch(hStmt, buf, nIndicator, pos)) {
         value = strtol((char*) buf, nullptr, 0);
         return true;
     }
     return false;
 }
 
-bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIdicator, int pos,
+bool DbcTools::fetch(SQLHSTMT& hStmt, SQLCHAR* buf, SQLLEN* nIndicator, int pos,
                      double& value) {
-    if (fetch(hStmt, buf, nIdicator, pos)) {
+    if (fetch(hStmt, buf, nIndicator, pos)) {
         value = atof((char*) buf);
         return true;
     }
