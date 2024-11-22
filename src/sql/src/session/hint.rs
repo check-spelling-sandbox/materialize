@@ -134,7 +134,7 @@ impl ApplicationNameHint {
 
     /// Returns whether or not we should trace errors for this requests with this application name.
     pub fn should_trace_errors(&self) -> bool {
-        // Note(parkmycar): For now we only trace errors for the web console since we contol all of
+        // Note(parkmycar): For now we only trace errors for the web console since we control all of
         // those queries and in general they should never fail. As opposed to user queries which
         // are arbitrary.
         matches!(self, ApplicationNameHint::WebConsole(_))
