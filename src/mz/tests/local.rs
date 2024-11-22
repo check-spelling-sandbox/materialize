@@ -127,7 +127,7 @@ mod tests {
         let output = output_to_string(assert);
         assert!(output.trim() == "default");
 
-        // Asert `mz profile init` fails.
+        // Assert `mz profile init` fails.
         let assert = cmd()
             .arg("profile")
             .arg("init")
@@ -152,7 +152,7 @@ mod tests {
         let output = output_to_string(assert);
         assert!(output.trim() == "The profile name 'alternative' already exists. You can either use 'mz profile init -f' to replace it or 'mz profile init --profile <PROFILE>' to choose another name.");
 
-        // Asert `mz profile config get region --profile alternative`
+        // Assert `mz profile config get region --profile alternative`
         let binding = cmd()
             .arg("profile")
             .arg("config")
@@ -168,7 +168,7 @@ mod tests {
         let output = output_to_string(binding);
         assert!(output.trim() == "aws/eu-west-1");
 
-        // Asert `mz profile config set region random --profile alternative`
+        // Assert `mz profile config set region random --profile alternative`
         cmd()
             .arg("profile")
             .arg("config")
