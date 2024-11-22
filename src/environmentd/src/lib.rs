@@ -84,7 +84,7 @@ pub struct Config {
     // === Connection options. ===
     /// TLS encryption and authentication configuration.
     pub tls: Option<TlsCertConfig>,
-    /// Trigger to attempt to reload TLS certififcates.
+    /// Trigger to attempt to reload TLS certificates.
     #[derivative(Debug = "ignore")]
     pub tls_reload_certs: ReloadTrigger,
     /// Frontegg JWT authentication configuration.
