@@ -80,7 +80,7 @@ The owner of a cluster can drop replicas with a billing or internal property, bu
 
 We extend clusters and their replicas with concept of replica sets.
 A replica set defines properties shared by a partition of replicas within a cluster.
-We allow internal users to create replica sets with specific billing information to add free or cost-reduced resouces to user environemnts, without changing the structure of a user's deplyoment.
+We allow internal users to create replica sets with specific billing information to add free or cost-reduced resouces to user environemnts, without changing the structure of a user's deployment.
 
 ## Goals
 
