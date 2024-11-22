@@ -8,7 +8,7 @@ Today, Kafka sinks are a major user pain point because any Kafka sinks that tran
 
 * Kafka sinks that depend on realtime (RT) sources can crash or be manually restarted and 'pick up where they left off'
 * Minimal changes to consumers (ie. no requirement on CDCv2 in the sink topic)
-* The assigments of timestamps to RT source data (aka the timestamp bindings) are 'replayable' in the sense that 'assuming the upstream data still exists, we will assign the same data the same, or greater timestamp on subsequent reads'.
+* The assignments of timestamps to RT source data (aka the timestamp bindings) are 'replayable' in the sense that 'assuming the upstream data still exists, we will assign the same data the same, or greater timestamp on subsequent reads'.
 * RT source timestamp bindings use a bounded amount of persistent memory when compaction is enabled.
 
 ## Non-goals:
