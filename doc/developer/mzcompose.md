@@ -182,7 +182,7 @@ While it is possible to use a Python driver such as `psycopg3` or `pg8000` to ru
 
 Putting the queries in a Testdrive `.td` file allows the entire convenience machinery of Testdrive to be used. For example:
 - Testdrive automatically handles retrying the query until it returns the desired result
-- Putting SQL queries in a `.td` file, rather than inlining them in Python with their own `assert` allows more individual queries to be included for a smaller effort. This enocourages better feature coverage (e.g. use more varied data types in the test, different types of sources or sinks, etc.)
+- Putting SQL queries in a `.td` file, rather than inlining them in Python with their own `assert` allows more individual queries to be included for a smaller effort. This encourages better feature coverage (e.g. use more varied data types in the test, different types of sources or sinks, etc.)
 
 To run a Testdrive test or tests:
 
