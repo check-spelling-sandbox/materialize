@@ -1614,7 +1614,7 @@ pub fn plan_ctes(
                     return type_err(proposed_typ, derived_typ);
                 }
 
-                // Cast dervied types to proposed types or error.
+                // Cast derived types to proposed types or error.
                 let val = match cast_relation(
                     qcx,
                     // Choose `CastContext::Assignment`` because the user has
