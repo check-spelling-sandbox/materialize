@@ -222,7 +222,7 @@ impl LanguageServer for Backend {
                     self.client
                         .log_message(
                             MessageType::INFO,
-                            format!("Initialization options are erroneus: {:?}", err.to_string()),
+                            format!("Initialization options are erroneous: {:?}", err.to_string()),
                         )
                         .await;
                 }
