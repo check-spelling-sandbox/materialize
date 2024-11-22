@@ -129,7 +129,7 @@ async fn test_client() -> Result<(), anyhow::Error> {
         assert_raw_schemas_eq(schema_v1, &res.schema.raw);
     }
 
-    // Validate that we can retrieve and change the compatibilty level for a subject
+    // Validate that we can retrieve and change the compatibility level for a subject
     let initial_res = client.get_subject_config(test_subject).await;
     assert!(matches!(
         initial_res,
