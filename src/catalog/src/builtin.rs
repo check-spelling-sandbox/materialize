@@ -6004,7 +6004,7 @@ pub static MZ_INDEX_ADVICE: LazyLock<BuiltinView> = LazyLock::new(|| {
 -- that are not depended on by other maintained objects and have a justification why they must
 -- be maintained (e.g. a materialized view that is depended on by a sink).
 -- Starting from these leaves, the dependencies are propagated upwards towards the roots according
--- to the object dependencies. Whenever there is a node that is beeing depended on by multiple
+-- to the object dependencies. Whenever there is a node that is being depended on by multiple
 -- downstream objects, that node is marked to be converted into a maintained object and this
 -- node is then propagated further up. Once completed, the list of objects that are marked as
 -- maintained is checked against all objects to generate appropriate recommendations.
