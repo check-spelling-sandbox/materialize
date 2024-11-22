@@ -41,7 +41,7 @@ but also have implications in the **default access level to the database**.
 More granular permissions within the database must be handled separately using
 [role-based access control (RBAC)](#role-based-access-control-rbac).
 
-[//]: # "TODO(morsapaes) Add a specific anotation for tutorial call-outs, to
+[//]: # "TODO(morsapaes) Add a specific annotation for tutorial call-outs, to
 make these more noticeable."
 
 To invite users to your Materialize organization, follow [this step-by-step guide](/manage/access-control/invite-users).
