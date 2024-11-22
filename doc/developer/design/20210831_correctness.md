@@ -141,6 +141,6 @@ If each wanted to be a stickler for detail, what would they require to make sure
 
 Not much is said here about properties of VOLATILE / INDEFINITE collections.
 Perhaps there are correctness requirements we should provide for them.
-For example, that each view results in the correct evalution on *some* data; "no impossible results".
+For example, that each view results in the correct evaluation on *some* data; "no impossible results".
 Almost certainly "no panics" (so no optimizations that are incorrect for VOLATILE sources).
 Should VOLATILE sources be best-effort only, and who would complain if each VOLATILE source were permanently empty / just very, very slow?
