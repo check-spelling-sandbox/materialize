@@ -166,7 +166,7 @@ pub mod private {
     pub use compile_time_run::run_command_str;
 
     // Bazel has a "workspace status" feature that allows us to collect info from
-    // the workspace (e.g. git hash) at build time. These values get incleded via
+    // the workspace (e.g. git hash) at build time. These values get included via
     // a generated file.
     #[cfg(all(bazel, stamped))]
     #[allow(unused)]
