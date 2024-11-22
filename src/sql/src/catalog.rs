@@ -498,7 +498,7 @@ impl RoleAttributes {
         self
     }
 
-    /// Returns whether or not the role has inheritence of privileges.
+    /// Returns whether or not the role has inheritance of privileges.
     pub const fn is_inherit(&self) -> bool {
         self.inherit
     }
