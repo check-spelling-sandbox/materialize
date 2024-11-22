@@ -99,7 +99,7 @@ foo1 foo2 c
 4 5 6
 
 
-# Verify we can't resolve columns using overridden table or colum names.
+# Verify we can't resolve columns using overridden table or column names.
 
 query error column "abc.foo1" does not exist
 SELECT abc.foo1 FROM abc AS foo (foo1)

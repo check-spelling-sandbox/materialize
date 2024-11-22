@@ -317,7 +317,7 @@ ERROR:  WHERE clause error: column "b.b" does not exist
 materialize=>
 ```
 
-When a colum name is resolved against any of the leaf quantifiers in the current context, the resulting column
+When a column name is resolved against any of the leaf quantifiers in the current context, the resulting column
 reference must be lifted through the projection of all the intermediate boxes until reaching a quantifier
 in the current box (the one referenced in `NameResolutionContext::owner_box` in the current context).
 

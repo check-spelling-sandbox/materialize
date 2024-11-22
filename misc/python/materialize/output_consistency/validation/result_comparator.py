@@ -254,7 +254,7 @@ class ResultComparator:
             validation_outcome.add_warning(
                 ValidationWarning(
                     "Query error with multiple columns",
-                    "Query expected to return an error should contain only one colum.",
+                    "Query expected to return an error should contain only one column.",
                     sql=failure.sql,
                 )
             )

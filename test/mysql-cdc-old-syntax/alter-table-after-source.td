@@ -322,7 +322,7 @@ contains:unknown
 
 
 #
-# Alter table rename colum
+# Alter table rename column
 
 > SELECT * FROM alter_table_rename_column;
 f1_orig f2_orig

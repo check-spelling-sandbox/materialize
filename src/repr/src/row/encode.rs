@@ -84,7 +84,7 @@ mod fixed_binary_sizes {
 }
 use fixed_binary_sizes::*;
 
-/// Returns true iff the ordering of the "raw" and Persist-encoded versions of this columm would match:
+/// Returns true iff the ordering of the "raw" and Persist-encoded versions of this column would match:
 /// ie. `sort(encode(column)) == encode(sort(column))`. This encoding has been designed so that this
 /// is true for many types.
 pub fn preserves_order(scalar_type: &ScalarType) -> bool {
