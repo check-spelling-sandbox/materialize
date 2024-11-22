@@ -72,7 +72,7 @@ fn main() -> Result<(), anyhow::Error> {
             let formatter = args.formatter.clone();
 
             let handle = s.spawn(move || {
-                let Some(bazel_build) = generage_build_bazel(&config, &package)? else {
+                let Some(bazel_build) = generate_build_bazel(&config, &package)? else {
                     return Ok::<_, anyhow::Error>(None);
                 };
                 let bazel_build_str = bazel_build.to_string();
@@ -160,7 +160,7 @@ fn main() -> Result<(), anyhow::Error> {
 }
 
 /// Given the [`PackageMetadata`] for a single crate, generates a `BUILD.bazel` file.
-fn generage_build_bazel<'a>(
+fn generate_build_bazel<'a>(
     config: &'a GlobalConfig,
     package: &'a PackageMetadata<'a>,
 ) -> Result<Option<BazelBuildFile>, anyhow::Error> {
