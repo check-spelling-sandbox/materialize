@@ -390,7 +390,7 @@ class UpdateMultiNoIndex(DML):
     """Measure the time it takes to perform multiple updates over the same records in a non-indexed table. GitHub Issue database-issues#3233"""
 
     def before(self) -> Action:
-        # Due to exterme variability in the results, we have no option but to drop and re-create
+        # Due to extreme variability in the results, we have no option but to drop and re-create
         # the table prior to each measurement
         return TdAction(
             f"""
