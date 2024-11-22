@@ -192,7 +192,7 @@ where
                     );
                     let thinned = collection.concat(&retractions.negate());
 
-                    // As an additional optimization, we can skip creating the full topk hierachy
+                    // As an additional optimization, we can skip creating the full topk hierarchy
                     // here since we now have an upper bound on the number records due to the
                     // intra-ts thinning. The maximum number of records per timestamp is
                     // (num_workers * limit), which we expect to be a small number and so we render
