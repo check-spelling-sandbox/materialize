@@ -109,7 +109,7 @@ Users on the same TIMELINE can be provided with consistency guarantees, whereas 
 
 The physical architecture tracks the logical architecture somewhat, in that each layer is intended to manage its own resources.
 * The STORAGE layer is expected to spin up threads, processes, containers for each maintained collection.
-* The COMPUTE layer is expected to spin up threads, processes, containers for each indepedent cluster.
+* The COMPUTE layer is expected to spin up threads, processes, containers for each independent cluster.
 * The ADAPTER layer is expected to spin up threads, processes, containers for each user session, timeline, frontend, etc.
 
 Each of these layers needs to orchestrate its resources: spinning up, instructing, spinning down, etc.
