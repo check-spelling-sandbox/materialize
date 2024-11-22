@@ -13,7 +13,7 @@ use std::time::Duration;
 
 use mz_dyncfg::{Config, ConfigSet};
 
-/// The interval at which to retry cleaning replicas from past generatinos.
+/// The interval at which to retry cleaning replicas from past generations.
 pub const CONTROLLER_PAST_GENERATION_REPLICA_CLEANUP_RETRY_INTERVAL: Config<Duration> = Config::new(
     "controller_past_generation_replica_cleanup_retry_interval",
     Duration::from_secs(300),
