@@ -5,7 +5,7 @@ menu:
   main:
     parent: "mysql"
     name: "Azure DB"
-    indentifier: "mysql-azure-db"
+    identifier: "mysql-azure-db"
 ---
 
 {{< public-preview />}}
