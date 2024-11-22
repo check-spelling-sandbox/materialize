@@ -228,7 +228,7 @@ Instead, we can try to make our dataflow graph visualization better and remove t
 The `EXPLAIN CREATE ...` syntax proposed in MaterializeInc/database-issues#5301 should be sufficient for people actively developing SQL queries that are meant to be installed as new dataflows.
 
 # Considered alternatives
-[considreed-alternatives]: #considreed-alternatives
+[considered-alternatives]: #considered-alternatives
 
 A more direct approach would be to directly attach the new fields to the `CatalogItem` variants.
 
