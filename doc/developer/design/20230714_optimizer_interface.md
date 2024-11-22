@@ -97,7 +97,7 @@ interface should:
    confidence that the pipeline for a specific statement type is consistent
    throughout the ADAPTER code, even as both the ADAPTER and COMPUTE code
    continue to evolve.
-2. Be flexible enought so it can be integrated in the current ADAPTER layer
+2. Be flexible enough so it can be integrated in the current ADAPTER layer
    without major refactoring of the ADAPTER call sites.
 3. Be aligned with the Platform V2 goals.
 
