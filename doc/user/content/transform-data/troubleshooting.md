@@ -122,7 +122,7 @@ to get the execution plan for the query, and validate that it starts with
 
 **Temporal filters**
 
-Use temporal flters to filter results on a timestamp column that correlates with
+Use temporal filters to filter results on a timestamp column that correlates with
 the insertion or update time of each row. For example:
 
 ```mzsql
