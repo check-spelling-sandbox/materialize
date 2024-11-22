@@ -614,7 +614,7 @@ impl<'a> Desugarer<'a> {
         }
 
         // When `$expr` is a `ROW` constructor, we need to desugar as described
-        // below in order to enable the row comparision expansion at the end of
+        // below in order to enable the row comparison expansion at the end of
         // this function. We don't do this desugaring unconditionally (i.e.,
         // when `$expr` is not a `ROW` constructor) because the implementation
         // in `plan_in_list` is more efficient when row comparison expansion is

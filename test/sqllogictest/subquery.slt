@@ -635,7 +635,7 @@ from ys
 1  -1
 2  0.5
 
-# Regression test for database-issues#1221, in which quantified comparision simplification was
+# Regression test for database-issues#1221, in which quantified comparison simplification was
 # not correctly handling LATERAL joins.
 query II
 SELECT * FROM (VALUES (1)), LATERAL (SELECT * FROM (SELECT column1) WHERE true)
