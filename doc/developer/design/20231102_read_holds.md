@@ -61,7 +61,7 @@ DROP HOLD <name>
 
 A `DROP` will release its current read hold.
 In-progress `SUBSCRIBE`s and transactions will not be affected after a `DROP`, but will continue to run as expected.
-Those will still be aquiring their own read holds in addition to the `HOLD` object.
+Those will still be acquiring their own read holds in addition to the `HOLD` object.
 
 Creating a `HOLD` will increase resource consumption (mostly memory) in proportion to the amount of time it is held for.
 Users must periodically advance the `HOLD` to a more recent time to allow for resources to be released.
