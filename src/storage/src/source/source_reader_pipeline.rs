@@ -1082,7 +1082,7 @@ where
 
 /// Reclocks an `IntoTime` frontier stream into a `FromTime` frontier stream. This is used for the
 /// virtual (through persist) feedback edge so that we convert the `IntoTime` resumption frontier
-/// into the `FromTime` frontier that is used with the source's `OffsetCommiter`.
+/// into the `FromTime` frontier that is used with the source's `OffsetCommitter`.
 fn reclock_committed_upper<G, FromTime>(
     bindings: &Collection<G, FromTime, Diff>,
     as_of: Antichain<G::Timestamp>,

@@ -190,7 +190,7 @@
 //! upper" and at this stage it is expressed in terms of `IntoTime` timestamps. As a final step,
 //! this resumption frontier is converted back into a `FromTime` timestamped frontier using
 //! `ReclockFollower::source_upper_at_frontier` and connected back to the source reader operator.
-//! This frontier is what drives the `OffsetCommiter` which informs the upstream system to release
+//! This frontier is what drives the `OffsetCommitter` which informs the upstream system to release
 //! resources until the specified offsets.
 //!
 //! ## Exports
