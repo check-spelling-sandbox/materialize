@@ -500,7 +500,7 @@ impl MapFilterProject {
 
     /// Extracts common expressions from multiple `Self` into a result `Self`.
     ///
-    /// The argument `mfps` are mutated so that each are functionaly equivalent to their
+    /// The argument `mfps` are mutated so that each are functionally equivalent to their
     /// corresponding input, when composed atop the resulting `Self`.
     pub fn extract_common(mfps: &mut [&mut Self]) -> Self {
         match mfps.len() {
