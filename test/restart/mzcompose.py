@@ -213,7 +213,7 @@ def workflow_audit_log(c: Composition) -> None:
     if log != restart_log or not log:
         print("initial audit log:", log)
         print("audit log after restart:", restart_log)
-        raise Exception("audit logs emtpy or not equal after restart")
+        raise Exception("audit logs empty or not equal after restart")
 
 
 # Test for GitHub issue database-issues#3923

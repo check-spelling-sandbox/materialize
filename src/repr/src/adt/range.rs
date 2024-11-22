@@ -511,7 +511,7 @@ impl<'a> Range<Datum<'a>> {
             // None is less than any Some, so only need to check this condition.
             && upper.bound.is_some()
         {
-            // emtpy range
+            // empty range
             self.inner = None
         }
 

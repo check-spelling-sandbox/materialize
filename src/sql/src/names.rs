@@ -2224,7 +2224,7 @@ impl ResolvedIds {
         ResolvedIds { entries }
     }
 
-    /// Returns an emptry [`ResolvedIds`].
+    /// Returns an empty [`ResolvedIds`].
     pub fn empty() -> Self {
         ResolvedIds {
             entries: BTreeMap::new(),

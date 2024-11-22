@@ -2258,7 +2258,7 @@ impl RowPacker<'_> {
     ///   and `upper` are optional, contingent on the flag value expressing an
     ///   empty range (where neither will be present) or infinite bounds (where
     ///   each infinite bound will be absent).
-    /// - To push an emtpy range, use `push_range` using `Range { inner: None }`.
+    /// - To push an empty range, use `push_range` using `Range { inner: None }`.
     pub fn push_range_with<L, U, E>(
         &mut self,
         lower: RangeLowerBound<L>,

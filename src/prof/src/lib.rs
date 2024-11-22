@@ -233,7 +233,7 @@ struct StringTable(BTreeMap<String, i64>);
 
 impl StringTable {
     fn new() -> Self {
-        // Element 0 must always be the emtpy string.
+        // Element 0 must always be the empty string.
         let inner = [("".into(), 0)].into();
         Self(inner)
     }
