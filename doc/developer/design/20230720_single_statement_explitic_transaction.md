@@ -35,7 +35,7 @@ Many statements cannot be executed without observable side effects to other sess
 However, these and many other statements do have a known `ExecuteResponse` that can be determined without execution (as opposed to statements that return a row count).
 We will add a new transaction operation mode called `SingleStatement`.
 Currently those modes are `Peeks`, `Writes`, and `Subscribe`.
-`SingleStatement` will record the statement, then generate and return to the user an `ExecuteResponse` that assummes success.
+`SingleStatement` will record the statement, then generate and return to the user an `ExecuteResponse` that assumes success.
 The `SingleStatement` operation can only be entered in explicit transactions (must start with `BEGIN`).
 On `COMMIT`, the coordinator clears the current transaction, fetching and processing its inner operation (this already occurs before this document).
 If the inner operation is `SingleStatement`, the transaction status is set to `Started` (a status that can execute any statement), the recorded statement is executed, and an implicit `COMMIT` is executed.
