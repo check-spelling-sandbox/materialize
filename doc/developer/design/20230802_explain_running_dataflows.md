@@ -123,7 +123,7 @@ The next section expands how we plan to do that with more concrete implementatio
 There are two competing approaches that both follow the same high-level structure.
 
 The [alternatives](#considered-alternatives) presents a design that overall seems to be the obvious solution.
-However, due to some inerent issues that arise when trying to implement it, my proposal is slightly different.
+However, due to some inherent issues that arise when trying to implement it, my proposal is slightly different.
 It will allow us to ship the feature and buy us some time to figure out how to properly refactor the code in order to ultimately move to the (conceptually better) alternative solution.
 Most likely, steps in this direction can be made with MaterializeInc/materialize#20569, but I don't think we should take this as a hard prerequisite for shipping MaterializeInc/database-issues#6222.
 
