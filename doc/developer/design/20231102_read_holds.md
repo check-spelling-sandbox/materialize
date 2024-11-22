@@ -76,7 +76,7 @@ If `TO <time>` is specified, the new time will be created at that time.
 For each object of the `HOLD`, the new time must be greater or equal to the lowest of all `HOLD`s (including this one) and the `implied_capability`.
 (This implies that a `HOLD` can go backward in time if another `HOLD` satisfies the above condition.)
 If `TO <time>` is not specified, the new time is the least common physical read frontier of all objects named in the `HOLD`.
-The `HOLD` releases its current read hold and aquires a new read hold at the new time.
+The `HOLD` releases its current read hold and acquires a new read hold at the new time.
 
 The `MAX LAG` option (required, but defaults to `'3h'`) is a duration.
 Its upper bound is limited by a LD-configured setting.
