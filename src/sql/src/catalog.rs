@@ -1108,7 +1108,7 @@ impl EnvironmentId {
         &self.cloud_provider_region
     }
 
-    /// Returns the name of the region associted with this environment ID.
+    /// Returns the name of the region associated with this environment ID.
     ///
     /// A region is a combination of [`EnvironmentId::cloud_provider`] and
     /// [`EnvironmentId::cloud_provider_region`].
