@@ -225,7 +225,7 @@ sum_a
 ----
 13.937
 
-# Inputing values that are invalid for the scale generates errors, equivalent to
+# Inputting values that are invalid for the scale generates errors, equivalent to
 # overflow
 > INSERT INTO numeric_scaled_insertions VALUES ('1e38');
 
@@ -269,7 +269,7 @@ sum_a
 ----
 6.9
 
-# Inputing values that are invalid for the scale generates errors, equivalent to
+# Inputting values that are invalid for the scale generates errors, equivalent to
 # overflow.
 > INSERT INTO numeric_scaled_input_insertions VALUES ('1e38');
 
