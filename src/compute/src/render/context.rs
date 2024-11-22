@@ -230,7 +230,7 @@ where
 }
 
 /// Convenient wrapper around an optional `Weak` instance that can be used to check whether a
-/// datalow is shutting down.
+/// dataflow is shutting down.
 ///
 /// Instances created through the `Default` impl act as if the dataflow never shuts down.
 /// Instances created through [`ShutdownToken::new`] defer to the wrapped token.
