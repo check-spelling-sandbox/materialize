@@ -409,7 +409,7 @@ A `SELECT` query is a grouping query if any of the following conditions is met:
 
 That means that in order to determine whether a query is a grouping query or not, we must inspect the projection
 of the query first. For this reason, after having processed the `FROM` clause and the `WHERE` clause, we will
-process the projection of the query, resolving names agains the `NameResolutionContext` for the join of the
+process the projection of the query, resolving names against the `NameResolutionContext` for the join of the
 query, and then will traverse the resulting expressions trying to find `Aggregate` expressions within
 non-`Grouping` boxes, which would make the current query being process a grouping one.
 

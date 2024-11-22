@@ -6007,7 +6007,7 @@ pub static MZ_INDEX_ADVICE: LazyLock<BuiltinView> = LazyLock::new(|| {
 -- to the object dependencies. Whenever there is a node that is beeing depended on by multiple
 -- downstream objects, that node is marked to be converted into a maintained object and this
 -- node is then propagated further up. Once completed, the list of objects that are marked as
--- maintained is checked agains all objects to generate appropriate recommendations.
+-- maintained is checked against all objects to generate appropriate recommendations.
 --
 -- Note that the recommendations only incorporate dependencies between objects.
 -- This can lead to bad recommendations, e.g. filters can no longer be pushed into (or close to)
