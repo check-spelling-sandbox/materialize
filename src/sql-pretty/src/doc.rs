@@ -468,7 +468,7 @@ fn doc_join<T: AstInfo>(v: &Join<T>) -> RcDoc {
             }
             doc
         }
-        _ => return doc_display(v, "join constrant"),
+        _ => return doc_display(v, "join constraint"),
     };
     intersperse_line_nest([RcDoc::text(name), doc_table_factor(&v.relation), constraint])
 }

@@ -1136,7 +1136,7 @@ impl VersionedRelationDesc {
             .unwrap_or(RelationVersion::root())
     }
 
-    /// Validates internal contraints of the [`RelationDesc`] are correct.
+    /// Validates internal constraints of the [`RelationDesc`] are correct.
     ///
     /// # Panics
     ///

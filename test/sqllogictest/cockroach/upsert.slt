@@ -621,7 +621,7 @@ true
 statement ok
 DROP TABLE example
 
-subtest contraint_check_validation_ordering
+subtest constraint_check_validation_ordering
 
 # Verification of column constraints vs CHECK handling. The column
 # constraint verification must take place first.

@@ -559,7 +559,7 @@ CREATE TABLE ct(x INT, derived INT AS (x+1) STORED)
 statement error value type varchar doesn't match type int of column "x"
 INSERT INTO ct(x) SELECT c FROM sw
 
-subtest contraint_check_validation_ordering
+subtest constraint_check_validation_ordering
 
 # Verification of column constraints vs CHECK handling. The column
 # constraint verification must take place first.
@@ -586,7 +586,7 @@ INSERT INTO tn2(x) VALUES (NULL)
 statement error value too long for type CHAR\(3\)
 INSERT INTO tn2(x, y) VALUES (123, 'abcd')
 
-subtest fk_contraint_check_validation_ordering
+subtest fk_constraint_check_validation_ordering
 
 # Verify that column constraints and CHECK handling occur before
 # foreign key validation.

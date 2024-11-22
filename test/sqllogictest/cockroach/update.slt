@@ -403,7 +403,7 @@ SELECT * FROM tu
 ----
 1 NULL NULL NULL
 
-subtest contraint_check_validation_ordering
+subtest constraint_check_validation_ordering
 
 # Verification of column constraints vs CHECK handling. The column
 # constraint verification must take place first.
@@ -432,7 +432,7 @@ UPDATE tn2 SET x = NULL
 statement error value too long for type CHAR\(3\)
 UPDATE tn2 SET y = 'abcd'
 
-subtest fk_contraint_check_validation_ordering
+subtest fk_constraint_check_validation_ordering
 
 # Verify that column constraints and CHECK handling occur before
 # foreign key validation.
