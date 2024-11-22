@@ -53,7 +53,7 @@ SELECT * FROM test1 EXCEPT ALL SELECT * FROM test2;
 
 can return data, when logically they shouldn't.
 
-We will change this behavior and instead force all instances consuming from a given `(source_id, partition_id)` to read from the same worker, and then keep state about "what data have beeen assigned to what timestamps" in worker-local state, rather than operator local state.
+We will change this behavior and instead force all instances consuming from a given `(source_id, partition_id)` to read from the same worker, and then keep state about "what data have been assigned to what timestamps" in worker-local state, rather than operator local state.
 
 The worker will track, for each partition, a list of timestamp bindings, that are conceptually a mapping from `timestamp` to intervals `[start_offset, end_offset)`. When a source operator needs to timestamp a record for which there is no existing binding, it will propose a new binding from `current_timestamp` -> `[start_offset, end_offset')`. Periodically, the dataflow worker will finalize proposed bindings, and update the current timestamp and introduce a new timestamp binding for `new_timestamp -> [greatest_read_offset, greatest_read_offset)` that source operators can then propose new additions to.
 
