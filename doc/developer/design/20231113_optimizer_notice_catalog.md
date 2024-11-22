@@ -496,7 +496,7 @@ along with reasons why we opted for the current design.
 
 There is a design choice in how to ensure that notices that are no longer valid
 don't show up in `mz_optimizer_notices`. A notice is no longer valid when
-either its dependant `object_id` or one of its `dependency_ids` disappears.
+either its dependent `object_id` or one of its `dependency_ids` disappears.
 
 We can maintain this in two ways:
 

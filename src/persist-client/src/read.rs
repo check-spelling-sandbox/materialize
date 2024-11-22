@@ -204,7 +204,7 @@ where
     /// There is a best-effort impl in Drop for [`ReadHandle`] to expire the
     /// [`ReadHandle`] held by the subscribe that wasn't explicitly expired
     /// with this method. When possible, explicit expiry is still preferred
-    /// because the Drop one is best effort and is dependant on a tokio
+    /// because the Drop one is best effort and is dependent on a tokio
     /// [Handle] being available in the TLC at the time of drop (which is a bit
     /// subtle). Also, explicit expiry allows for control over when it happens.
     pub async fn expire(mut self) {
@@ -469,7 +469,7 @@ where
     /// There is a best-effort impl in Drop for [`ReadHandle`] to expire the
     /// [`ReadHandle`] held by the listen that wasn't explicitly expired with
     /// this method. When possible, explicit expiry is still preferred because
-    /// the Drop one is best effort and is dependant on a tokio [Handle] being
+    /// the Drop one is best effort and is dependent on a tokio [Handle] being
     /// available in the TLC at the time of drop (which is a bit subtle). Also,
     /// explicit expiry allows for control over when it happens.
     pub async fn expire(self) {
@@ -864,7 +864,7 @@ where
     ///
     /// There is a best-effort impl in Drop to expire a reader that wasn't
     /// explictly expired with this method. When possible, explicit expiry is
-    /// still preferred because the Drop one is best effort and is dependant on
+    /// still preferred because the Drop one is best effort and is dependent on
     /// a tokio [Handle] being available in the TLC at the time of drop (which
     /// is a bit subtle). Also, explicit expiry allows for control over when it
     /// happens.

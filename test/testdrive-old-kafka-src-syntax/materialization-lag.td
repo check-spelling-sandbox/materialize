@@ -143,7 +143,7 @@ snk
     global_lag > INTERVAL '5s'
 
 # If a source has an empty frontier we can't compute a lag value anymore, so
-# the lag of dependant collections shows up as NULL instead.
+# the lag of dependent collections shows up as NULL instead.
 
 > ALTER CLUSTER compute SET (REPLICATION FACTOR 0)
 
@@ -160,7 +160,7 @@ snk
   WHERE name = 'mv_behind_empty'
 <null> <null>
 
-# Once the dependant collection manages to catch up, the lag should become 0.
+# Once the dependent collection manages to catch up, the lag should become 0.
 
 > ALTER CLUSTER compute SET (REPLICATION FACTOR 1)
 

@@ -2707,7 +2707,7 @@ impl Coordinator {
     /// resulting dataflow plans into the catalog state.
     ///
     /// `ordered_catalog_entries` must be sorted in dependency order, with dependencies ordered
-    /// before their dependants.
+    /// before their dependents.
     ///
     /// This method does not perform timestamp selection for the dataflows, nor does it create them
     /// in the compute controller. Both of these steps happen later during bootstrapping.

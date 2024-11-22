@@ -1735,26 +1735,26 @@ impl Coordinator {
                 ObjectId::Item(id) => {
                     if let Some(index) = self.catalog().get_entry(id).index() {
                         let humanizer = self.catalog().for_session(session);
-                        let dependants = self
+                        let dependents = self
                             .controller
                             .compute
                             .collection_reverse_dependencies(index.cluster_id, index.global_id())
                             .ok()
                             .into_iter()
                             .flatten()
-                            .filter(|dependant_id| {
+                            .filter(|dependent_id| {
                                 // Transient Ids belong to Peeks. We are not interested for now in
                                 // peeks depending on a dropped index.
                                 // TODO: show a different notice in this case. Something like
                                 // "There is an in-progress ad hoc SELECT that uses the dropped
                                 // index. The resources used by the index will be freed when all
                                 // such SELECTs complete."
-                                if dependant_id.is_transient() {
+                                if dependent_id.is_transient() {
                                     return false;
                                 }
                                 // The item should exist, but don't panic if it doesn't.
                                 let Some(dependent_id) = humanizer
-                                    .try_get_item_by_global_id(dependant_id)
+                                    .try_get_item_by_global_id(dependent_id)
                                     .map(|item| item.id())
                                 else {
                                     return false;
@@ -1763,19 +1763,19 @@ impl Coordinator {
                                 // problem, so we don't want a notice.
                                 !ids_set.contains(&ObjectId::Item(dependent_id))
                             })
-                            .flat_map(|dependant_id| {
+                            .flat_map(|dependent_id| {
                                 // If we are not able to find a name for this ID it probably means
                                 // we have already dropped the compute collection, in which case we
                                 // can ignore it.
-                                humanizer.humanize_id(dependant_id)
+                                humanizer.humanize_id(dependent_id)
                             })
                             .collect_vec();
-                        if !dependants.is_empty() {
+                        if !dependents.is_empty() {
                             dropped_in_use_indexes.push(DroppedInUseIndex {
                                 index_name: humanizer
                                     .humanize_id(index.global_id())
                                     .unwrap_or(id.to_string()),
-                                dependant_objects: dependants,
+                                dependent_objects: dependents,
                             });
                         }
                     }

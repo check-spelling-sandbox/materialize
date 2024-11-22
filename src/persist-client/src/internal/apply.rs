@@ -511,7 +511,7 @@ where
         // Find out if this command has been selected to perform gc, so
         // that it will fire off a background request to the
         // GarbageCollector to delete eligible blobs and truncate the
-        // state history. This is dependant both on `maybe_gc` returning
+        // state history. This is dependent both on `maybe_gc` returning
         // Some _and_ on this state being successfully compare_and_set.
         //
         // NB: Make sure this overwrites `garbage_collection` on every

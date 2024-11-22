@@ -75,7 +75,7 @@ pub struct FlatPlan<T = mz_repr::Timestamp> {
     steps: BTreeMap<LirId, FlatPlanStep<T>>,
     /// The ID of the root node.
     root: LirId,
-    /// The topological order of nodes (dependencies before dependants).
+    /// The topological order of nodes (dependencies before dependents).
     topological_order: Vec<LirId>,
 }
 

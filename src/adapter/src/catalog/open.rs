@@ -897,10 +897,10 @@ impl Catalog {
         let mut sorted_entries = Vec::new();
         visited_set.insert(id);
         let entry = state.get_entry(&id);
-        for dependant in entry.used_by() {
-            if !visited_set.contains(dependant) {
+        for dependent in entry.used_by() {
+            if !visited_set.contains(dependent) {
                 let child_topological_sort =
-                    Catalog::topological_sort(state, *dependant, visited_set);
+                    Catalog::topological_sort(state, *dependent, visited_set);
                 sorted_entries.extend(child_topological_sort);
             }
         }

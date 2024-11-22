@@ -450,9 +450,9 @@ impl fmt::Display for AdapterNotice {
             }
             AdapterNotice::DroppedInUseIndex(DroppedInUseIndex {
                 index_name,
-                dependant_objects,
+                dependent_objects,
             }) => {
-                write!(f, "The dropped index {index_name} is being used by the following objects: {}. The index is now dropped from the catalog, but it will continue to be maintained and take up resources until all dependent objects are dropped, altered, or Materialize is restarted!", separated(", ", dependant_objects))
+                write!(f, "The dropped index {index_name} is being used by the following objects: {}. The index is now dropped from the catalog, but it will continue to be maintained and take up resources until all dependent objects are dropped, altered, or Materialize is restarted!", separated(", ", dependent_objects))
             }
             AdapterNotice::PerReplicaLogRead { log_names } => {
                 write!(f, "Queried introspection relations: {}. Unlike other objects in Materialize, results from querying these objects depend on the current values of the `cluster` and `cluster_replica` session variables.", log_names.join(", "))
@@ -488,7 +488,7 @@ impl fmt::Display for AdapterNotice {
 #[derive(Clone, Debug)]
 pub struct DroppedInUseIndex {
     pub index_name: String,
-    pub dependant_objects: Vec<String>,
+    pub dependent_objects: Vec<String>,
 }
 
 impl From<PlanNotice> for AdapterNotice {

@@ -223,7 +223,7 @@ Even without any new features, users could keep the data in a table instead of a
 
 ### `REFRESH NEVER` MVs Periodically Recreated by Externally Scheduled Jobs
 
-`REFRESH NEVER` MVs would probably be also easy to implement. These would be sealed forever after their initial snapshot is done. With these, a user could manually simulate `REFRESH EVERY` by dropping and recreating the MV at every refresh. This would require users to manually create and drop also replicas around the time of the refresh, so this approach has the same drawback of the above, tables approach: it is too complex for users, as it requires complex external job scheduling. Another downside is that users would have to drop and recreate all dependants on every refresh.
+`REFRESH NEVER` MVs would probably be also easy to implement. These would be sealed forever after their initial snapshot is done. With these, a user could manually simulate `REFRESH EVERY` by dropping and recreating the MV at every refresh. This would require users to manually create and drop also replicas around the time of the refresh, so this approach has the same drawback of the above, tables approach: it is too complex for users, as it requires complex external job scheduling. Another downside is that users would have to drop and recreate all dependents on every refresh.
 
 ### `REFRESH ON DEMAND` MVs
 

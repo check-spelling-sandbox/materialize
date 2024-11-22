@@ -203,7 +203,7 @@ statement ok
 DROP MATERIALIZED VIEW mv
 
 
-# Test: Materialized views cannot be dropped if they have dependants.
+# Test: Materialized views cannot be dropped if they have dependents.
 
 statement ok
 CREATE MATERIALIZED VIEW mv AS SELECT 1
@@ -215,7 +215,7 @@ statement error cannot drop materialized view "mv": still depended upon by view 
 DROP MATERIALIZED VIEW mv
 
 
-# Test: Materialized views with dependants can be dropped with CASCADE.
+# Test: Materialized views with dependents can be dropped with CASCADE.
 
 statement ok
 DROP MATERIALIZED VIEW mv CASCADE
