@@ -27,7 +27,7 @@ use crate::crd::vpc_endpoint::v1::{VpcEndpointState, VpcEndpointStatus};
 pub mod crd;
 
 /// A prefix for an [external ID] to use for all AWS AssumeRole operations. It
-/// should be concatenanted with a non-user-provided suffix identifying the
+/// should be concatenated with a non-user-provided suffix identifying the
 /// source or sink. The ID used for the suffix should never be reused if the
 /// source or sink is deleted.
 ///
