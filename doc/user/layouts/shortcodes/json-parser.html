@@ -84,7 +84,7 @@ function handleJson(source, sample, columnName) {
 }
 
 /// Recursively iterates through the provided object, tracking the chain
-/// of parent fields for later use in naming and desctructuring.
+/// of parent fields for later use in naming and destructuring.
 function expandObject(object, parents, columns) {
     if (Array.isArray(object)) {
         handleArray(object, parents, columns);
