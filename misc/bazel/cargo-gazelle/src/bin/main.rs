@@ -129,7 +129,7 @@ fn main() -> Result<(), anyhow::Error> {
             .into_iter()
             .map(|handle| handle.join().expect("failed to join!"))
             .collect::<Result<_, anyhow::Error>>()
-            .context("genrating a BUILD.bazel file")?;
+            .context("generating a BUILD.bazel file")?;
 
         let updates: Vec<_> = results.into_iter().filter_map(|x| x).collect();
 

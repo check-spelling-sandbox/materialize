@@ -210,7 +210,7 @@ If `EXPOSE PROGRESS` is not specified, and the source type is reclockable,
 Materialize will generate a name of the form `<source>_progress`. If that name
 already exists, Materialize will try names of the form `<source>_progress1`,
 `<source>_progress2`, ... in sequence until it finds an available name. This
-matches the logic used for generatic the name of a primary index for a table.
+matches the logic used for generating the name of a primary index for a table.
 
 The reclocked relation will be a new catalog item of type `SourceProgress`:
 
