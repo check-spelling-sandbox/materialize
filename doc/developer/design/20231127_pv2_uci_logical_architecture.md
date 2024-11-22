@@ -180,7 +180,7 @@ At a high level, processing of these queries goes like this (abridged):
 1. External command `CREATE TABLE foo [..]` comes in
 2. Command is processed: update Catalog, send commands to Controller
 3. External Insert command comes in, this writes inserts into a queue
-4. An internal GroupCommmit message is synthesized
+4. An internal GroupCommit message is synthesized
 5. Internal GroupCommit message is processed, writing to tables, at the end we
    spawn an internal GroupCommitApply message
 6. The internal GroupCommitApply is processed, which spawns an Internal
