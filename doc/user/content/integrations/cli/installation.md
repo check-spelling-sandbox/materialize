@@ -53,7 +53,7 @@ curl -L https://binaries.materialize.com/mz-latest-$(uname -m)-unknown-linux-gnu
 
 You can use the `materialize/mz` Docker image to run `mz` on any platform that
 is supported by Docker. You'll need to mount your local `~/.mz` directory in the
-container to ensure that configuration settings and authentiation tokens outlive
+container to ensure that configuration settings and authentication tokens outlive
 the container.
 
 ```
