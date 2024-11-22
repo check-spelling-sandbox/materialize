@@ -921,7 +921,7 @@ protobuf encoded objects) they lack the features of group 2 which work well for
 large amounts of data, e.g. compression or dictionary encoding.
 
 Out of the formats in group 2, it's generally accepted that columnar formatted
-data is better for analytical workloads. That elimates row based formats like
+data is better for analytical workloads. That eliminates row based formats like
 Apache Avro, CSV, and jsonl.
 
 The only serialization format, other than Apache Parquet, I could find that was
