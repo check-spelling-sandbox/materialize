@@ -796,7 +796,7 @@ where
                     // Peel as many consecutive reclockable items as possible. It is not beneficial
                     // to go further even if theoretically there may be more messages ready to be
                     // reclocked further along because in the common case the message order is
-                    // correleated with time and therefore in the common case we would be wasting
+                    // correlated with time and therefore in the common case we would be wasting
                     // work trying to compare all the buffered messages with the frontier.
                     let mut reclockable_count = untimestamped_batches
                         .iter()
