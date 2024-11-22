@@ -169,7 +169,7 @@ class RestartEntireMz(Scenario):
 
 ```
 
-A Scenario always contains 5 mandatory steps -- starting a Mz instance, and the exection of the initialization,
+A Scenario always contains 5 mandatory steps -- starting a Mz instance, and the execution of the initialization,
 manipulation (twice) and validation of all participating Checks. Any Actions that restart or upgrade containers
 are then interspersed between those steps. Two `Manipulate` sections are run so that more complex, drawn-out
 upgrade scenarios can be tested while ensuring that database activity happens during every stage of the upgrade.
