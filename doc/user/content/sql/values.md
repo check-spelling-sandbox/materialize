@@ -19,7 +19,7 @@ the parenthesis represent the values of the columns in that row.
 
 ## Details
 
-`VALUES` expressionscan be used anywhere that [`SELECT`] statements are valid.
+`VALUES` expressions can be used anywhere that [`SELECT`] statements are valid.
 They are most commonly used in [`INSERT`] statements, but can also be used
 on their own.
 
