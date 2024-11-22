@@ -14,7 +14,7 @@
 //! a vector of error messages.
 //!
 //! [`Error`](`enum@Error`) is a custom error type containing multiple variants
-//! for erros produced by the self crate, internal crates and external crates.
+//! for errors produced by the self crate, internal crates and external crates.
 
 use hyper::header::{InvalidHeaderValue, ToStrError};
 use thiserror::Error;
