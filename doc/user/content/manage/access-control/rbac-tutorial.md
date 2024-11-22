@@ -275,7 +275,7 @@ You can revoke certain privileges for each role, even if they are inherited from
 
    {{< note >}}
    If you need to revoke specific privileges from a role that have been
-   inheritied from another role, you must revoke the role with those privileges.
+   inherited from another role, you must revoke the role with those privileges.
 
    ```mzsql
    REVOKE qa_role FROM dev_role;
