@@ -157,7 +157,7 @@ class TestGenerateSeries(BaseGenerateSeries):
     pass
 
 
-class TestGetIntervalsBeteween(BaseGetIntervalsBetween):
+class TestGetIntervalsBetween(BaseGetIntervalsBetween):
     @pytest.fixture(scope="class")
     def models(self):
         return {
