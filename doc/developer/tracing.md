@@ -149,7 +149,7 @@ _automatically_ collected and exported to analysis tools with _no additional wor
 
 ### Span visualization
 
-OpenTelemetry UI's like the Grafana/Tempo one in the local setup _are extraordinarly powerful tools for debugging_. They allow you to visualize
+OpenTelemetry UI's like the Grafana/Tempo one in the local setup _are extraordinarily powerful tools for debugging_. They allow you to visualize
 and inspect the exact control flow graph of your service, including the latency of each operation, and contextual recorded fields. See
 [Best Practices](#best-practices) for more information.
 
