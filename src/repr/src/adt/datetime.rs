@@ -1542,7 +1542,7 @@ struct AnnotatedIntervalPart {
 }
 
 /// Determines the format of the interval part (uses None to identify an
-/// indeterminant/ambiguous format). This is necessary because the interval
+/// indeterminate/ambiguous format). This is necessary because the interval
 /// string format is not LL(1); we instead parse as few tokens as possible to
 /// generate the string's semantics.
 ///
