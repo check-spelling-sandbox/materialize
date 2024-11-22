@@ -229,6 +229,6 @@ Each cache entry would be saved as a file of the format
 - Which implementation should we use?
 - If we use the persist implementation, how do we coordinate writes across pods?
   - I haven't thought much about this, but here's one idea. The cache will maintain a subscribe on
-    the persist shard. Everytime it experiences an upper mismatch, it will listen for all new
+    the persist shard. Every time it experiences an upper mismatch, it will listen for all new
     changes. If any of the changes contain the current deploy generation, then panic, else ignore
     them.

@@ -94,7 +94,7 @@ We will also support the following session specific attributes:
 | login privilege           | `LOGIN`         | Roles with this attribute can establish a database connection.                                                                                        | Yes             |
 | superuser status          | `SUPERUSER`     | Can bypass all permission checks, except login.                                                                                                       | Yes             |
 
-These attributes are derived everytime a user tries to log in and only lasts as long as the session is active. You
+These attributes are derived every time a user tries to log in and only lasts as long as the session is active. You
 cannot specify these attributes in `CREATE ROLE` or `ALTER ROLE`. We use the following logic at every login:
 
 - When you log in to a role and are successfully authenticated, then you implicitly get the `LOGIN` attribute for that

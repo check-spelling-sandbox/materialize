@@ -797,8 +797,8 @@ impl<'a> Transaction<'a> {
             return Err(CatalogError::Catalog(SqlCatalogError::OidExhaustion));
         }
 
-        // This is potentially slow to do everytime we allocate an OID. A faster approach might be
-        // to have an ID allocator that is updated everytime an OID is allocated or de-allocated.
+        // This is potentially slow to do every time we allocate an OID. A faster approach might be
+        // to have an ID allocator that is updated every time an OID is allocated or de-allocated.
         // However, benchmarking shows that this doesn't make a noticeable difference and the other
         // approach requires making sure that allocator always stays in-sync which can be
         // error-prone. If DDL starts slowing down, this is a good place to try and optimize.

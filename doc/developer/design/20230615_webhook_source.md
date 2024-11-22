@@ -344,7 +344,7 @@ update `TABLE`s to make `INSERT`s optionally linearizable, but this work probabl
 given we also have reason 1.
 
 The second alternative is to build this new kind of storage owned Source, which gets installed on a
-cluster and can do more complex operations everytime a request is received. We plan to build
+cluster and can do more complex operations every time a request is received. We plan to build
 something like this in the future, but at the moment this would require a large amount of work,
 and we first we want to validate that webhooks are a feature users actually want.
 
