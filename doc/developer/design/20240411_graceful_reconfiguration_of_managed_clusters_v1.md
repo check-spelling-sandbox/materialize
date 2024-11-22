@@ -234,7 +234,7 @@ and sinks we can remove the disruptive mechanism and default the wait to `WAIT=F
 The responsibilities of this operation will be:
 1. checking for cancellations
 2. checking for the `WAIT` condition
-3. finalizaing the reconfiguration
+3. finalizing the reconfiguration
 4. returning to the user
 
 __Checking the `WAIT` Condition__
