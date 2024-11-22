@@ -141,6 +141,6 @@ Our recipe for "practical reclocking" is therefore:
 1. Maintain a durable collection `remap` containing `FromTime` at each `IntoTime`.
 2. For each `IntoTime` that is durable in `remap`, summarize all input records up through `remap`'s `FromTime` at that `IntoTime`.
     a. The summary should contain an output collection of published records, varying as a function of `IntoTime`.
-    b. The summary may optionally contain auxiliary information ("state"), varying as a funtion of `IntoTime`.
+    b. The summary may optionally contain auxiliary information ("state"), varying as a function of `IntoTime`.
 
 The summary should have the property that for any `remap`, all `it` in `IntoTime` produce identical summaries when restarted with their inputs at `remap[it]`, and their summary at `it`.
