@@ -11,7 +11,7 @@
 #
 # ci-python-imports - List all files transitively imported by a mzcompose
 # composition. This is a separate script instead of a module to prevent
-# polluting namespaces and inherting a polluted namespace.
+# polluting namespaces and inheriting a polluted namespace.
 
 import os
 import sys
@@ -25,7 +25,7 @@ def main() -> int:
         description="""
 ci-python-imports - List all files transitively imported by a mzcompose
 composition. This is a separate script instead of a module to prevent polluting
-namespaces and inherting a polluted namespace.""",
+namespaces and inheriting a polluted namespace.""",
     )
     parser.add_argument("path", type=str, help="path to composition")
     args = parser.parse_args()
