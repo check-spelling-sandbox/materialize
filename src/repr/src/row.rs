@@ -2206,7 +2206,7 @@ impl RowPacker<'_> {
     /// # Notes
     /// - This function canonicalizes the range before pushing it to the row.
     /// - Prefer this function over `push_range_with` because of its
-    ///   canonicaliztion.
+    ///   canonicalization.
     /// - Prefer creating [`RangeBound`]s using [`RangeBound::new`], which
     ///   handles `Datum::Null` in a SQL-friendly way.
     pub fn push_range<'a>(&mut self, mut range: Range<Datum<'a>>) -> Result<(), InvalidRangeError> {
