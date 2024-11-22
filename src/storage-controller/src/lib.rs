@@ -3628,7 +3628,7 @@ where
 
     // We create a new read handle every time someone requests a snapshot and then immediately
     // expire it instead of keeping a read handle permanently in our state to avoid having it
-    // heartbeat continously. The assumption is that calls to snapshot are rare and therefore
+    // heartbeat continuously. The assumption is that calls to snapshot are rare and therefore
     // worth it to always create a new handle.
     let read_handle = persist_client
         .open_leased_reader::<SourceData, (), _, _>(

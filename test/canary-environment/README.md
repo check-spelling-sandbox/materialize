@@ -23,13 +23,13 @@ The TPC-H queries to materialize were chosen as to include both outer joins and 
 
 The postgres source is an RDS instance running in AWS that is replicating two tables.
 
-In order to continously emit updates, pg_cron jobs that update the tables are set up to run with a 1-second interval.
+In order to continuously emit updates, pg_cron jobs that update the tables are set up to run with a 1-second interval.
 
 ## MySQL source (`models/mysql-cdc`)
 
 The mysql source is an RDS instance running in AWS that is replicating two tables.
 
-In order to continously emit updates, events that update the tables are set up to run with a 1-second interval.
+In order to continuously emit updates, events that update the tables are set up to run with a 1-second interval.
 
 ## Kafka sources (`models/loadgen`)
 

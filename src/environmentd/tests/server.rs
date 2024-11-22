@@ -3201,7 +3201,7 @@ async fn webhook_concurrent_actions() {
     // Track how many requests were resolved before we dropped the collection.
     let num_requests_before_drop = Arc::new(AtomicUsize::new(0));
 
-    // Spin up tasks that will contiously push data to the webhook.
+    // Spin up tasks that will continuously push data to the webhook.
     let keep_sending_ = Arc::clone(&keep_sending);
     let num_requests_before_drop_ = Arc::clone(&num_requests_before_drop);
     let addr = server.inner.http_local_addr();
@@ -3552,7 +3552,7 @@ async fn webhook_concurrent_swap() {
         .await
         .expect("failed to create source");
 
-    // Spin up tasks that will contiously push data to both webhooks.
+    // Spin up tasks that will continuously push data to both webhooks.
     let addr = server.inner.http_local_addr();
     let http_client = reqwest::Client::new();
     let keep_sending = Arc::new(AtomicBool::new(true));
