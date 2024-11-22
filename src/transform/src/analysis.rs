@@ -770,7 +770,7 @@ mod unique_keys {
     }
 }
 
-/// Determines if accumulated frequences can be negative.
+/// Determines if accumulated frequencies can be negative.
 ///
 /// This analysis assumes that globally identified collection have the property, and it is
 /// incorrect to apply it to expressions that reference external collections that may have
