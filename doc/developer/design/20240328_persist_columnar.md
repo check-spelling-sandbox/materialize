@@ -942,7 +942,7 @@ required to invent our own format, considering where we are today.
 ### Why Arrow?
 
 There are not many in-memory columnar formats other than Arrow. I did find
-[lance](https://github.com/lancedb/lance) which is a farily popular columnar
+[lance](https://github.com/lancedb/lance) which is a fairly popular columnar
 format written in Rust, but it's geared towards Machine Learning and LLMs. In
 fact, when I looked a bit deeper parts of `lance` seemed to use Arrow directly?
 Given this and the different goals it doesn't seem like it would be a good fit.
