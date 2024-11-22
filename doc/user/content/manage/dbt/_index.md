@@ -886,7 +886,7 @@ for a reference implementation).
 
 ### Generate documentation
 
-[//]: # "TODO(morsapaes) Mention exposures and DAG costumization (e.g., colors)."
+[//]: # "TODO(morsapaes) Mention exposures and DAG customization (e.g., colors)."
 
 dbt can automatically generate [documentation](https://docs.getdbt.com/docs/building-a-dbt-project/documentation)
 for your project as a shareable website. This brings **data governance** to your
