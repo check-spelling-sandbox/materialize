@@ -225,7 +225,7 @@ pub enum AdapterError {
     UnreadableSinkCollection,
     /// User sessions have been blocked.
     UserSessionsDisallowed,
-    /// This use session has been deneid by a NetworkPolicy.
+    /// This use session has been denied by a NetworkPolicy.
     NetworkPolicyDenied(NetworkPolicyError),
     /// Something attempted a write (to catalog, storage, tables, etc.) while in
     /// read-only mode.
