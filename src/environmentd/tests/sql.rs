@@ -3380,7 +3380,7 @@ async fn test_retain_history() {
                 let upper = source.write_frontier.into_element();
                 let since = source.read_frontier.into_element();
                 if upper.saturating_sub(since) < Timestamp::from(2000u64) {
-                    anyhow::bail!("{upper} - {since} should be atleast 2s apart")
+                    anyhow::bail!("{upper} - {since} should be at least 2s apart")
                 }
                 client
                     .query(
