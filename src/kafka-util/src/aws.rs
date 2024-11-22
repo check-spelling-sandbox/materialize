@@ -46,7 +46,7 @@ pub enum SignerError {
     #[error("failed to provide credentials: {0}")]
     ProvideCredentials(#[from] CredentialsError),
     /// An error constructing the authentication token.
-    #[error("failed constuct auth token: {0}")]
+    #[error("failed construct auth token: {0}")]
     ConstructAuthToken(String),
 }
 
