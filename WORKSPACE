@@ -308,7 +308,7 @@ c_repositories()
 
 # `rules_rust`
 #
-# Rules for building Rust crates, and several convienence macros for building all transitive
+# Rules for building Rust crates, and several convenience macros for building all transitive
 # dependencies.
 
 RULES_RUST_VERSION = "0.53.0"

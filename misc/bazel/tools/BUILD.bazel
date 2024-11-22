@@ -50,7 +50,7 @@ native_binary(
     ),
 )
 
-# Convience wrapper around `cargo-gazelle` that specifies our formatter.
+# Convenience wrapper around `cargo-gazelle` that specifies our formatter.
 sh_binary(
     name = "cargo-gazelle",
     srcs = ["@//misc/bazel/cargo-gazelle:main"],
