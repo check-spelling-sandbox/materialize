@@ -6012,7 +6012,7 @@ pub static MZ_INDEX_ADVICE: LazyLock<BuiltinView> = LazyLock::new(|| {
 -- Note that the recommendations only incorporate dependencies between objects.
 -- This can lead to bad recommendations, e.g. filters can no longer be pushed into (or close to)
 -- a sink if an index is added in between the sink and the filter. For very selecive filters,
--- this can lead to tedundant work: the index is computing stuff only to dicarded by the selective
+-- this can lead to tedundant work: the index is computing stuff only to discarded by the selective
 -- filter later on. But these kind of aspects cannot be understood by merely looking at the
 -- dependencies.
 WITH MUTUALLY RECURSIVE
