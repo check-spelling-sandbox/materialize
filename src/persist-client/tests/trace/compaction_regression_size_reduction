@@ -12,7 +12,7 @@
 # received new fuel, we compared progress against self.b1.len() + self.b2.len()
 # to see how much work remained. However, because we (quite surprisingly) swap
 # out the innards of a batch when applying a compaction response, if the
-# compaction resulted in consolication of updates, a batch len could become
+# compaction resulted in consolidation of updates, a batch len could become
 # smaller. This could lead to a situation where progress was greater than the
 # sum of the two batch lengths. In debug, this would present as a subtraction
 # underflow panic. In release, it would actually underflow and result in a batch
