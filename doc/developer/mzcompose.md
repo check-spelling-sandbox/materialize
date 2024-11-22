@@ -172,7 +172,7 @@ c.up("schema-registry")
 
 ## Executing SQL
 
-A test cannot be considered complete if it does not connnect to the Materialize instance to run SQL commands.
+A test cannot be considered complete if it does not connect to the Materialize instance to run SQL commands.
 
 ### Accessing Materialize directly from Python
 

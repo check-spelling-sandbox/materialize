@@ -392,7 +392,7 @@ def workflow_pg_restart_bastion(c: Composition) -> None:
 
     c.run_testdrive_files("--no-reset", "pg-source-ingest-more.td")
 
-    # we do this after we assert that we re-connnected
+    # we do this after we assert that we re-connected
     # with the passing td file, to ensure that the
     # docker image was setup before we actually start reading
     # stuff from it
