@@ -11,7 +11,7 @@ This document proposes an encoding to be adopted for these purposes based on Goo
 ## Goals
 
 1. Propose a general strategy for serializing and deserializing API message types into a binary format that can be sued both for (a) network transfer and (b) durable storage.
-2. Consider how the proposed strategy will facilitate maintaining backwards-compatibile code as the set of commands and responses in the API evolves over time.
+2. Consider how the proposed strategy will facilitate maintaining backwards-compatible code as the set of commands and responses in the API evolves over time.
 
 ## Non-Goals
 
