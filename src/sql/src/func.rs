@@ -1469,9 +1469,9 @@ impl PolymorphicSolution {
                         .iter()
                         .filter_map(|f| f.as_coerced().cloned())
                         .collect::<Vec<_>>();
-                    let (candiate, remaining) =
+                    let (candidate, remaining) =
                         s.split_first().expect("have at least one non-None element");
-                    if remaining.iter().all(|r| r.base_eq(candiate)) {
+                    if remaining.iter().all(|r| r.base_eq(candidate)) {
                         s.remove(0)
                     } else {
                         return false;
