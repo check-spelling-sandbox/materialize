@@ -250,7 +250,7 @@ Two example of this are:
 2.  Some of the pipeline may be non-deterministic.
 
     If the non-determinism may lead to different results, we need to capture the choices made and play forward from them.
-    Reclocking is an example of non-determinism, where it is important to commit the results to `persist`, and then read out of `persist` to be sure to use the commited choices.
+    Reclocking is an example of non-determinism, where it is important to commit the results to `persist`, and then read out of `persist` to be sure to use the committed choices.
     It may be important to use only a single `persist` shard if the non-determinism must be committed all at once (otherwise, the commits might only land in a subset of the shards).
 
 ![source pipeline](assets/storage-architecture-sources.png)

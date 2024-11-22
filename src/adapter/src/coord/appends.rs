@@ -49,7 +49,7 @@ impl DeferredWriteOp {
     /// Certain operations, e.g. "blind writes"/`INSERT` statements, can be optimistically retried
     /// because we can share a write lock between multiple operations. In this case we wait to
     /// acquire the locks until [`group_commit`], where writes are groupped by collection and
-    /// comitted at a single timestamp.
+    /// committed at a single timestamp.
     ///
     /// Other operations, e.g. read-then-write plans/`UPDATE` statements, must uniquely hold their
     /// write locks and thus we should acquire the locks in [`try_deferred`] to prevent multiple

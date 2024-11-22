@@ -113,7 +113,7 @@ After the initial snapshot, there should be relatively little skew between
 that the source has fallen behind, and that you likely need to scale it up.
 
 `messages_received` does not necessarily correspond with `updates_staged`
-and `updates_commmited`. For example, a source with `ENVELOPE UPSERT` can have _more_
+and `updates_commit`. For example, a source with `ENVELOPE UPSERT` can have _more_
 updates than messages, because messages can cause both deletions and insertions
 (i.e. when they update a value for a key), which are both counted in the
 `updates_*` statistics. There can also be _fewer_ updates than messages, as
