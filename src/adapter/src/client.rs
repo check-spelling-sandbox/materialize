@@ -845,7 +845,7 @@ impl SessionClient {
         } = self;
 
         // TODO(parkmycar): Leaking this invariant here doesn't feel great, but calling
-        // `self.client()` doesn't work because then Rust takes a borrow on the entirity of self.
+        // `self.client()` doesn't work because then Rust takes a borrow on the entirety of self.
         let inner_client = inner_client.as_ref().expect("inner invariant violated");
 
         // ~~SPOOKY ZONE~~
