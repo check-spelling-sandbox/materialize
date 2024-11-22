@@ -310,7 +310,7 @@ impl LanguageServer for Backend {
                         .map_err(|_| build_error("Error parsing the statements."))?;
 
                     // Transform raw statements to splitted statements
-                    // and infere the kind.
+                    // and infer the kind.
                     // E.g. if it is a select or a create_table statement.
                     let parse_statements: Vec<ExecuteCommandParseStatement> = statements
                         .iter()
