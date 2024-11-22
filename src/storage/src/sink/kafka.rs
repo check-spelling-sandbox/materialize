@@ -847,7 +847,7 @@ async fn determine_sink_progress(
         "enable.partition.eof" => "true".into(),
     };
 
-    // Construct two cliens in read committed and read uncommitted isolations respectively. See
+    // Construct two clients in read committed and read uncommitted isolations respectively. See
     // comment below for an explanation on why we need it.
     let progress_client_read_committed: BaseConsumer<_> = {
         let mut opts = common_options.clone();
