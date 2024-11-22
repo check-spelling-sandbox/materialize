@@ -147,7 +147,7 @@ Strict Serializability across restarts.
 Write read cycles (write followed by read followed by write followed by read etc) and consecutive writes can cause the
 global timestamp to increase in an unbounded fashion.
 
-NOTE: Recall that each timeline has some definiton of the current time (i.e. the system clock) and a current timestamp
+NOTE: Recall that each timeline has some definition of the current time (i.e. the system clock) and a current timestamp
 (the timestamp most recently assigned to an operation).
 
 Proposal: All writes across all sessions per timeline should be added to a queue. If the current timestamp of the global
