@@ -1845,7 +1845,7 @@ def workflow_main(c: Composition, parser: WorkflowArgumentParser) -> None:
     parser.add_argument(
         "--find-limit",
         action="store_true",
-        help="Increase limit until the test fails, record higehst limit that works",
+        help="Increase limit until the test fails, record highest limit that works",
     )
     args = parser.parse_args()
 
