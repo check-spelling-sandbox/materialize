@@ -78,7 +78,7 @@ text
 $ kafka-delete-topic-flaky topic=topic1
 
 # Even though `kafka-delete-topic` ensures that the topic no longer exists in
-# the broker metadata there is still work to be done asychnronously before it's
+# the broker metadata there is still work to be done asynchronously before it's
 # truly gone that must complete before we attempt to recreate it. There is no
 # way to observe this work completing so the only option left is sleeping for a
 # while. This is the sad state of Kafka. If this test ever becomes flaky let's

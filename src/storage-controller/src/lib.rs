@@ -2701,7 +2701,7 @@ where
 
         // Translate our net compute actions into `AllowCompaction` commands and
         // downgrade persist sinces. The actual downgrades are performed by a Tokio
-        // task asynchorously.
+        // task asynchronously.
         //
         // N.B. We only downgrade persist sinces for collections because
         // exports/sinks don't have an associated collection. We still _do_ want

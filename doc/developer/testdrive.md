@@ -712,7 +712,7 @@ Create a Kafka topic
 Delete a Kafka topic
 
 Even though `kafka-delete-topic-flaky` ensures that the topic no longer exists
-in the broker metadata there is still work to be done asychnronously before
+in the broker metadata there is still work to be done asynchronously before
 it's truly gone that must complete before we attempt to recreate it. There is
 no way to observe this work completing so the only option left is sleeping for
 a while after executing this command.
