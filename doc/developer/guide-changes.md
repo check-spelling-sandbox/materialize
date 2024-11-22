@@ -891,7 +891,7 @@ PR equivalent, the CL ("change list"), always contains exactly one commit.
 
 Why, then, did we write our own guide? The biggest reason was to allow our
 engineering practices to evolve independently. Has this guide skewed with
-reality? Then please submit a PR to update it! Frustated with something about
+reality? Then please submit a PR to update it! Frustrated with something about
 our engineering process? Then submit a PR with your proposed fix and ask for
 feedback!
 
