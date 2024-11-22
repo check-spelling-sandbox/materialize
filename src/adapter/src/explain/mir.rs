@@ -13,7 +13,7 @@
 //! wrapped in an [`Explainable`] newtype struct allows us to interpret more
 //! [`mz_repr::explain::ExplainConfig`] options. This is the case because
 //! attribute derivation and let normalization are defined in [`mz_transform`]
-//! and conssequently are not available for the default [`Explain`]
+//! and consequently are not available for the default [`Explain`]
 //! implementation for [`MirRelationExpr`] in [`mz_expr`].
 
 use mz_compute_types::dataflows::DataflowDescription;
