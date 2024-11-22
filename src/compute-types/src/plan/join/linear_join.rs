@@ -127,7 +127,7 @@ pub struct LinearStagePlan {
     /// The key expressions to use for the lookup relation.
     pub lookup_key: Vec<MirScalarExpr>,
     /// The closure to apply to the concatenation of the key columns,
-    /// the stream value columns, and the lookup value colunms.
+    /// the stream value columns, and the lookup value columns.
     pub closure: JoinClosure,
 }
 
