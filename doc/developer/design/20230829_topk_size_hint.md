@@ -489,7 +489,7 @@ we will evaluate if opportunity arises to address them expediently (leaving them
 
 ### Different hinting strategies
 
-Two main categories of approches were discussed to solve the problem:
+Two main categories of approaches were discussed to solve the problem:
 
 1. *Hints are about semantic properties:* If the user informs us of an `EXPECTED GROUP COUNT`,
 this hint could transcend the configuration of top-k operators. It could be used for

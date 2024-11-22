@@ -306,7 +306,7 @@ the "initialization" step as described in part 3, so new users will immediately 
 `STASH_VERSION: 15` which will contain the protobufs.
 
 
-> Note: There are two alternative approachs I thought of, but don't think are great:
+> Note: There are two alternative approaches I thought of, but don't think are great:
 > 1. Before running any of the existing Stash migrations, switch everything to protobufs and
      re-write the existing migrations using protos. I don't like this approach because we'd then
      have two version fields for the Stash, i.e. "version number" and "is proto". And we'd need
