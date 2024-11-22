@@ -1392,7 +1392,7 @@ where
                     with_snapshot: new_export_description.sink.with_snapshot,
                     partition_strategy: new_export_description.sink.partition_strategy.clone(),
                     version: new_export_description.sink.version,
-                    // Here we are about to send a RunSinkCommand with the current read capaibility
+                    // Here we are about to send a RunSinkCommand with the current read capability
                     // held by this sink. However, clusters are already running a version of the
                     // sink and nothing guarantees that by the time this command arrives at the
                     // clusters they won't have made additional progress such that this read

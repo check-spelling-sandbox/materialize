@@ -926,7 +926,7 @@ impl SourceRender for KafkaSourceConnection {
                             // We use try_downgrade here because during the initial snapshot phase the
                             // data capability is not beyond the progress capability and therefore a
                             // normal downgrade would panic. Once it catches up though the data
-                            // capbility is what's pushing the progress capability forward.
+                            // capability is what's pushing the progress capability forward.
                             let _ = part_cap.progress.try_downgrade(&upper);
                         }
                     }

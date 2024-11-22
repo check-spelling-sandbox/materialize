@@ -359,7 +359,7 @@ impl<'w, A: Allocate + 'static> Worker<'w, A> {
                     // of the operator implementation knows how to handle a disconnected client.
                     let _ = activator_tx.send(activator);
 
-                    //Hold onto capbility until we receive a disconnected error
+                    //Hold onto capability until we receive a disconnected error
                     let mut cap_opt = Some(capability);
                     // Drop capability if we are not the leader, as our queue will
                     // be empty and we will never use nor importantly downgrade it.
