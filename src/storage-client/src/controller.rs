@@ -348,7 +348,7 @@ pub trait StorageController: Debug {
     /// collections.
     ///
     /// A collection is "active" when it has a non empty frontier of read
-    /// capabilties.
+    /// capabilities.
     fn active_collection_metadatas(&self) -> Vec<(GlobalId, CollectionMetadata)>;
 
     /// Returns the IDs of all active ingestions for the given storage instance.

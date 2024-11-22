@@ -627,7 +627,7 @@ The layer also intercepts commands for identifiers it introduces.
     The method returns read capabilities for each of its outputs.
 
     The Compute layer retains the read capabilities it has been offered, and only downgrades them as it is certain they are not needed.
-    For example, the Compute layer will not downgrade its input read capabalities past the `since` of its outputs.
+    For example, the Compute layer will not downgrade its input read capabilities past the `since` of its outputs.
 
 The outputs of a dataflow may or may not make their way to durable TVCs in the Storage layer.
 All commands are durable upon return of the invocation.

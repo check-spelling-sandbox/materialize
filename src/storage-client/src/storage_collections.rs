@@ -115,7 +115,7 @@ pub trait StorageCollections: Debug {
     /// collections.
     ///
     /// A collection is "active" when it has a non empty frontier of read
-    /// capabilties.
+    /// capabilities.
     fn active_collection_metadatas(&self) -> Vec<(GlobalId, CollectionMetadata)>;
 
     /// Returns the frontiers of the identified collection.
@@ -140,7 +140,7 @@ pub trait StorageCollections: Debug {
     /// Atomically gets and returns the frontiers of all active collections.
     ///
     /// A collection is "active" when it has a non empty frontier of read
-    /// capabilties.
+    /// capabilities.
     fn active_collection_frontiers(&self) -> Vec<CollectionFrontiers<Self::Timestamp>>;
 
     /// Checks whether a collection exists under the given `GlobalId`. Returns

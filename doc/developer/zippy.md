@@ -117,4 +117,4 @@ class CreateView(Action):
 
 In this example, `CreateView` can be scheduled if one of the two sets is satisfied, that is, if a table OR a source already exists in the system.
 
-The `provides()` method returns a list of `Capabilites` that executing a given action provides to the system. For example, if the `CreateView` action will be creating a new view, it will return a `ViewExists` capability as a result of its `provides()` method. This will allow an action such as `ValidateView` , that has a `ViewExists` requirement, to be scheduled subsequently.
+The `provides()` method returns a list of `Capabilities` that executing a given action provides to the system. For example, if the `CreateView` action will be creating a new view, it will return a `ViewExists` capability as a result of its `provides()` method. This will allow an action such as `ValidateView` , that has a `ViewExists` requirement, to be scheduled subsequently.
