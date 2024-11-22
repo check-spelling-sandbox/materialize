@@ -269,7 +269,7 @@ class VersionPostExecutionInconsistencyIgnoreFilter(
     ) -> IgnoreVerdict:
         if (
             self.lower_version <= MZ_VERSION_0_109_0 <= self.higher_version
-            and self._aggregration_shortcut_changed(
+            and self._aggregation_shortcut_changed(
                 query_template, contains_aggregation
             )
         ):
@@ -351,7 +351,7 @@ class VersionPostExecutionInconsistencyIgnoreFilter(
     ) -> IgnoreVerdict:
         if (
             self.lower_version <= MZ_VERSION_0_109_0 <= self.higher_version
-            and self._aggregration_shortcut_changed(
+            and self._aggregation_shortcut_changed(
                 query_template, contains_aggregation
             )
         ):
@@ -361,7 +361,7 @@ class VersionPostExecutionInconsistencyIgnoreFilter(
             error, query_template, contains_aggregation, query_output_mode
         )
 
-    def _aggregration_shortcut_changed(
+    def _aggregation_shortcut_changed(
         self, query_template: QueryTemplate, contains_aggregation: bool
     ) -> bool:
         return query_template.matches_any_expression(
