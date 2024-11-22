@@ -264,7 +264,7 @@ __Handling Cancelation__
 The mechanism used for handling dropped connections can be used for cancelation.
 `cancel_compute_sync_for_conn` provides an example of this.
 
-__v2 coniderations__
+__v2 considerations__
 Reverting the reconfiguration
 On failure or timeout of the reconfiguration, this task will revert to the state
 prior to the `ALTER CLUSTER` DDL. It will remove reconfigure replicas, and ensure the
