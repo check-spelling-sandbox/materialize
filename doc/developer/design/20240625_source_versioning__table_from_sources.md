@@ -1,6 +1,6 @@
 # Source Versioning / Tables from Sources
 
-This design encompases 2 existing proposals also known as
+This design encompasses 2 existing proposals also known as
 'Subsource Demuxing' and 'Subsources as Tables'.
 
 Associated:
