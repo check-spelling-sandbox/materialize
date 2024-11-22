@@ -36,7 +36,7 @@ An Action is an mzcompose or testdrive operation that is performed during the te
 
 The complete list of actions is available here:
 
-## ActionFactores
+## ActionFactories
 
 An ActionFactory is a way to pass parameters to Actions, so that e.g. a different number of database objects will be created.
 
