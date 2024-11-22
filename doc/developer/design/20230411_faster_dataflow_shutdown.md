@@ -252,7 +252,7 @@ We expect to find more instances of dataflow operators that are slow to shut dow
 Insofar as these instances can be resolved by adding more token checks, we should do so.
 
 As mentioned in [#fuse-operators], a possible optimization would be to make the fuse operator advance to the empty froniter immediately once it observes the dataflow shutdown.
-We can consider implementing this optimization if we receive prove that it is worthwhile, provided we can convice ourselves that it is a safe thing to do.
+We can consider implementing this optimization if we receive prove that it is worthwhile, provided we can convince ourselves that it is a safe thing to do.
 
 This design does not consider issues caused by dataflow operators refusing to yield back to the Timely runtime.
 Examples of this are `FlatMap`s executing `generate_series` functions with high numbers ([#8853]), or high-cardinality joins over a small number of keys.
