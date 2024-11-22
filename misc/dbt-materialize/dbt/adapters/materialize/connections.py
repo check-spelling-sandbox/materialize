@@ -79,7 +79,7 @@ class MaterializeCredentials(PostgresCredentials):
     # cluster configured for the connected dbt user (or, the active cluster for
     # the connection). This is strictly better than hardcoding `quickstart` as
     # the `target.cluster`, which might not exist and leads to all sorts of
-    # annoying errors. This will still fail if the defalt cluster for the
+    # annoying errors. This will still fail if the default cluster for the
     # connected user is invalid or set to `mz_catalog_server` (which cannot be
     # modified).
     cluster: Optional[str] = None

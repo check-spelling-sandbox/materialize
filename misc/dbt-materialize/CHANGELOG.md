@@ -45,7 +45,7 @@
   cluster is specified. When no cluster is specified, either in `profiles.yml`
   or as a configuration, we should default to the default cluster configured
   for the connected dbt user (or, the active cluster for the connection). This
-  will still fail if the defalt cluster for the connected user is invalid or
+  will still fail if the default cluster for the connected user is invalid or
   set to `mz_catalog_server` (which cannot be modified).
 
 ## 1.8.4 - 2024-08-07
