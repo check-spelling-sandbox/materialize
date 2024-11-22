@@ -511,7 +511,7 @@ mod test {
         ];
 
         // Now we go through each one of them, encode it in two different ways using the normal
-        // Proto structs, which is how Materialize 0.68.1 and 0.69.1 would do it, and then attemp
+        // Proto structs, which is how Materialize 0.68.1 and 0.69.1 would do it, and then attempt
         // to decode them with the shim. The shim should correctly understand if it is reading a
         // new or legacy format.
 
