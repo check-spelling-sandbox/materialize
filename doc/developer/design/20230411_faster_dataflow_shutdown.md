@@ -251,7 +251,7 @@ Furthermore, DD is a public library, so it is not clear whether the maintainers 
 We expect to find more instances of dataflow operators that are slow to shut down under certain conditions, even after this design is implemented.
 Insofar as these instances can be resolved by adding more token checks, we should do so.
 
-As mentioned in [#fuse-operators], a possible optimization would be to make the fuse operator advance to the empty froniter immediately once it observes the dataflow shutdown.
+As mentioned in [#fuse-operators], a possible optimization would be to make the fuse operator advance to the empty frontier immediately once it observes the dataflow shutdown.
 We can consider implementing this optimization if we receive prove that it is worthwhile, provided we can convince ourselves that it is a safe thing to do.
 
 This design does not consider issues caused by dataflow operators refusing to yield back to the Timely runtime.
