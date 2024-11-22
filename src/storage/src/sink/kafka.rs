@@ -234,7 +234,7 @@ struct TransactionalProducer {
 
 impl TransactionalProducer {
     /// Initializes a transcational producer for the sink identified by `sink_id`. After this call
-    /// returns it is guranteed that all previous `TransactionalProducer` instances for the same
+    /// returns it is guaranteed that all previous `TransactionalProducer` instances for the same
     /// sink have been fenced out (i.e `init_transations()` has been called successfully).
     async fn new(
         sink_id: GlobalId,

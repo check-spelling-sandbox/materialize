@@ -344,7 +344,7 @@ pub trait SessionCatalog: fmt::Debug + ExprHumanizer + Send + Sync + ConnectionR
     /// Returns mutable system vars
     ///
     /// Clients should use this this method carefully, as changes to the backing
-    /// state here are not guarateed to be persisted. The motivating use case
+    /// state here are not guaranteed to be persisted. The motivating use case
     /// for this method was ensuring that features are temporary turned on so
     /// catalog rehydration does not break due to unsupported SQL syntax.
     fn system_vars_mut(&mut self) -> &mut SystemVars;
