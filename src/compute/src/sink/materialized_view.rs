@@ -506,7 +506,7 @@ where
                     .extend(persist_frontier.iter().cloned());
             }
 
-            // We only mint new batch desriptions when:
+            // We only mint new batch descriptions when:
             //  1. the desired frontier is past the persist frontier
             //  2. the persist frontier has moved since we last emitted a
             //     batch
