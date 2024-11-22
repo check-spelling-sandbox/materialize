@@ -165,7 +165,7 @@
     specified `poll_interval`.
 
   * `deploy_promote`: deploys the current dbt targets to the production
-    environment, encuring all deployment targets, including schemas and
+    environment, incurring all deployment targets, including schemas and
     clusters, are fully hydrated and deployed together as a single atomic
     operation. If any part of the deployment fails, the entire deployment is
     rolled back to maintain consistency and prevent partial updates.
