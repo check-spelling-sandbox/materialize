@@ -254,7 +254,7 @@ enum DatumColumnEncoder {
     /// Special encoder for a [`ScalarType::Record`] that has no inner fields.
     ///
     /// We have a special case for this scenario because Arrow does not allow a
-    /// [`StructArray`] (what normally use to encod a `Record`) with no fields.
+    /// [`StructArray`] (what normally use to encode a `Record`) with no fields.
     RecordEmpty(BooleanBuilder),
 }
 
