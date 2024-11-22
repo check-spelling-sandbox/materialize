@@ -180,7 +180,7 @@ build:rust-nightly --@rules_rust//rust/toolchain/channel=nightly
 #
 # <https://blog.llvm.org/2019/09/closing-gap-cross-language-lto-between.html>
 #
-# TODO(parkmycar): Re-enable these. They eiter cause a compilation failure because of
+# TODO(parkmycar): Re-enable these. They either cause a compilation failure because of
 # missing object files, or (seemingly) makes the number of codegen units 1 which compiles
 # way too slow.
 #build:release --@rules_rust//:extra_rustc_flag="-Clinker-plugin-lto"
