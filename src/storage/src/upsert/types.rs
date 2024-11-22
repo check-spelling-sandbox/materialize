@@ -888,7 +888,7 @@ where
                 |e: std::num::TryFromIntError| {
                     tracing::warn!(
                         "rehydration_total metric overflowed or is negative \
-                        and is innacurate: {}. Defaulting to 0",
+                        and is inaccurate: {}. Defaulting to 0",
                         e.display_with_causes(),
                     );
 
