@@ -4725,7 +4725,7 @@ pub static OP_IMPLS: LazyLock<BTreeMap<&'static str, Func>> = LazyLock::new(|| {
             params!(ArrayAnyCompatible, ArrayAnyCompatible) => ArrayArrayConcat => ArrayAnyCompatible, 375;
             params!(ListAnyCompatible, ListAnyCompatible) => ListListConcat => ListAnyCompatible, oid::OP_CONCAT_LIST_LIST_OID;
             params!(ListAnyCompatible, ListElementAnyCompatible) => ListElementConcat => ListAnyCompatible, oid::OP_CONCAT_LIST_ELEMENT_OID;
-            params!(ListElementAnyCompatible, ListAnyCompatible) => ElementListConcat => ListAnyCompatible, oid::OP_CONCAT_ELEMENY_LIST_OID;
+            params!(ListElementAnyCompatible, ListAnyCompatible) => ElementListConcat => ListAnyCompatible, oid::OP_CONCAT_ELEMENT_LIST_OID;
         },
 
         // JSON, MAP, RANGE, LIST, ARRAY
