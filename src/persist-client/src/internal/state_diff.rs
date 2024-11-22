@@ -1053,7 +1053,7 @@ fn apply_compaction_lenient<'a, T: Timestamp + Lattice>(
 /// its doc comment for more info. The underlying buffer for a [`ProtoStateFieldDiffs`]
 /// is a [`Bytes`] struct, which is an immutable, shared, reference counted,
 /// buffer of data. Using a [`Bytes`] struct is a very efficient way to manage data
-/// becuase multiple [`Bytes`] can reference different parts of the same underlying
+/// because multiple [`Bytes`] can reference different parts of the same underlying
 /// portion of memory. See its doc comment for more info.
 ///
 /// A [`ProtoStateFieldDiffsWriter`] maintains a mutable, unique, data buffer, i.e.

@@ -1,6 +1,6 @@
 # Test changing a table mid query by another connection.
 
-# This is incompatible with Postgres beacuse they, reasonably, block on DROP
+# This is incompatible with Postgres because they, reasonably, block on DROP
 # TABLE while a portal is bound to it.
 
 send
