@@ -292,7 +292,7 @@ class MaterializeAdapter(PostgresAdapter, SQLAdapter):
         # connection has a valid cluster.
 
         # Determine the name to use for the view. Unfortunately Materialize
-        # comingles data about temporary views from all sessions in the system
+        # commingles data about temporary views from all sessions in the system
         # catalog, so we need to manually include the connection ID in the name
         # to be able to identify the catalog entries for the temporary views
         # created by this specific connection.
