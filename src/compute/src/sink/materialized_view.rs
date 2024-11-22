@@ -515,7 +515,7 @@ where
             // descriptions whenever the desired frontier moves but the
             // persist frontier doesn't move, we would mint overlapping
             // batch descriptions, which would lead to errors when trying to
-            // appent batches based on them.
+            // append batches based on them.
             //
             // We never use the same lower frontier twice.
             // We only emit new batches when the persist frontier moves.
