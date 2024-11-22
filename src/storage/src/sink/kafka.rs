@@ -59,7 +59,7 @@
 //!
 //! The only error that is possible during sending is that the queue is full. We are purposefully
 //! NOT handling this error and simply configure `librdkafka` with a very large queue. The reason
-//! for this choice is that the only choice for hanlding such an error ourselves would be to queue
+//! for this choice is that the only choice for handling such an error ourselves would be to queue
 //! it, and there isn't a good argument about two small queues being better than one big one. If we
 //! reach the queue limit we simply error out the entire sink dataflow and start over.
 //!
