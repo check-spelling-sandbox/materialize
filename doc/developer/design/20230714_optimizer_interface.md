@@ -69,7 +69,7 @@ addition, we want to address the following shortcomings of the current state:
 
 1. The optimizer boundary is a natural boundary between the COMPUTE and ADAPTER
    teams. However, because this boundary is fuzzy, it's often not clear which
-   changes in `mz_adapter` consistute changes to the optimizer internals and
+   changes in `mz_adapter` constitute changes to the optimizer internals and
    need an explicit stamp from COMPUTE, and which go the other way.
 2. Optimization is not ready for the Platform v2 effort. More speificially, we
    are not ensuring that optimization phases can be spawned into a different
