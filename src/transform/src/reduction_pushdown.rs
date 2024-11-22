@@ -346,12 +346,12 @@ fn lookup_corresponding_component(
     old_join_mapper: &JoinInputMapper,
     input_component_map: &BTreeMap<usize, usize>,
 ) -> Option<usize> {
-    let mut dedupped = old_join_mapper
+    let mut deduped = old_join_mapper
         .lookup_inputs(expr)
         .map(|i| input_component_map[&i])
         .collect::<BTreeSet<_>>();
-    if dedupped.len() == 1 {
-        dedupped.pop_first()
+    if deduped.len() == 1 {
+        deduped.pop_first()
     } else {
         None
     }

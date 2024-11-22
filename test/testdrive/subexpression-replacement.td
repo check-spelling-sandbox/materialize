@@ -44,7 +44,7 @@ Used Indexes:
 
 Target cluster: quickstart
 
-# NULL-able expressions are dedupped
+# NULL-able expressions are deduped
 ? EXPLAIN WITH(no notices) SELECT * FROM t1 WHERE col_null = 1 AND (col_null = 1 AND col_not_null = 5);
 Explained Query (fast path):
   Project (#0, #1)

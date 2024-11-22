@@ -582,7 +582,7 @@ impl PredicatePushdown {
                     for equivalence_pos in 0..equivalences.len() {
                         // Case 1: there are more than one literal in the
                         // equivalence class. Because of equivalences have been
-                        // dedupped, this means that everything in the equivalence
+                        // deduped, this means that everything in the equivalence
                         // class must be equal to two different literals, so the
                         // entire relation zeroes out
                         if equivalences[equivalence_pos]

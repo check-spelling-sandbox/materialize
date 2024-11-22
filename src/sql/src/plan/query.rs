@@ -6075,7 +6075,7 @@ impl WindowFuncCollector {
     fn into_result(self) -> Vec<Expr<Aug>> {
         // Dedup while preserving the order.
         let mut seen = BTreeSet::new();
-        let window_funcs_dedupped = self
+        let window_funcs_deduped = self
             .window_funcs
             .into_iter()
             .filter(move |expr| seen.insert(expr.clone()))
@@ -6083,7 +6083,7 @@ impl WindowFuncCollector {
             // inner one is evaluated first.
             .rev()
             .collect();
-        window_funcs_dedupped
+        window_funcs_deduped
     }
 }
 

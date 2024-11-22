@@ -109,7 +109,7 @@ pub fn canonicalize_equivalences<'a, I>(
 ///
 /// This function:
 /// * ensures the same expression appears in only one equivalence class.
-/// * ensures the equivalence classes are sorted and dedupped.
+/// * ensures the equivalence classes are sorted and deduped.
 /// ```rust
 /// use mz_expr::MirScalarExpr;
 /// use mz_expr::canonicalize::canonicalize_equivalence_classes;
