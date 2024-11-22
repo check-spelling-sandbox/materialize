@@ -78,7 +78,7 @@ pub struct Completions {
 }
 
 /// The [Backend] struct implements the [LanguageServer] trait, and thus must provide implementations for its methods.
-/// Most imporant methods includes:
+/// Most important methods includes:
 /// - `initialize`: sets up the server.
 /// - `did_open`: logs when a file is opened and triggers an `on_change` method.
 /// - `did_save`, `did_close`: log messages indicating file actions.
