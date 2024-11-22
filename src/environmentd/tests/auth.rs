@@ -2310,8 +2310,8 @@ async fn test_refresh_task_metrics() {
     let metric = metrics.pop().unwrap();
     let metric = &metric.get_metric()[0];
 
-    let guage_value = metric.get_gauge().get_value();
-    assert_eq!(guage_value, 0.0);
+    let gauge_value = metric.get_gauge().get_value();
+    assert_eq!(gauge_value, 0.0);
 }
 
 #[mz_ore::test(tokio::test(flavor = "multi_thread", worker_threads = 1))]
