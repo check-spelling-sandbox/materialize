@@ -257,7 +257,7 @@ pub fn canonicalize_predicates(predicates: &mut Vec<MirScalarExpr>, column_types
     // predicates, it is acceptable to make the aforementioned substitution
     // even if `pi` can be null.
 
-    // Note that this does some dedupping of predicates since if `p1 = p2`
+    // Note that this does some deduping of predicates since if `p1 = p2`
     // then this reduction process will replace `p1` with true.
 
     // Maintain respectively:
