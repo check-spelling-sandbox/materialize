@@ -102,7 +102,7 @@ to eliminate the need for nearly all Cockroach reads.
 # Reference Explanation
 
 As a first implementation of the Persist sidechannel, we propose building a new RPC service that flows through `environmentd`.
-The service would be backed by gRPC with a minimal surface area -- to start, we would use a simple bidirection stream that
+The service would be backed by gRPC with a minimal surface area -- to start, we would use a simple bidirectional stream that
 allows each end to push updates back and forth, with `environmentd` broadcasting out any changes it receives.
 
 ## RPC Service
