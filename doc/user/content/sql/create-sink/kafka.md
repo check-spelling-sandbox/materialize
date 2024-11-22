@@ -771,7 +771,7 @@ COMMENT ON COLUMN t.value IS 'SQL comment on t.value';
 
 CREATE SINK docs_sink
 FROM t
-INTO KAFKA CONNECTION kafka_connection (TOPIC 'doc-commont-example')
+INTO KAFKA CONNECTION kafka_connection (TOPIC 'doc-comment-example')
 KEY (key)
 FORMAT AVRO USING CONFLUENT SCHEMA REGISTRY CONNECTION csr_connection (
     DOC ON TYPE t = 'Top-level comment for container record in both key and value schemas',
