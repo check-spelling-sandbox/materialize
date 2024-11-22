@@ -6,7 +6,7 @@ This package contains optimizer benchmarking scripts.
 
 To run a benchmark you need to:
 
-1. Intialize the database schema for your test scenario.
+1. Initialize the database schema for your test scenario.
 1. Run the workload of your test scenario.
 
 These two steps are modeled by the `init` and `run` commands.

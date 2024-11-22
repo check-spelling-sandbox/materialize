@@ -387,7 +387,7 @@ impl TraceBundle {
     ///
     /// Note that the padded bundle represents a different TVC than the original one, it is unsound
     /// to use it to "uncompact" an existing TVC. The only valid use of the padded bundle is to
-    /// initializa a new TVC.
+    /// initialize a new TVC.
     pub fn into_padded(self) -> Self {
         Self {
             oks: self.oks.into_padded(),

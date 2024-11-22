@@ -29,7 +29,7 @@ pub struct ProfileCommand {
 
 #[derive(Debug, clap::Subcommand)]
 pub enum ProfileSubcommand {
-    /// Iniitialize an authentication profile.
+    /// Initialize an authentication profile.
     Init {
         /// Prompt for a username and password on the terminal.
         #[clap(long)]
