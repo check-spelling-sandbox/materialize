@@ -750,7 +750,7 @@ indexes is controlled by the permissions on the cluster containing the index.
 
 ### Secret
 
-A secret is a new type of database object that securely stores a confidential
+A secret is a new type of database object that securely stores a confidentical
 credential.
 
 To create a new secret:

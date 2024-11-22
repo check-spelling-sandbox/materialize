@@ -238,7 +238,7 @@ We do this by directly modifying the `CatalogState`.
 In particular, we extend the `CatalogItem::Index` and `CatalogItem::MaterializedView` variants with extra fields that record the `DataflowDescription` for the `OPTIMIZED` and `PHYSICAL` plans:
 
 ```rust
-// idential extensions to `index`
+// identical extensions to `index`
 struct MaterializedView {
     ...
     optimized_plan: DataflowDescription<OptimizedMirRelationExpr, ()>,
