@@ -59,13 +59,13 @@ Upon executing the `ROTATE KEYS` command, Materialize deletes the first key
 pair, promotes the second key pair to the first key pair, and generates a new
 second key pair. The connection's row in `mz_ssh_tunnel_connections` is updated
 accordingly: the `public_key_1` column will contain the public key that was
-formely in the `public_key_2` column, and the `public_key_2` column will contain
+formerly in the `public_key_2` column, and the `public_key_2` column will contain
 a new public key.
 
 After executing `ROTATE KEYS`, you should update your SSH bastion server with
 the new public keys:
 
-* Remove the public key that was formely in the `public_key_1` column.
+* Remove the public key that was formerly in the `public_key_1` column.
 * Add the new public key from the `public_key_2` column.
 
 Throughout the entire process, the SSH bastion server is configured to permit
