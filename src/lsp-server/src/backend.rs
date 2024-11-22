@@ -36,7 +36,7 @@ use crate::{PKG_NAME, PKG_VERSION};
 /// Default formatting width to use in the [LanguageServer::formatting] implementation.
 pub const DEFAULT_FORMATTING_WIDTH: usize = 100;
 
-/// This is a re-implemention of [mz_sql_parser::parser::StatementParseResult]
+/// This is a re-implementation of [mz_sql_parser::parser::StatementParseResult]
 /// but replacing the sql code with a rope.
 #[derive(Debug)]
 pub struct ParseResult {

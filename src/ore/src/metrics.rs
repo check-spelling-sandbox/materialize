@@ -743,7 +743,7 @@ impl<F: Future, M: DurationMetric> Future for ExecTimeFuture<F, M> {
 pub struct UnspecifiedMetric(());
 
 /// A trait makes recording a duration generic over different prometheus metrics. This allows us to
-/// de-dupe the implemenation of [`Future`] for our wrapper Futures like [`WallTimeFuture`] and
+/// de-dupe the implementation of [`Future`] for our wrapper Futures like [`WallTimeFuture`] and
 /// [`ExecTimeFuture`] over different kinds of prometheus metrics.
 trait DurationMetric {
     fn record(&mut self, seconds: f64);

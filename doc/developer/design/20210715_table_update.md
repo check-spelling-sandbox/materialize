@@ -53,7 +53,7 @@ A successive commit to this code, instead refactors the global write lock to use
 - It limits a critical path to one entrant at a time
 - Signals those waiting on the lock of its availability and lets one of them proceed
 
-While the mutex I chose comes from `tokio::sync`, mutexes are well-known, well-tested, idiomatic tools from standard libraries of many programming languages, so using one has the advantage of giving us exactly what we want with very little work, and is generally less fallible than trying to hand-roll the same semantics using another implemenation.
+While the mutex I chose comes from `tokio::sync`, mutexes are well-known, well-tested, idiomatic tools from standard libraries of many programming languages, so using one has the advantage of giving us exactly what we want with very little work, and is generally less fallible than trying to hand-roll the same semantics using another implementation.
 
 By using a mutex, if the session holding the write lock gets dropped, the lock is released. To reach parity with the `Option<u32>` approach, we would need to implement an "unlock" operation on `Drop`, at which point we're basically handrolling a mutex.
 
