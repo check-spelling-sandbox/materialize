@@ -138,7 +138,7 @@ impl SshTunnelManager {
                     // IMPORTANT: clear the `Connecting` state on scope exit.
                     // This is *required* for cancel safety. If the future is
                     // dropped at the following await point, we need to record
-                    // that we are no longer attemping the connection.
+                    // that we are no longer attempting the connection.
                     let guard = scopeguard::guard((), |()| {
                         let mut tunnels = self.tunnels.lock().expect("lock poisoned");
                         tunnels.remove(&key);
