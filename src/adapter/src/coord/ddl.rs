@@ -704,7 +704,7 @@ impl Coordinator {
                         // a while. The PostgreSQL server may no longer be
                         // healthy. Users often drop PostgreSQL sources
                         // *because* the PostgreSQL server has been
-                        // decomissioned.
+                        // decommissioned.
                         let result: Result<(), anyhow::Error> = Retry::default()
                             .max_duration(Duration::from_secs(60))
                             .retry_async(|_state| async {
