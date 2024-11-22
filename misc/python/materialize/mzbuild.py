@@ -939,7 +939,7 @@ class ResolvedImage:
         """
         paths = set(git.expand_globs(self.image.rd.root, f"{self.image.path}/**"))
         if not paths:
-            # While we could find an `mzbuild.yml` file for this service, expland_globs didn't
+            # While we could find an `mzbuild.yml` file for this service, expand_globs didn't
             # return any files that matched this service. At the very least, the `mzbuild.yml`
             # file itself should have been returned. We have a bug if paths is empty.
             raise AssertionError(
