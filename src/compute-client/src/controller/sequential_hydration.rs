@@ -25,7 +25,7 @@
 //! implementation. If the assumption ever ceases to hold, we will need to adjust the code in this
 //! module.
 //!
-//! Sequential hydration is enforeced by a `SequentialHydration` client that sits between the
+//! Sequential hydration is enforced by a `SequentialHydration` client that sits between the
 //! controller and the `PartitionedState` client that splits commands across replica processes.
 //! This location is important:
 //!
