@@ -1392,7 +1392,7 @@ fn generate_rbac_requirements(
                 })
                 .collect(),
             // Altering the default privileges for the PUBLIC role (aka ALL ROLES) will affect all roles
-            // that currently exist and roles that will exist in the future. It's impossible for an exising
+            // that currently exist and roles that will exist in the future. It's impossible for an existing
             // role to be a member of a role that doesn't exist yet, so no current role could possibly have
             // the privileges required to alter default privileges for the PUBLIC role. Therefore we
             // only superusers can alter default privileges for the PUBLIC role.
