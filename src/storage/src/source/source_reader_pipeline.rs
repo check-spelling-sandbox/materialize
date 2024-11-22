@@ -793,7 +793,7 @@ where
                     let total_buffered: usize = untimestamped_batches.iter().map(|(_, b)| b.len()).sum();
                     let reclock_source_upper = timestamper.source_upper();
 
-                    // Peel as many consequtive reclockable items as possible. It is not benefitial
+                    // Peel as many consequtive reclockable items as possible. It is not beneficial
                     // to go further even if theoretically there may be more messages ready to be
                     // reclocked further along because in the common case the message order is
                     // correleated with time and therefore in the common case we would be wasting
