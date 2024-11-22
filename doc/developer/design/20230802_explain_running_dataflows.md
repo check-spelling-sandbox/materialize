@@ -200,7 +200,7 @@ The proposed implementation path allows to stage the rollout by first merging th
 Given the relatively low number of indexes and materialized views that we currently expect to see per environment dramatic changes in the `environmentd` resource footprint and performance due to this change seems unlikely.
 Based on offline discussion, it seems that his is low risk, so we are currently aiming in rolling this out with a series of PR that introduce the new functionality.
 
-To make reviews more digestabdle, I can envision the following sequence of PRs:
+To make reviews more digestible, I can envision the following sequence of PRs:
 
 1. A PR that contains the groundwork and the code changes required for `EXPLAIN OPTIMIZED PLAN FOR MATERIALIZED VIEW`.
 1. A PR that contains the groundwork and the code changes required for `EXPLAIN PHYSICAL PLAN FOR MATERIALIZED VIEW`.
