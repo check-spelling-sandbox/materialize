@@ -246,7 +246,7 @@ impl Coordinator {
                     coord_bail!("Cannot change AVAILABILITY ZONES of unmanaged clusters");
                 }
                 if !matches!(options.introspection_debugging, Unchanged) {
-                    coord_bail!("Cannot change INTROSPECTION DEGUBBING of unmanaged clusters");
+                    coord_bail!("Cannot change INTROSPECTION DEBUGGING of unmanaged clusters");
                 }
                 if !matches!(options.introspection_interval, Unchanged) {
                     coord_bail!("Cannot change INTROSPECTION INTERVAL of unmanaged clusters");

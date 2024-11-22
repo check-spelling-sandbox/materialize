@@ -94,7 +94,7 @@ ALTER CLUSTER baz RESET (SIZE)
 statement error db error: ERROR: Cannot change AVAILABILITY ZONES of unmanaged clusters
 ALTER CLUSTER baz RESET (AVAILABILITY ZONES)
 
-statement error db error: ERROR: Cannot change INTROSPECTION DEGUBBING of unmanaged clusters
+statement error db error: ERROR: Cannot change INTROSPECTION DEBUGGING of unmanaged clusters
 ALTER CLUSTER baz RESET (INTROSPECTION DEBUGGING)
 
 statement error db error: ERROR: Cannot change INTROSPECTION INTERVAL of unmanaged clusters
