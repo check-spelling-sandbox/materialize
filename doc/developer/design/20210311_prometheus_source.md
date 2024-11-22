@@ -40,7 +40,7 @@ CREATE TABLE mz_catalog.metrics (
     value float8
 );
 
-CREATE TABLE mz_calalog.metrics_meta (
+CREATE TABLE mz_catalog.metrics_meta (
     metric TEXT,
     metric_type TEXT,
     help TEXT

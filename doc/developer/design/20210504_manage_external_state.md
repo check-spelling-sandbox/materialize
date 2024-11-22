@@ -88,7 +88,7 @@ here]):
 pub async fn create_state_op(&self) -> Option<ExternalStateOp> {}
 
 /// Returns an operator that indicates any external state to be destroyed once
-/// catatlog_transact succeeds.
+/// catalog_transact succeeds.
 pub async fn destroy_state_op(&self) -> Option<ExternalStateOp> {}
 ```
 
