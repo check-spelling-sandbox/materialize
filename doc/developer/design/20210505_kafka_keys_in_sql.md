@@ -105,7 +105,7 @@ will get the name specified:
 * If the field type has defined fields, the fields will be included as a record
   with that name.
 
-If any key column names colide with value columns using the bare `INCLUDE KEY`
+If any key column names collide with value columns using the bare `INCLUDE KEY`
 syntax, an error will be raised before dataflow construction suggesting the use
 of the `AS <name>` clause.
 
