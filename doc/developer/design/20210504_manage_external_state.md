@@ -31,7 +31,7 @@ In the future, the following will also require the ability to create, maintain, 
 - Any sinks where we create a new topic, partition, table, bucket, or other object in an external system.
 - Other direct replication sources (such as MySQL).
 
-Futhermore, external state is not necessarily associated 1-1 with a source.
+Furthermore, external state is not necessarily associated 1-1 with a source.
 Materialize will currently spawn as many source *instances* as needed from a
 given source, typically one per downstream materialized view. Since it's the
 source instances that do the actual communication with external systems there

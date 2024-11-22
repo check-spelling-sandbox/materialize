@@ -169,7 +169,7 @@ The headers and body of the request are only subject to validation if `WITH
 default, the type of `body` used for validation is `text`, regardless of the
 `BODY FORMAT` you specified for the source. In the example above, the `body`
 column for `my_webhook_source` has a type of `jsonb`, but `request_body` as
-used in the validation expression has type `text`. Futher, the request headers
+used in the validation expression has type `text`. Further, the request headers
 are not persisted as part of `my_webhook_source`, since `INCLUDE HEADERS` was
 not specified — but they are provided to the validation expression.
 
