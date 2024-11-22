@@ -319,7 +319,7 @@ We are still lacking operational observability (tracked in MaterializeInc/databa
 
 At the very least, we can export a Prometheus metric that tracks the number of indexed or materialized views that have recursive CTEs.
 
-Once we have anonymized query logging, we can get some deper insights which would be useful for product analytics.
+Once we have anonymized query logging, we can get some deeper insights which would be useful for product analytics.
 
 ---
 
