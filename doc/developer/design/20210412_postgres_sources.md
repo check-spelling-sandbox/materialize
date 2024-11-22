@@ -194,7 +194,7 @@ tables.
 
 An easy way to ensure this doesn't happen is to declare the original SOURCE a
 MATERIALIZED SOURCE. This has the benefit of creating only one source instance,
-avoiding the bandiwdth bloat. The downside is that the in-memory index created
+avoiding the bandwidth bloat. The downside is that the in-memory index created
 will contain the data for all the tables, even ones that are not needed by
 downstream views, and also hold data in their text-encoded format meaning that
 each downstream user will have to decode independently.
