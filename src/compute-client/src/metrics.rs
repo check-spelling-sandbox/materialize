@@ -174,7 +174,7 @@ impl ComputeControllerMetrics {
                 var_labels: ["instance_id", "replica_id", "collection_id"],
             )),
 
-            // The next three metrics immitate a summary metric type. The `prometheus` crate lacks
+            // The next three metrics imitate a summary metric type. The `prometheus` crate lacks
             // support for summaries, so we roll our own. Note that we also only expose the 0- and
             // the 1-quantile, i.e., minimum and maximum lag values.
             dataflow_wallclock_lag_seconds: metrics_registry.register(metric!(
