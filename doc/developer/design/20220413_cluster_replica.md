@@ -90,7 +90,7 @@ of a cluster replica:
   * Timely worker threads, specified as the `--workers` argument to `computed`
 
 The mapping between replica size and the above properties will be
-determined by the new `--cluster-replica-sizes` comand line option, which
+determined by the new `--cluster-replica-sizes` command line option, which
 accepts a JSON object that can be deserialized into `ClusterReplicaSizeMap`:
 
 ```rust

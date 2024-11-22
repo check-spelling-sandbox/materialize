@@ -138,7 +138,7 @@ refer to the reclocked collection in the following commands:
   * [`StorageCommand::CreateSources`](https://dev.materialize.com/api/rust/mz_dataflow_types/client/enum.StorageCommand.html#variant.CreateSources)
   * [`StorageCommand::AllowCompaction`](https://dev.materialize.com/api/rust/mz_dataflow_types/client/enum.StorageCommand.html#variant.AllowCompaction)
   * [`StorageCommand::Insert`](https://dev.materialize.com/api/rust/mz_dataflow_types/client/enum.StorageCommand.html#variant.Insert)
-  * [`StorageComand::DurabilityFrontierUpdates`](https://dev.materialize.com/api/rust/mz_dataflow_types/client/enum.StorageCommand.html#variant.DurabilityFrontierUpdates)
+  * [`StorageCommand::DurabilityFrontierUpdates`](https://dev.materialize.com/api/rust/mz_dataflow_types/client/enum.StorageCommand.html#variant.DurabilityFrontierUpdates)
 
 [`StorageCommand::RenderSources`](https://dev.materialize.com/api/rust/mz_dataflow_types/client/enum.StorageCommand.html#variant.RenderSources) will evolve to allow clients to specify *which* of the collections associated with the source to render:
 
