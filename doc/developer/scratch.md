@@ -149,7 +149,7 @@ bin/scratch destroy --all-mine
 ```
 
 Pass `--dry-run` if you want to see what instances `bin/scratch destroy` would
-destroy without actually destroyin them.
+destroy without actually destroying them.
 
 ### Grafana integration
 
