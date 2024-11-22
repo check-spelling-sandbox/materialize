@@ -1317,7 +1317,7 @@ class Sink(Scenario):
 
 class ExactlyOnce(Sink):
     """Measure the time it takes to emit 1M records to a reuse_topic=true sink. As we have limited
-    means to figure out when the complete output has been emited, we have no option but to re-ingest
+    means to figure out when the complete output has been emitted, we have no option but to re-ingest
     the data to determine completion.
     """
 
@@ -1385,7 +1385,7 @@ $ kafka-ingest format=avro topic=sink-input key-format=avro key-schema=${{keysch
 
 $ kafka-verify-topic sink=materialize.public.sink1 await-value-schema=true await-key-schema=true
 
-# Wait until all the records have been emited from the sink, as observed by the sink1_check source
+# Wait until all the records have been emitted from the sink, as observed by the sink1_check source
 
 > CREATE SOURCE sink1_check
   IN CLUSTER source_cluster
