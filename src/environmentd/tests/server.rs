@@ -1079,7 +1079,7 @@ fn test_closing_connection_cancels_dataflows(query: String) {
 
     let started = Instant::now();
     if let Some(wait_status) = child.try_wait().expect("wait shouldn't error") {
-        panic!("child should still be running, it exitted with {wait_status}");
+        panic!("child should still be running, it exited with {wait_status}");
     }
     child.kill().expect("killing psql child");
 
