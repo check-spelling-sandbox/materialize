@@ -54,7 +54,7 @@ These are not likely to be renderable in the foreseeable future, as they cannot 
 3.  Nested mutual recursion.
 
     There should either be at most one `WITH MUTUALLY RECURSIVE`, or appear so after query optimization.
-    We are not able to render nested mutually recursive fragements.
+    We are not able to render nested mutually recursive fragments.
 
 ## Description
 
