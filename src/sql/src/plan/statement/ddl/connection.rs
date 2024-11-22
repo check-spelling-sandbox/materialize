@@ -717,7 +717,7 @@ fn plan_kafka_security(
                         // MECHANISMS = PLAIN`. Identifier case folding results in a
                         // SASL mechanism of `plain` (note the lowercase), which
                         // Materialize previously rejected with an error of "SASL
-                        // mechanism must be uppercase." This was deeply frustarting for
+                        // mechanism must be uppercase." This was deeply frustrating for
                         // users who were not familiar with identifier case folding
                         // rules. See database-issues#6693.
                         mechanism: mechanism.to_uppercase(),
