@@ -640,13 +640,13 @@ class CargoBuild(CargoPreImage):
                     spawn.runv(["cp", "-R", out_dir / src, self.path / dst])
 
         if self.bazel_tars and "bazel" in build_output:
-            ui.section("Extracing 'bazel-tar'")
+            ui.section("Extracting 'bazel-tar'")
             for tar in self.bazel_tars:
                 # Where Bazel built the tarball.
                 tar_path = self.rd.bazel_workspace_dir() / build_output["bazel"][tar]
                 # Where we need to extract it into.
                 tar_dest = self.path / self.bazel_tars[tar]
-                ui.say(f"extracing {tar_path} to {tar_dest}")
+                ui.say(f"extracting {tar_path} to {tar_dest}")
 
                 with tarfile.open(tar_path, "r") as tar_file:
                     os.makedirs(tar_dest, exist_ok=True)
