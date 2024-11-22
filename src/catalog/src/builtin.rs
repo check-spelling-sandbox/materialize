@@ -5999,7 +5999,7 @@ pub static MZ_INDEX_ADVICE: LazyLock<BuiltinView> = LazyLock::new(|| {
 -- the following uses the terms leafs (instead of sinks) and roots (instead of sources)
 -- when referring to the object dependency graph.
 --
--- The basic idea is to walk up the debendency graph to propage the transitive dependencies
+-- The basic idea is to walk up the dependency graph to propage the transitive dependencies
 -- of maintained objected upwards. The leaves of the dependency graph are maintained objects
 -- that are not depended on by other maintained objects and have a justification why they must
 -- be maintained (e.g. a materialized view that is depended on by a sink).

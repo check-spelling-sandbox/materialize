@@ -694,7 +694,7 @@ where
             if !dependency_read_holds.is_empty() {
                 // The dependency since cannot be beyond the dependent (our)
                 // upper unless the collection is new. In practice, the
-                // depdenency is the remap shard of a source (export), and if
+                // dependency is the remap shard of a source (export), and if
                 // the since is allowed to "catch up" to the upper, that is
                 // `upper <= since`, a restarting ingestion cannot differentiate
                 // between updates that have already been written out to the

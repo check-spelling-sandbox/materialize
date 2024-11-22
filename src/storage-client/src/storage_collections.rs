@@ -1550,7 +1550,7 @@ where
             let initial_since = match storage_dependencies
                 .iter()
                 .at_most_one()
-                .expect("should have at most one depdendency")
+                .expect("should have at most one dependency")
             {
                 Some(dep) => {
                     let dependency_collection = self_collections
@@ -1571,7 +1571,7 @@ where
                     if PartialOrder::less_than(&data_shard_since, &dependency_since) {
                         // The dependency since cannot be beyond the dependent
                         // (our) upper unless the collection is new. In
-                        // practice, the depdenency is the remap shard of a
+                        // practice, the dependency is the remap shard of a
                         // source (export), and if the since is allowed to
                         // "catch up" to the upper, that is `upper <= since`, a
                         // restarting ingestion cannot differentiate between

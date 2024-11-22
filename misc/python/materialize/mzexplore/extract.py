@@ -360,7 +360,7 @@ def arrangement_sizes(
     Extract arrangement sizes for selected catalog items.
     """
 
-    # Don't make pandas depedency for the entire module, but just for this
+    # Don't make pandas dependency for the entire module, but just for this
     # command (otherwise all `extract` clients will have to install pandas, even
     # if they will never call `extract.arrangement_sizes`).
     import pandas as pd
