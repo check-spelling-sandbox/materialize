@@ -92,7 +92,7 @@ class UpsertEnrichValue(Check):
                 $ kafka-ingest format=avro key-format=avro topic=upsert-enrich-value key-schema=${{keyschema}} schema=${{schema}} repeat=1000
                 {{"key1": "A${{kafka-ingest.iteration}}"}} {{"f1": {{"string":"{PAD_1K}"}}}}
 
-                # 'B...' records will now be enpoverished to NULLs
+                # 'B...' records will now be impoverished to NULLs
                 $ kafka-ingest format=avro key-format=avro topic=upsert-enrich-value key-schema=${{keyschema}} schema=${{schema}} repeat=1000
                 {{"key1": "B${{kafka-ingest.iteration}}"}} {{"f1": null}}
 
