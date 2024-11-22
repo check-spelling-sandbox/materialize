@@ -1377,7 +1377,7 @@ pub static STATEMENT_LOGGING_MAX_DATA_CREDIT: VarDefinition = VarDefinition::new
     value!(Option<usize>; None),
     // The idea is that during periods of low logging, tokens can accumulate up to this value,
     // and then be depleted during periods of high logging.
-    "The maximum number of bytes that can be logged for statement logging in short burts, or NULL if unlimited (Materialize).",
+    "The maximum number of bytes that can be logged for statement logging in short bursts, or NULL if unlimited (Materialize).",
     false,
 );
 
