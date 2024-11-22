@@ -679,7 +679,7 @@ where
                             shared: Rc::clone(&shared),
                         };
 
-                        // Evalute the limit, first as a constant and then against the key if needed.
+                        // Evaluate the limit, first as a constant and then against the key if needed.
                         let limit = if let Some(l) = limit.as_literal_int64() {
                             l
                         } else {

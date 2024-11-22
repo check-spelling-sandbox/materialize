@@ -221,7 +221,7 @@ to the properties of the incoming HTTP request:
 > The `BYTES` option may be deferred to future work.
 
 If the constraint expression evaluates to `true`, the incoming HTTP request is
-accepted. If the constraint expression evalutes to `false` or NULL, or produces
+accepted. If the constraint expression evaluates to `false` or NULL, or produces
 an error, the incoming HTTP request is rejected with a 403 Forbidden status
 code.
 

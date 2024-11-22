@@ -73,7 +73,7 @@ SELECT MAP['a' => ['b' => 'c']];
  {a=>{b=>c}}
 ```
 
-`MAP` expressions evalute expressions for both keys and values:
+`MAP` expressions evaluate expressions for both keys and values:
 
 ```mzsql
 SELECT MAP['a' || 'b' => 1 + 2];
