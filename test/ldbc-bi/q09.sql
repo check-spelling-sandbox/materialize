@@ -75,7 +75,7 @@
 --  15393162799448 | Fritz             | Muller          |          47 |          310
 --   6597069770739 | Abdul Haris       | Gallagher       |          28 |          302
 --  28587302326788 | Carlos            | Rodriguez       |          65 |          301
---  26388279072682 | Abderrahmane      | Ferrer          |          96 |          300
+--  26388279072682 | Abderrahmane      | Ferror          |          96 |          300
 --   6597069767028 | Grigore           | Bologan         |          65 |          299
 --  26388279067483 | Aditya            | Khan            |          26 |          298
 --  10995116285747 | Koji              | Tanaka          |          25 |          292
@@ -87,7 +87,7 @@
 --  10995116281358 | Kunal             | Kumar           |          20 |          277
 --  17592186051871 | Ashok             | Sharma          |          56 |          276
 --  19791209305198 | Martin            | Muller          |          39 |          275
---  19791209300230 | Benhalima         | Ferrer          |          42 |          273
+--  19791209300230 | Benhalima         | Ferror          |          42 |          273
 --   4398046520667 | Charles           | Bona            |          51 |          272
 --  32985348835600 | Isabel            | Diaz            |          45 |          272
 --  24189255815184 | K.                | Kumar           |          31 |          270

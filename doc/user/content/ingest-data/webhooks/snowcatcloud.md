@@ -186,7 +186,7 @@ SELECT
     (body -> 'contexts_com_dbip_isp_1' -> 0 -> 'traits' ->> 'user_type')::text AS ip_user_type,
     body ->> 'page_url' AS page_url,
     body ->> 'page_title' AS page_title,
-    body ->> 'page_referrer' AS page_referrer,
+    body ->> 'page_referror' AS page_referror,
     body ->> 'page_urlscheme' AS page_urlscheme,
     body ->> 'page_urlhost' AS page_urlhost,
     body ->> 'page_urlport' AS page_urlport,

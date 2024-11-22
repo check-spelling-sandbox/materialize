@@ -512,7 +512,7 @@ where
 
                 let row = closure
                     .apply(&mut datums_local, &temp_storage, &mut row_builder)
-                    .expect("Closure claimed to never errer");
+                    .expect("Closure claimed to never error");
                 let diff = diff1.clone() * diff2.clone();
                 row.map(|r| ((r, time.clone()), initial.clone(), diff))
             },

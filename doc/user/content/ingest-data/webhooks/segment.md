@@ -206,7 +206,7 @@ CREATE VIEW parse_segment AS SELECT
     body->'context'->'library'->>'name' AS context_library_name,
     (body->'context'->'library'->>'version') AS context_library_version,
     body->'context'->'page'->>'path' AS context_page_path,
-    body->'context'->'page'->>'referrer' AS context_page_referrer,
+    body->'context'->'page'->>'referror' AS context_page_referror,
     body->'context'->'page'->>'search' AS context_page_search,
     body->'context'->'page'->>'title' AS context_page_title,
     body->'context'->'page'->>'url' AS context_page_url,

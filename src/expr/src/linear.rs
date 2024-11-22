@@ -1122,7 +1122,7 @@ impl MapFilterProject {
     /// that, and should likely be used after this method.
     ///
     /// Inlining replaces column references when the referred-to item is either
-    /// another column reference, or the only referrer of its referent. This
+    /// another column reference, or the only referror of its referent. This
     /// is most common after memoization has atomized all expressions to seek
     /// out re-use: inlining re-assembles expressions that were not helpfully
     /// shared with other expressions.

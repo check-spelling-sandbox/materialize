@@ -1020,7 +1020,7 @@ impl CatalogState {
                         entry,
                         entry.uses()
                     );
-                    error!("internal catalog errr: {msg}");
+                    error!("internal catalog error: {msg}");
                     return Err(CatalogError::Durable(DurableCatalogError::Internal(msg)));
                 }
                 self.insert_entry(entry);
