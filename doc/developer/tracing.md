@@ -108,7 +108,7 @@ fn my_function(big_argument: MyState) {
 }
 ```
 
-Both the spans for the `my_sub_function` calls will be childen of the `my_function` span!
+Both the spans for the `my_sub_function` calls will be children of the `my_function` span!
 
 See [`tracing::instrument`] for more info.
 
