@@ -3190,7 +3190,7 @@ pub static MZ_STATEMENT_LIFECYCLE_HISTORY: LazyLock<BuiltinSource> =
         is_retained_metrics_object: false,
         // TODO[btv]: Maybe this should be public instead of
         // `MONITOR_REDACTED`, but since that would be a backwards-compatible
-        // chagne, we probably don't need to worry about it now.
+        // change, we probably don't need to worry about it now.
         access: vec![
             SUPPORT_SELECT,
             ANALYTICS_SELECT,
