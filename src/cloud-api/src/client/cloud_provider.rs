@@ -8,7 +8,7 @@
 // by the Apache License, Version 2.0.
 
 //! This module implements Materialize cloud API sync endpoint to
-//! list all the availables cloud providers and regions, represented
+//! list all the available cloud providers and regions, represented
 //! by [`CloudProvider`].
 //! As utilities, the module implements the enum [`CloudProviderRegion`].
 //! It is useful to validate and compare external input (e.g. user input)

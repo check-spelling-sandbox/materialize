@@ -20,7 +20,7 @@ def resource_path(name: str) -> Path:
 
 def scenarios() -> list[str]:
     """
-    Determines a list of avilable scenarios based on the intersection
+    Determines a list of available scenarios based on the intersection
     of files located in both the `schema` and `workload` resource paths.
     """
     schema_files = {

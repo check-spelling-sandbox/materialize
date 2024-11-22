@@ -202,7 +202,7 @@ to the properties of the incoming HTTP request:
   * The `SECRET` clause makes the specified secret available to the constraint
     expression via the specified name. If no name is specified for a given
     secret, the secret is made available under its item name in the catalog
-    (e.g., a secret named `db.sch.sek` is made avaialable with name `sek`). If
+    (e.g., a secret named `db.sch.sek` is made available with name `sek`). If
     the `BYTES` option is specified, the secret has type `bytea`; otherwise the
     secret has type `text`.
   * The `HEADERS` clause makes the HTTP request's headers available to the

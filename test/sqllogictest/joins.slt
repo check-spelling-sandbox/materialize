@@ -1211,7 +1211,7 @@ Target cluster: quickstart
 EOF
 
 # Verify that the fueling logic of the linear join implementation is correct
-# by running a large cross-join that exhausts the avaible fuel (currently
+# by running a large cross-join that exhausts the available fuel (currently
 # 1 million output records) at least once.
 
 statement ok
