@@ -234,7 +234,7 @@ pub trait StorageCollections: Debug {
     ///
     /// NOTE: Ideally, [StorageCollections] would not care about these, but we
     /// have to learn about changes such that when new subsources are created we
-    /// can correctly determine a since based on its depenencies' sinces. This
+    /// can correctly determine a since based on its dependencies' sinces. This
     /// is really only relevant because newly created subsources depend on the
     /// remap shard, and we can't just have them start at since 0.
     async fn alter_ingestion_source_desc(

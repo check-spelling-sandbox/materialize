@@ -660,7 +660,7 @@ There are multiple ways to migrate a customer to the new syntax model:
 -   auto migration: The customer can coordinate with Materialize to activate the
     `force_source_table_syntax` flag and trigger a restart of their environment, which will
     activate the catalog migration that automatically converts all existing sources and
-    depenencies to the new syntax. All name -> data relationships are unchanged such that
+    dependencies to the new syntax. All name -> data relationships are unchanged such that
     all queries should continue to work without modification, but state in dbt and terraform
     may need to be updated to reference new statements.
 

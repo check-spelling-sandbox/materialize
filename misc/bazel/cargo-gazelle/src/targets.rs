@@ -980,7 +980,7 @@ type AllCrateDeps = CratesUniverseMacro<AllCrateDeps_>;
 type Aliases = CratesUniverseMacro<Aliases_>;
 
 /// [`crates_universe`](http://bazelbuild.github.io/rules_rust/crate_universe.html) exposes a few
-/// macros that make it easier to define depedencies and aliases.
+/// macros that make it easier to define dependencies and aliases.
 #[derive(Default, Debug)]
 struct CratesUniverseMacro<Name> {
     name: Name,

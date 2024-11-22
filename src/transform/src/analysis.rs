@@ -28,7 +28,7 @@ pub use unique_keys::UniqueKeys;
 pub trait Analysis: 'static {
     /// The type of value this analysis associates with an expression.
     type Value: std::fmt::Debug;
-    /// Announce any depencies this analysis has on other analyses.
+    /// Announce any dependencies this analysis has on other analyses.
     ///
     /// The method should invoke `builder.require::<Foo>()` for each other
     /// analysis `Foo` this analysis depends upon.

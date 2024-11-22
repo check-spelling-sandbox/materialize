@@ -247,7 +247,7 @@ to hydrate before you can validate that it produces the expected results.
     ```
 
     Alternatively, you can execute unit tests as part of the `dbt build`
-    command, which will ensure the upstream depdendencies are created before
+    command, which will ensure the upstream dependencies are created before
     any unit tests are executed:
 
     ```bash

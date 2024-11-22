@@ -1,6 +1,6 @@
 ---
 title: "Webhooks quickstart"
-description: "Learn and prototype with the webhook source without external deoendencies"
+description: "Learn and prototype with the webhook source without external dependencies"
 menu:
   main:
     parent: "webhooks"
