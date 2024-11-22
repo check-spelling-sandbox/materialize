@@ -69,7 +69,7 @@ struct Model {
     top_box: BoxId,
     /// All boxes in the query graph model.
     boxes: HashMap<BoxId, Box<RefCell<QueryBox>>>,
-    /// Used for asigning unique IDs to query boxes.
+    /// Used for assigning unique IDs to query boxes.
     next_box_id: Boxid,
     /// All quantifiers in the query graph model.
     quantifiers: HashMap<QuantifierId, Box<RefCell<Quantifier>>>,
