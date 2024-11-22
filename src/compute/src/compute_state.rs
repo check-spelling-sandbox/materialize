@@ -281,7 +281,7 @@ impl ComputeState {
                 let clear_bytes = LGALLOC_SLOW_CLEAR_BYTES.get(config);
                 info!(
                     ?path,
-                    eager_return, backgrund_interval=?interval, clear_bytes, "enabling lgalloc"
+                    eager_return, background_interval=?interval, clear_bytes, "enabling lgalloc"
                 );
                 let background_worker_config = lgalloc::BackgroundWorkerConfig {
                     interval,
