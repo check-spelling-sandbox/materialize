@@ -56,7 +56,7 @@ pub async fn run(args: Args) -> Result<(), anyhow::Error> {
                 .serve(args.listen_addr.clone())
                 .await
                 .expect("server running");
-            info!("server ded");
+            info!("server died");
         }
         Role::Writer => {
             let connection = GrpcPubSubClient::connect(
@@ -96,7 +96,7 @@ pub async fn run(args: Args) -> Result<(), anyhow::Error> {
             while let Some(message) = connection.receiver.next().await {
                 info!("client res: {:?}", message);
             }
-            info!("stream to client ded");
+            info!("stream to client died");
         }
     }
     Ok(())
