@@ -23,7 +23,7 @@
 //!     - (note that `UPSERT` RocksDB instances are NOT in the
 //!     critical path for any sort of query.
 //!
-//! The defaults (so, the values resulting from derserializing `{}`
+//! The defaults (so, the values resulting from deserializing `{}`
 //! into a `RocksDBTuningParameters`) should be reasonable defaults.
 //!
 //! The documentation on each field in `RocksDBTuningParameters` has more
