@@ -39,7 +39,7 @@
 //!   `SpineBatch`, which has no effect on the structure of `Spine`
 //!   but replaces the metadata in persist's state to point at the
 //!   new batch.
-//! - `SpineBatch` is explictly allowed to accumulate a list of `HollowBatch`s.
+//! - `SpineBatch` is explitly allowed to accumulate a list of `HollowBatch`s.
 //!   This decouples compaction from Spine progress and also allows us to reduce
 //!   write amplification by merging `N` batches at once where `N` can be
 //!   greater than 2.

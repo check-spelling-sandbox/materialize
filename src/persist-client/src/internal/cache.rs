@@ -167,7 +167,7 @@ mod lru {
         ///
         /// `evict_fn` is called for every entry evicted by the least recently
         /// used policy. It is not called for entries replaced by the same key
-        /// in `insert` nor entries explictly removed by `remove`.
+        /// in `insert` nor entries explitly removed by `remove`.
         pub fn new<F>(capacity: usize, evict_fn: F) -> Self
         where
             F: Fn(K, V, usize) + Send + 'static,

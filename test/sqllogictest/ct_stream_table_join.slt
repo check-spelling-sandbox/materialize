@@ -23,7 +23,7 @@ CREATE CONTINUAL TASK stj ON INPUT big AS (
     INSERT INTO stj SELECT b.key AS k, s.val AS v FROM big b JOIN small s ON b.key = s.key;
 )
 
-# Can rename columns via AS when we don't specify them explictly in the CT
+# Can rename columns via AS when we don't specify them explitly in the CT
 query TTTT
 SHOW COLUMNS FROM stj;
 ----

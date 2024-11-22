@@ -289,7 +289,7 @@ where
 
         // A lot of things across mz have to line up to hold the following
         // invariant and violations only show up as subtle correctness errors,
-        // so explictly validate it here. Better to panic and roll back a
+        // so explitly validate it here. Better to panic and roll back a
         // release than be incorrect (also potentially corrupting a sink).
         //
         // Note that the since check is intentionally less_than, not less_equal.
@@ -863,7 +863,7 @@ where
     /// Politely expires this reader, releasing its lease.
     ///
     /// There is a best-effort impl in Drop to expire a reader that wasn't
-    /// explictly expired with this method. When possible, explicit expiry is
+    /// explitly expired with this method. When possible, explicit expiry is
     /// still preferred because the Drop one is best effort and is dependent on
     /// a tokio [Handle] being available in the TLC at the time of drop (which
     /// is a bit subtle). Also, explicit expiry allows for control over when it

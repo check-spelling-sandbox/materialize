@@ -489,7 +489,7 @@ fn plan_explainee(
                 stmt.if_exists = IfExistsBehavior::Skip;
             } else {
                 sql_bail!(
-                    "Cannot EXPLAIN a CREATE VIEW that explictly sets IF NOT EXISTS \
+                    "Cannot EXPLAIN a CREATE VIEW that explitly sets IF NOT EXISTS \
                      (the behavior is implied within the scope of an enclosing EXPLAIN)"
                 );
             }
@@ -509,7 +509,7 @@ fn plan_explainee(
                 stmt.if_exists = IfExistsBehavior::Skip;
             } else {
                 sql_bail!(
-                    "Cannot EXPLAIN a CREATE MATERIALIZED VIEW that explictly sets IF NOT EXISTS \
+                    "Cannot EXPLAIN a CREATE MATERIALIZED VIEW that explitly sets IF NOT EXISTS \
                      (the behavior is implied within the scope of an enclosing EXPLAIN)"
                 );
             }
@@ -532,7 +532,7 @@ fn plan_explainee(
                 stmt.if_not_exists = true;
             } else {
                 sql_bail!(
-                    "Cannot EXPLAIN a CREATE INDEX that explictly sets IF NOT EXISTS \
+                    "Cannot EXPLAIN a CREATE INDEX that explitly sets IF NOT EXISTS \
                      (the behavior is implied within the scope of an enclosing EXPLAIN)"
                 );
             }

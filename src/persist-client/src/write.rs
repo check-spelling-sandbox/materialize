@@ -678,7 +678,7 @@ where
     /// Politely expires this writer, releasing any associated state.
     ///
     /// There is a best-effort impl in Drop to expire a writer that wasn't
-    /// explictly expired with this method. When possible, explicit expiry is
+    /// explitly expired with this method. When possible, explicit expiry is
     /// still preferred because the Drop one is best effort and is dependent on
     /// a tokio [Handle] being available in the TLC at the time of drop (which
     /// is a bit subtle). Also, explicit expiry allows for control over when it
