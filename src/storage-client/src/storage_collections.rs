@@ -2235,7 +2235,7 @@ struct BackgroundTask<T: TimelyTimestamp + Lattice + Codec64> {
     finalizable_shards: Arc<ShardIdSet>,
     collections: Arc<std::sync::Mutex<BTreeMap<GlobalId, CollectionState<T>>>>,
     // So we know what shard ID corresponds to what global ID, which we need
-    // when re-enqueing futures for determining the next upper update.
+    // when re-enqueuing futures for determining the next upper update.
     shard_by_id: BTreeMap<GlobalId, ShardId>,
     since_handles: BTreeMap<GlobalId, SinceHandleWrapper<T>>,
     txns_handle: Option<WriteHandle<SourceData, (), T, Diff>>,
@@ -2556,7 +2556,7 @@ where
                     return;
                 }
 
-                info!(%id, %dropped_shard_id, "enqueing shard finalization due to dropped collection and dropped persist handle");
+                info!(%id, %dropped_shard_id, "enqueuing shard finalization due to dropped collection and dropped persist handle");
 
                 self.finalizable_shards.lock().insert(dropped_shard_id);
 
