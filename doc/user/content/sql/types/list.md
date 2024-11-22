@@ -1,12 +1,12 @@
 ---
 title: "List types"
-description: "Lists are ordered sequences of homogenously typed elements"
+description: "Lists are ordered sequences of homogeneously typed elements"
 menu:
   main:
     parent: sql-types
 ---
 
-Lists are ordered sequences of homogenously typed elements. Lists' elements can
+Lists are ordered sequences of homogeneously typed elements. Lists' elements can
 be other lists, known as "layered lists."
 
 | Detail           | Info                                         |
