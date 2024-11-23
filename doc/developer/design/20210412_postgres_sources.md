@@ -97,7 +97,7 @@ to move data from one postgres instance to another.
 
 ### User experience
 
-The system will expose a low level source type to users that once instanciated
+The system will expose a low level source type to users that once instantiated
 provides the raw replication stream data as a streaming source. Specifically,
 users will have to invoke syntax similar to `CREATE SOURCE "foo" FROM POSTGRES
 ..` which will create a source `foo` with a generic schema not tied to
