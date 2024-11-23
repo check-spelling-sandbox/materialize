@@ -293,13 +293,13 @@ statement ok
 ALTER SCHEMA c1 RENAME TO c2;
 
 statement ok
-ALTER SCHEMA grand_friend RENAME TO grand_acquaintance;
+ALTER SCHEMA grand_friend RENAME TO grand_acquainstance;
 
 query TT
 SHOW CREATE VIEW c2.v1;
 ----
 materialize.c2.v1
-CREATE VIEW "materialize"."c2"."v1" AS SELECT "y" FROM "materialize"."friend_again"."v2" JOIN "materialize"."grand_acquaintance"."t1" ON "materialize"."friend_again"."v2"."y" = "materialize"."grand_acquaintance"."t1"."keys" UNION ALL SELECT "aux_key" FROM "materialize"."c2"."keys", "materialize"."b4"."t"
+CREATE VIEW "materialize"."c2"."v1" AS SELECT "y" FROM "materialize"."friend_again"."v2" JOIN "materialize"."grand_acquainstance"."t1" ON "materialize"."friend_again"."v2"."y" = "materialize"."grand_acquainstance"."t1"."keys" UNION ALL SELECT "aux_key" FROM "materialize"."c2"."keys", "materialize"."b4"."t"
 
 statement ok
 CREATE TABLE c2.c2 (ts int);

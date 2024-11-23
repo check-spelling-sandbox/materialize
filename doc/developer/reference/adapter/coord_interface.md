@@ -224,7 +224,7 @@ Unless described differently elsewhere, the typical statement
 terminates in the coordinator, and no further action by the client is
 necessary. To give one arbitrary example among many, if a `CREATE
 SOURCE` statement is successful, the coordinator responds with an
-instace of [`ExecuteResponse::CreatedSource`][createdsource], which
+instance of [`ExecuteResponse::CreatedSource`][createdsource], which
 carries no additional information and requires no response.
 
 [adapter client]: https://github.com/MaterializeInc/materialize/blob/0495d6272f/src/adapter/src/client.rs#L85-L92
