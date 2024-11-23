@@ -200,7 +200,7 @@ PASSWORD_RE = re.compile(
 
 PASSWORD_IGNORE_RE = re.compile(
     # We actually want this to be the exact ignored string, but unfortunately
-    # log lines from clusterd and environmentd can interfer when they are
+    # log lines from clusterd and environmentd can interfere when they are
     # running in the same materialized container. Example:
     # > password: Some("%3C2024-10-18T17:11:36.445784450Z redacted%3E")
     # rb"^ ( < | %3[Cc] ) redacted ( > | %3[Ee] ) $",
