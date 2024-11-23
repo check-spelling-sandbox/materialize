@@ -115,7 +115,7 @@ pub fn trace_plan<T: Clone + 'static>(plan: &T) {
 
 /// Create a span identified by `segment` and trace `plan` in it.
 ///
-/// This primitive is useful for instrumentic code, see this commit[^example]
+/// This primitive is useful for instrumenting code, see this commit[^example]
 /// for an example.
 ///
 /// [^example]: <https://github.com/MaterializeInc/materialize/commit/2ce93229>
@@ -127,7 +127,7 @@ pub fn dbg_plan<S: Display, T: Clone + 'static>(segment: S, plan: &T) {
 
 /// Create a span identified by `segment` and trace `misc` in it.
 ///
-/// This primitive is useful for instrumentic code, see this commit[^example]
+/// This primitive is useful for instrumenting code, see this commit[^example]
 /// for an example.
 ///
 /// [^example]: <https://github.com/MaterializeInc/materialize/commit/2ce93229>
