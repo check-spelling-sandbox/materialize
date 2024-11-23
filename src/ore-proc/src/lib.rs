@@ -65,7 +65,7 @@ pub fn static_list(args: TokenStream, item: TokenStream) -> TokenStream {
     static_list::static_list_impl(args, item)
 }
 
-/// Materialize wrapper around the `#[tracing::insrument]` macro.
+/// Materialize wrapper around the `#[tracing::instrument]` macro.
 ///
 /// We wrap the `tracing::instrument` macro to skip tracing all arguments by default, this prevents
 /// noisy or actively harmful things (e.g. the entire Catalog) from accidentally getting traced. If
