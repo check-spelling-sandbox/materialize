@@ -20,7 +20,7 @@ ln -s /absolute/path/to/this/repo/misc/editor/vscode ~/.vscode/extensions
 
 With some work, it's likely to possible to use these syntax highlighting grammar
 files with other editors. Most modern editors (Atom, Sublime) all use the same
-underlying TextMate grammar format, and the IntellJ family has a [TextMate
+underlying TextMate grammar format, and the IntelliJ family has a [TextMate
 plugin][intellij-textmate] that may prove useful.
 
 [vscode]: https://code.visualstudio.com
