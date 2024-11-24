@@ -464,7 +464,7 @@ impl Value {
                 // clients to query. And THEN we'd need to teach every client we
                 // care about how to query this table.
                 //
-                // This isn't intractible. It's how PostgreSQL's range type
+                // This isn't intractable. It's how PostgreSQL's range type
                 // works, which is supported by many drivers. But our job is
                 // harder because most PostgreSQL drivers don't want to carry
                 // around code for Materialize-specific types. So we'd have to
