@@ -901,7 +901,7 @@ impl MapFilterProject {
             // Try to identify this pattern, of a map that introduces an expression equated to a prior column,
             // and then replace the mapped expression by a column reference.
             //
-            // We think this is due to `LiteralLifting`, and we might investigate removing the introduciton in
+            // We think this is due to `LiteralLifting`, and we might investigate removing the introduction in
             // the first place. The tell-tale that we see when we fix is a diff that look likes
             //
             // - Project (#0, #2)
