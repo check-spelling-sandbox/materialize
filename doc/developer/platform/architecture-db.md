@@ -93,7 +93,7 @@ The ADAPTER layer translates user input into commands for the STORAGE and COMPUT
 
 It relies on STORAGE to make sources definite, and on COMPUTE to compute and maintain views as specified.
 
-ADAPTER has no requirements imposed on it by other layers, and has great lattitude in defining what it asks others to do.
+ADAPTER has no requirements imposed on it by other layers, and has great latitude in defining what it asks others to do.
 
 Although at the moment ADAPTER is "SQL", there is no reason this layer needs to provide exactly this interface.
 It could also provide more direct access to STORAGE and COMPUTE, for other frameworks, applications, languages.
