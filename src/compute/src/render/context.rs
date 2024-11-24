@@ -286,7 +286,7 @@ impl HydrationLogger {
                 hydrated,
             };
             if self.tx.send(event).is_err() {
-                error!("hydration event receiver dropped unexpectely");
+                error!("hydration event receiver dropped unexpectedly");
             }
         }
     }
