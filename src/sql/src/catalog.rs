@@ -358,14 +358,14 @@ pub trait SessionCatalog: fmt::Debug + ExprHumanizer + Send + Sync + ConnectionR
     /// Returns all the IDs of all objects that depend on `ids`, including `ids` themselves.
     ///
     /// The order is guaranteed to be in reverse dependency order, i.e. the leafs will appear
-    /// earlier in the list than the roots. This is particularly userful for the order to drop
+    /// earlier in the list than the roots. This is particularly useful for the order to drop
     /// objects.
     fn object_dependents(&self, ids: &Vec<ObjectId>) -> Vec<ObjectId>;
 
     /// Returns all the IDs of all objects that depend on `id`, including `id` themselves.
     ///
     /// The order is guaranteed to be in reverse dependency order, i.e. the leafs will appear
-    /// earlier in the list than `id`. This is particularly userful for the order to drop
+    /// earlier in the list than `id`. This is particularly useful for the order to drop
     /// objects.
     fn item_dependents(&self, id: CatalogItemId) -> Vec<ObjectId>;
 
