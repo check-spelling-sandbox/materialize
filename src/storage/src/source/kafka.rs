@@ -1059,7 +1059,7 @@ impl KafkaResumeUpperProcessor {
             let mut tpl = TopicPartitionList::new();
             for (pid, offset) in offsets {
                 let offset_to_commit =
-                    Offset::Offset(offset.offset.try_into().expect("offset to be vald i64"));
+                    Offset::Offset(offset.offset.try_into().expect("offset to be valid i64"));
                 tpl.add_partition_offset(&self.topic_name, pid, offset_to_commit)
                     .expect("offset known to be valid");
             }
