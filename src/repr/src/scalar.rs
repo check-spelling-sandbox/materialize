@@ -746,7 +746,7 @@ impl<'a> Datum<'a> {
         }
     }
 
-    /// Unwraps the time vaqlue within this datum.
+    /// Unwraps the time value within this datum.
     ///
     /// # Panics
     ///
