@@ -10,7 +10,7 @@
 # TODO(mgree): need to relax the parser to write more type errors
 #
 # missing relation type errors:
-#  unbouned variables (parser panics)
+#  unbound variables (parser panics)
 #  bad type annotation on Get (parser panics)
 #  project of nonexistent column (parser panics)
 #  union of incompatible types (parser panics)
