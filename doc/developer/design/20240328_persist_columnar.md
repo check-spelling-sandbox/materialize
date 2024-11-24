@@ -797,7 +797,7 @@ time.
    impact cost, and requires `ConsolidatingIter` to handle a larger number of
    Parts.
 
-Neither option is great, but I am leanning towards [1] since it puts the
+Neither option is great, but I am leaning towards [1] since it puts the
 pressure/complexity on S3 and the network more than Persist internals. To make
 sure this solution is stable we can add Prometheus metrics tracking the size of
 blobs we read from S3 and monitor them during rollout to staging and canaries.
