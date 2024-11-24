@@ -330,7 +330,7 @@ where
             .expect("CollectionManager panicked")
             .remove(&id);
 
-        // Wait for the task to complete before reporting as unregisted.
+        // Wait for the task to complete before reporting as unregistered.
         if let Some((_prev_writer, prev_task, shutdown_tx)) = prev {
             // Notify the task it needs to shutdown.
             //
@@ -345,7 +345,7 @@ where
             .expect("CollectionManager panicked")
             .remove(&id);
 
-        // Wait for the task to complete before reporting as unregisted.
+        // Wait for the task to complete before reporting as unregistered.
         if let Some((_prev_writer, prev_task, shutdown_tx)) = prev {
             // Notify the task it needs to shutdown.
             //
