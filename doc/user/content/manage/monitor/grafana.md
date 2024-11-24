@@ -89,7 +89,7 @@ which has been tried and tested in production environments.
         # of type float.
         values:
         - "memory_percent"
-        # The SQL query that is run unalterted for each job.
+        # The SQL query that is run unaltered for each job.
         query:  |
                 SELECT
                    name::text AS replica_name,
