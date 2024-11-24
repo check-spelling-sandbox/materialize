@@ -199,7 +199,7 @@ CREATE TABLE <name> (<cols>) WITH (<options>)
 
 We would update the `CREATE TABLE` statement to be able to optionally reference an upstream
 source and reference using `FROM SOURCE <source> (REFERENCE <upstream reference>)` and
-any additional options necessary for ingesting the upstrema data:
+any additional options necessary for ingesting the upstream data:
 
 ```sql
 CREATE TABLE <name> FROM SOURCE <source_name> (REFERENCE = <upstream name>) WITH (TEXT COLUMNS = (..), ..)
