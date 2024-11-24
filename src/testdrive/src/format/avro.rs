@@ -230,7 +230,7 @@ pub fn from_json(json: &JsonValue, schema: SchemaNode) -> Result<Value, anyhow::
 
 /// Decodes an Avro datum from its Confluent-formatted byte representation.
 ///
-/// The Confluent format includes a verbsion byte, followed by a 32-bit schema
+/// The Confluent format includes a version byte, followed by a 32-bit schema
 /// ID, followed by the encoded Avro value. This function validates the version
 /// byte but ignores the schema ID.
 pub fn from_confluent_bytes(schema: &Schema, mut bytes: &[u8]) -> Result<Value, anyhow::Error> {

@@ -57,7 +57,7 @@ class CloudtestUpgrade(Scenario):
 
 @pytest.mark.long
 def test_upgrade(aws_region: str | None, log_filter: str | None, dev: bool) -> None:
-    """Test upgrade from the last released verison to the current source by running all the Platform Checks"""
+    """Test upgrade from the last released version to the current source by running all the Platform Checks"""
     last_released_version = get_previous_published_version(
         MzVersion.parse_cargo(), previous_minor=True
     )
