@@ -55,7 +55,7 @@ mod test {
         canonicalize_predicates(&mut predicates3, &typ);
         if predicates1 != predicates2 || predicates1 != predicates3 {
             Err(format!(
-                "predicate canonicalization resulted in unrealiable output: [{}] vs [{}] vs [{}]",
+                "predicate canonicalization resulted in unreliable output: [{}] vs [{}] vs [{}]",
                 separated(", ", predicates1.iter().map(|p| p.to_string())),
                 separated(", ", predicates2.iter().map(|p| p.to_string())),
                 separated(", ", predicates3.iter().map(|p| p.to_string())),
