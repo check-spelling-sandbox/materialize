@@ -3738,7 +3738,7 @@ pub static MZ_CATALOG_BUILTINS: LazyLock<BTreeMap<&'static str, Func>> = LazyLoc
             // params!([String], Any...) => Operation::variadic(|ecx, exprs| {
             //
             // ...the challenge here is that we don't support constructing other
-            // complex types from varidaic functions and instead use a SQL
+            // complex types from variadic functions and instead use a SQL
             // keyword; however that doesn't work very well for map because the
             // intuitive syntax would be something akin to `MAP[key=>value]`,
             // but that doesn't work out of the box because `key=>value` looks
