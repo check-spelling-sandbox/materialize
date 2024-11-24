@@ -73,7 +73,7 @@ In both of those cases, Materialize, CRDB and Python will run within the same ma
 This resolves to the commit of the merge base of the current branch.
 * In Buildkite, this is the last shared commit of the current branch and the merge target. When not in a pull request,
 `latest` will be used.
-* When running locally, this is the lasat shared commit of the current branch and the `main` branch.
+* When running locally, this is the last shared commit of the current branch and the `main` branch.
 
 ```
 ./mzcompose run default --target common-ancestor ...
