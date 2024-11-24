@@ -38,7 +38,7 @@ use crate::error::Error;
 #[cfg(target_os = "macos")]
 static KEYCHAIN_SERVICE_NAME: &str = "Materialize";
 
-/// Old keychain name keeped for compatibility.
+/// Old keychain name kept for compatibility.
 /// TODO: Should be removed after > 0.2.6
 #[cfg(target_os = "macos")]
 static OLD_KEYCHAIN_SERVICE_NAME: &str = "Materialize mz CLI";
