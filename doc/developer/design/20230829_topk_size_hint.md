@@ -521,7 +521,7 @@ top-k variants.
 We considered changing the current behavior of `EXPECTED GROUP SIZE`. For example, we could make the
 `EXPECTED GROUP SIZE` apply only to the reduction in a single query block and force users to
 specify the other proposed hints for top-k constructs. Additionally, `AGGREGATE INPUT GROUP SIZE` could
-be introdced as a synonym for `EXPECTED GROUP SIZE`, which would in turn be deprecated.
+be introduced as a synonym for `EXPECTED GROUP SIZE`, which would in turn be deprecated.
 
 However, such a change would introduce operational complexity. Migration procedures would need to be
 devised and implemented where we rewrite production queries to introduce the additional
