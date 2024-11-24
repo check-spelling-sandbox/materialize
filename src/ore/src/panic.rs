@@ -109,7 +109,7 @@ pub fn install_enhanced_handler() {
         //
         // We do support `RUST_BACKTRACE=full` to display a full backtrace
         // rather than a short backtrace that omits the frames from the runtime
-        // and the panic handler itslef.
+        // and the panic handler itself.
         let mut backtrace = Backtrace::force_capture().to_string();
         if env::var("RUST_BACKTRACE").as_deref() != Ok("full") {
             // Rust doesn't provide an API for generating a short backtrace, so
