@@ -44,7 +44,7 @@ compact output=b0_1 inputs=(b0,b1)  lower=0 upper=3 since=0
 parts=1 len=2
 
 # Give enough fuel to the Spine that we generate a merge req for b0 and b1
-# (unfortuante implementation detail).
+# (unfortunate implementation detail).
 write-batch output=b2 lower=3 upper=4
 threeA 3 1
 threeB 3 1
