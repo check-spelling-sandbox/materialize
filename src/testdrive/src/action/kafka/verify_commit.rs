@@ -48,7 +48,7 @@ pub async fn run_verify_commit(
             let mut tpl = TopicPartitionList::new();
             tpl.add_partition(&topic, partition);
             let committed_tpl = mz_ore::task::spawn_blocking(
-                || "kakfa_committed_offsets".to_string(),
+                || "kafka_committed_offsets".to_string(),
                 move || {
                     let consumer: StreamConsumer =
                         config.create().context("creating kafka consumer")?;
