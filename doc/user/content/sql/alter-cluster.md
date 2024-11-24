@@ -305,7 +305,7 @@ Alter the `managed` status of a cluster to managed:
 ALTER CLUSTER c1 SET (MANAGED);
 ```
 
-Materialize permits converting an unmanged cluster to a managed cluster if
+Materialize permits converting an unmanaged cluster to a managed cluster if
 the following conditions are met:
 
 * The cluster replica names are `r1`, `r2`, ..., `rN`.
