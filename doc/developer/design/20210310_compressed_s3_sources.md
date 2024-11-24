@@ -89,7 +89,7 @@ object that is not compressed.
 
 This solution is not ideal, as
 [Type](https://www.w3.org/Protocols/rfc2616/rfc2616-sec7.html#sec7.2.1) is meant to specify the
-media of the underyling data (such as `text/csv` or `text/plain`) and not the compression
+media of the underlying data (such as `text/csv` or `text/plain`) and not the compression
 algorithm applied. It should be noted that it is still possible that `Content-Type` can be a media
 type that needs to be decompressed (see `application/x-gzip` example above).
 
