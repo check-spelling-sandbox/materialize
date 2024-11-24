@@ -40,7 +40,7 @@ use url::{ParseError, Url};
 
 /// Arguments for [`Context::load`].
 pub struct ContextLoadArgs {
-    /// An override for the configuration file path to laod.
+    /// An override for the configuration file path to load.
     ///
     /// If unspecified, the default configuration file path is used.
     pub config_file_path: Option<PathBuf>,
