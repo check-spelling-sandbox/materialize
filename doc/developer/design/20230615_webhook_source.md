@@ -97,7 +97,7 @@ on the `SessionClient`. This new API will send the following to the `Coordinator
 
 Note, the reason we'll use the `mz_adapter::Client` and not the `SessionClient`, is because to push
 data to a source we don't need a `Session`. Creating and tearing down a `Session` adds non-trivial
-overhead and also possibly results in unneccessary writes to CockroachDB.
+overhead and also possibly results in unnecessary writes to CockroachDB.
 
 In the coordinator we'll do the following:
 

@@ -25,7 +25,7 @@ message ProtoStructStats {
 
 message ProtoDynStats {
   // ProtoOptionStats could instead be have a `ProtoDynStats some` field and
-  // be in the oneof, but that's unnecesary (we don't need
+  // be in the oneof, but that's unnecessary (we don't need
   // `OptionStats<OptionStats<T>>`) and causes some problems (OptionStats
   // would need to represent `some` as a `Box<dyn DynStats>` instead of a `T`,
   // which is far less ergonomic).

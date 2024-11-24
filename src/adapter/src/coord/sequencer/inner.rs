@@ -590,7 +590,7 @@ impl Coordinator {
                 // subsources, we create all of the collections at once. If we
                 // created each collection independently, we would reschedule
                 // the primary source's execution for each subsources, causing
-                // unncessary thrashing.
+                // unnecessary thrashing.
                 //
                 // Note that creating all of the collections at once should
                 // never be semantic bearing; we should always be able to break

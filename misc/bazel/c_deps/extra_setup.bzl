@@ -24,7 +24,7 @@ def protoc_setup():
     that relatively crowded file.
 
     Note: We could use "@protobuf//:protobuf_deps.bzl", but that pulls in
-    unneccessary toolchains that we don't need, like Java, so we manually
+    unnecessary toolchains that we don't need, like Java, so we manually
     specify dependencies here.
     """
 
