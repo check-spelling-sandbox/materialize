@@ -43,7 +43,7 @@ The selected strategy offers flexibility due to the separation of the serializab
 1. We are free to evolve `$T` as usual and keep client code simple.
    The technical complexity caused by backwards-compatibility guarantees is accumulated in the `Proto$T` and the associated `Proto$T ⇒ $T` conversion function.
 2. We have an obvious solution to the mismatch between the Rust types and the types derived from the `*.proto` defs by `prost-build` (see the rejected [alternatives](#alternatives) for details).
-   The existing Rust type `$T` can remain unchaged, while `Proto$T` can deviate in a predictable and consistent way based on the limitations of `prost-build`.
+   The existing Rust type `$T` can remain unchanged, while `Proto$T` can deviate in a predictable and consistent way based on the limitations of `prost-build`.
    Moreover, we can offer library functions that mediate between `$T` and `Proto$T` in a consistent way across the codebase.
    For example, we can enforce that the Rust type `usize` is always represented by the Protobuf type `uint64`.
 
