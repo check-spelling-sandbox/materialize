@@ -32,12 +32,12 @@ class OneOf(OperationParam):
     def supports_type(
         self, data_type: DataType, previous_args: list[Expression]
     ) -> bool:
-        raise RuntimeError("Unsuppported")
+        raise RuntimeError("Unsupported")
 
     def might_support_type_as_input_assuming_category_matches(
         self, return_type_spec: ReturnTypeSpec
     ) -> bool:
-        raise RuntimeError("Unsuppported")
+        raise RuntimeError("Unsupported")
 
     def pick(self, randomized_picker: RandomizedPicker) -> OperationParam:
         param_choice_index = randomized_picker.random_number(0, len(self.choices) - 1)
