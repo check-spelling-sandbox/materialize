@@ -48,7 +48,7 @@ which has been tried and tested in production environments.
 
    {{< note >}}
    You must escape the special `@` character in `USER` for a successful
-   connection. Example: instead of `name@email.com`, use `name%40email.com`.
+   connection. Example: instead of `name@example.com`, use `name%40example.com`.
    {{</ note >}}
 
    **Filename:** config.yml
