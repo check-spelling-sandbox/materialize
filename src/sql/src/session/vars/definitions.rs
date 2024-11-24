@@ -1174,13 +1174,13 @@ pub static STORAGE_DATAFLOW_MAX_INFLIGHT_BYTES: VarDefinition = VarDefinition::n
     false,
 );
 
-/// Configuration ratio to shrink unusef buffers in upsert by.
+/// Configuration ratio to shrink unused buffers in upsert by.
 /// For eg: is 2 is set, then the buffers will be reduced by 2 i.e. halved.
 /// Default is 0, which means shrinking is disabled.
 pub static STORAGE_SHRINK_UPSERT_UNUSED_BUFFERS_BY_RATIO: VarDefinition = VarDefinition::new(
     "storage_shrink_upsert_unused_buffers_by_ratio",
     value!(usize; 0),
-    "Configuration ratio to shrink unusef buffers in upsert by",
+    "Configuration ratio to shrink unused buffers in upsert by",
     false,
 );
 
