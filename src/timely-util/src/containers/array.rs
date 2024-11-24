@@ -35,7 +35,7 @@ impl<T> Array<T> {
             // 3. Not aliased.
             // 4. Total size not longer than isize::MAX because lgalloc has a capacity limit.
             let slice = unsafe { std::slice::from_raw_parts_mut(ptr.as_ptr(), actual_capacity) };
-            // SAFETY: slice is valid, and we deallocate it usinge lgalloc.
+            // SAFETY: slice is valid, and we deallocate it using lgalloc.
             (handle, unsafe { Box::from_raw(slice) })
         } else {
             // We failed to allocate through lgalloc, fall back to heap.

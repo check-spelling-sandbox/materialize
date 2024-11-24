@@ -14,7 +14,7 @@ This doc walks you through the process of contributing to Materialize's referenc
 1.  Add assets (such as `*.png` figures) to [the `assets` subfolder](./assets/).
 1.  Add the sources for each asset [in our Excalidraw project](https://app.excalidraw.com/o/6NqJ5ikTEpv/4jWfVZot2bS).
     1.  If you are a member of [the MaterializeInc org](https://github.com/orgs/MaterializeInc/people):
-        1. [Join our Excalidraw workspace](app.excalidraw.com/redeem/6NqJ5ikTEpv/5Be393wLTO2) useing your `@materialize.com` email address.
+        1. [Join our Excalidraw workspace](app.excalidraw.com/redeem/6NqJ5ikTEpv/5Be393wLTO2) using your `@materialize.com` email address.
         1. Create a separate scene for every new image. Align the name of the image and the name of the scene for better discoverability.
     1.  If you are an external contributor:
         1. Ping a member of [the MaterializeInc org](https://github.com/orgs/MaterializeInc/people) in GitHub or [in the community Slack](https://materialize.com/s/chat) to get the sources you need.
