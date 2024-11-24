@@ -83,7 +83,7 @@ FlatMap wrap3(0, 1, 2, 3)
 ## Support for unnest_~ calls
 ## --------------------------
 
-# Rewrite possible for `unnset_array`
+# Rewrite possible for `unnest_array`
 # Example SQL: select unnest(array[f1]) from t1 where f1 = 5;
 apply pipeline=flatmap_to_map
 FlatMap unnest_array({5})
@@ -92,7 +92,7 @@ FlatMap unnest_array({5})
 Map (5)
   Get t0
 
-# Rewrite possible for `unnset_list`
+# Rewrite possible for `unnest_list`
 # Example SQL: select unnest(list[f1]) from t1 where f1 = 5;
 apply pipeline=flatmap_to_map
 FlatMap unnest_list([5])
