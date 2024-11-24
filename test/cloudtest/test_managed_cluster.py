@@ -233,7 +233,7 @@ def test_graceful_reconfiguration(mz: MaterializeApplication) -> None:
         user="mz_system",
     )
 
-    # Valudate replicas are correct during an ongoing alter
+    # Validate replicas are correct during an ongoing alter
     def gracefully_alter():
         mz.environmentd.sql(
             """
