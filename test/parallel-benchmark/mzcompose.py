@@ -356,9 +356,9 @@ def report(
         for key, m in measurements.data.items():
             durations = [x.duration * 1000.0 for x in m]
             durations.sort()
-            (uniqu_durations, counts) = numpy.unique(durations, return_counts=True)
+            (unique_durations, counts) = numpy.unique(durations, return_counts=True)
             counts = numpy.cumsum(counts)
-            plt.plot(uniqu_durations, 1 - counts / counts.max(), label=key)
+            plt.plot(unique_durations, 1 - counts / counts.max(), label=key)
         plt.legend(loc="best")
 
         plot_path = f"plots/{scenario_name}_{suffix}_ccdf.png"
