@@ -248,7 +248,7 @@ pub fn decode_parquet_file_kvtd(
                 }
             }
         }
-        unknown => Err(format!("unkown ProtoFormatMetadata, {unknown:?}"))?,
+        unknown => Err(format!("unknown ProtoFormatMetadata, {unknown:?}"))?,
     }
 }
 
