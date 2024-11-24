@@ -100,7 +100,7 @@ which has been tried and tested in production environments.
    ```
 
 4. Once you are done with the Prometheus SQL Exporter configuration,
-   follow the intructions in the [`sql_exporter` repository](https://github.com/justwatchcom/sql_exporter#getting-started)
+   follow the instructions in the [`sql_exporter` repository](https://github.com/justwatchcom/sql_exporter#getting-started)
    to run the service using the configuration file from the previous step.
 
 ## Step 2. Set up a metrics scraper
