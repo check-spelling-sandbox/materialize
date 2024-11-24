@@ -63,7 +63,7 @@ is basically the same.
 The existence of the per-worker underlying sources is not completely
 useless, e.g. because they are useful for detecting skew. However,
 they are probably less commonly useful than a summed view would
-be. Unforunately, this summed view does not exist for most such
+be. Unfortunately, this summed view does not exist for most such
 relations (one counterexample is `mz_records_per_dataflow` and
 `mz_records_per_dataflow_global`).
 

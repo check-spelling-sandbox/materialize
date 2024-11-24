@@ -909,7 +909,7 @@ where
 
         // Mappings to send along.
         // To save overhead, we'll only compute mappings when we need to,
-        // which means things get gated behind options. Unfortuantely, that means we
+        // which means things get gated behind options. Unfortunately, that means we
         // have several `Option<...>` types that are _all_ `Some` or `None` together,
         // but there's no convenient way to express the invariant.
         let should_compute_lir_metadata = self.compute_logger.is_some();
