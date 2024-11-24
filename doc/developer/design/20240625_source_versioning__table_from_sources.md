@@ -339,7 +339,7 @@ to the index of that upstream table in the source's `details` struct (which is c
 created during purification -- a vector of upstream table descriptions).
 
 Then inside each source implementation, we currently assume that each
-`SourceExport` uniqely corresponds to a single `output_index`, and that each `output_index`
+`SourceExport` uniquely corresponds to a single `output_index`, and that each `output_index`
 corresponds to the same index of the upstream table in the source's upstream `details`.
 
 Since the top-level source `details` will no longer contain the `tables` field, the
