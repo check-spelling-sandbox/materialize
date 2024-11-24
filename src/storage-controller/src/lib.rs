@@ -3601,7 +3601,7 @@ where
                 let mut snapshot = Vec::with_capacity(contents.len());
                 for ((data, _), _, diff) in contents {
                     // TODO(petrosagg): We should accumulate the errors too and let the user
-                    // interprret the result
+                    // interpret the result
                     let row = data.expect("invalid protobuf data").0?;
                     snapshot.push((row, diff));
                 }
